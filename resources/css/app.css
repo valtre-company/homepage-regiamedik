@@ -1,0 +1,134 @@
+/**
+ * 
+ */
+
+:root {
+	--red: #fe3714;
+	--red-light: #eb634b;
+	--blue: #043579;
+	--blue-light: #215caf;
+	--dark: #272829;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/** main bg */
+.main-bg {
+	background-size: cover;   
+}
+
+.footer-logo {
+	height: 2.5rem;
+}
+
+/** nav */
+.health-care-header .header-full-active .main-navigation {
+	background-image: none;
+	background-color: #ffff !important;
+}
+
+.health-care-header .header-full-active .main-navigation nav .navbar-nav .nav-item .nav-link {
+	color: var(--dark) !important;
+}
+body.template-color-51 .header-full-menu.health-care-header .header-full-active .main-navigation nav .navbar-nav .nav-item .nav-link:hover, body.template-color-51 .header-full-menu.health-care-header .header-full-active .main-navigation nav .navbar-nav .nav-item .nav-link.active {
+	color: var(--red) !important;
+}
+
+.health-care-header .header-full-active .top-social-links li a i {
+	color: var(--blue) !important;
+}
+.health-care-header .header-full-active .top-social-links li:hover a i {
+	color: #fff !important;
+}
+
+body.template-color-51 .text-color, body.template-color-51 .hover-text-color:hover, body.template-color-51 .snail_toolbar .inner a:hover, body.template-color-51 .sidebar-wrapper .widget-tag-links a:hover, body.template-color-51 .accordion-style-2 .card-header h5 a.acc-btn[aria-expanded=true], body.template-color-51 .accordion-style-2 .card-header h5 a.acc-btn[aria-expanded=true]::before, body.template-color-51 .commnent-list-wrap .comment .content .comment-footer span.reply-btn a:hover, body.template-color-51 .blog-post.blog-classic .blog-inner .blog-title:hover a, body.template-color-51 .blog-modern-pagination .modern-pagination a:hover, body.template-color-51 .blog-tag-list a:hover, body.template-color-51 .sl-quote::before, body.template-color-51 .blog-post-return-button a:hover, body.template-color-51 .portfolio-details-list .details-list span a:hover, body.template-color-51 .portfolio-details-list-2 .details-list span a:hover, body.template-color-51 .portfolio-nav-list .portfolio-page .inner a:hover h3, body.template-color-51 .portfolio-nav-list .portfolio-page .inner a:hover p, body.template-color-51 .product:hover .product-contain h4, body.template-color-51 .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner h4 a:hover, body.template-color-51 .mini-cart .shopping-cart .footer .total, body.template-color-51 .mini-cart .shopping-cart .footer .total span, body.template-color-51 .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner .quatity span, body.template-color-51 .post.blog2.dark-version .post-body h5 a:hover, body.template-color-51 .post.blog2 .post-body h5 a:hover, body.template-color-51 .tab.tabs-links-dark .nav .nav-link a.active, body.template-color-51 .tab.tabs-links-dark .nav .nav-link:hover a, body.template-color-51 .tab.tabs-links .nav .nav-link a.active, body.template-color-51 .tab.tabs-links .nav .nav-link:hover a, body.template-color-51 .blog-post .blog-inner .blog-title a:hover, body.template-color-51 .footer-part.footer-classic .footer-links a:hover, body.template-color-51 .music_area .music-artist:hover .show-title, body.template-color-51 .sl-testimonial .description:after, body.template-color-51 .sl-testimonial .description:before, body.template-color-51 .rating li i, body.template-color-51 .btn .gradients-button.hover-bg-white:hover, body.template-color-51 .sl-list-2 .list-header.with-ckeck .marker::before, body.template-color-51 #common-footer .footer_menu__list li a:hover, body.template-color-51 .icon-box.style-5:hover .gradients-button, body.template-color-51 .icon-box.style-5.active .gradients-button {
+	color: var(--red) !important;
+}
+
+body.template-color-51 .header-full-menu .upper-nav .top-personal-info li a i, body.template-color-51 .header-full-menu .upper-nav .top-personal-info li a:hover, body.template-color-51 .header-full-menu .social-icons-simple li a:hover, body.template-color-51 .header-full-menu.header-light-style .header-full-active .main-navigation nav .navbar-nav .nav-item .nav-link:hover, body.template-color-51 .header-full-menu.header-light-style .header-full-active .main-navigation nav .navbar-nav .nav-item .nav-link.active {
+	color: var(--blue) !important;
+}
+
+body.template-color-51 .border-color, body.template-color-51 .hover-border-color:hover, body.template-color-51 .sl-pagination-wrapper .sl-pagination li.active a, body.template-color-51 .sl-pagination-wrapper .sl-pagination li a, body.template-color-51 .sidebar-wrapper .widget-search .submit-search:hover, body.template-color-51 .sidebar-wrapper .widget-search .form-group .form-control:focus~.submit-search, body.template-color-51 .radio input:checked~span, body.template-color-51 .sl-testimonial .pic img {
+	color: var(--red) !important;
+}
+
+.grad-bg-19 {
+	background-image: none !important;
+	background-color: var(--red) !important;
+}
+
+body.template-color-51 .border-color, body.template-color-51 .hover-border-color:hover, body.template-color-51 .sl-pagination-wrapper .sl-pagination li.active a, body.template-color-51 .sl-pagination-wrapper .sl-pagination li a, body.template-color-51 .sidebar-wrapper .widget-search .submit-search:hover, body.template-color-51 .sidebar-wrapper .widget-search .form-group .form-control:focus~.submit-search, body.template-color-51 .radio input:checked~span, body.template-color-51 .sl-testimonial .pic img {
+	border-color: var(--red) !important;
+}
+body.template-color-51 .header-full-menu .main-navigation nav .navbar-nav .nav-item .nav-link:hover, body.template-color-51 .header-full-menu .main-navigation nav .navbar-nav .nav-item .nav-link.active {
+	color: var(--red) !important;
+}
+
+.heathcare-service.box-1 {
+	background: var(--red) !important;
+}
+.heathcare-service .btn {
+	background-color: var(--red-light) !important;
+}
+body.template-color-51 #scroll-top {
+	background: var(--red) !important;
+	border: 2px solid var(--red) !important;
+}
+
+.upper-nav > .container {
+	border-bottom: 1px solid #f1f1f1 !important;
+	padding-bottom: .6rem !important;
+}
+
+/** nav links */
+.header-full-menu .main-navigation nav .navbar-nav .nav-item .nav-link {
+	color: var(--dark);
+}
+
+.header-full-active {
+	box-shadow: 0px 7px 13px 0px rgb(221 221 221 / 35%) !important;
+}
+
+/** input focused */
+body.template-color-51 input:not([disabled]):focus, body.template-color-51 textarea:not([disabled]):focus, body.template-color-51 .nice-select:focus, body.template-color-51 select:focus, body.template-color-51 .nice-select.open {
+	border-color: var(--red);
+}
+
+/** footer */
+.footer-container {
+	background-color: #f7f7f8 !important;
+	color: var(--dark) !important;
+	border-top: 1px solid #e9eaec !important;
+}
+.footer-part.footer-classic .footer-links a {
+	color: var(--dark) !important;
+}
+.social-icon.liquid-animate li a {
+	/* background: var(--blue); */
+	color: var(--red);
+	border-color: rgba(255, 255, 255, 0) !important;
+}
+.social-icon.liquid-animate li:hover a {
+	background: var(--blue);
+}
+body.template-color-51 .bg-color, body.template-color-51 .hover-bg-color:hover, body.template-color-51 [data-color-overlay]::after, body.template-color-51 [data-color-hover-overlay]:hover::after, body.template-color-51 .sl-pagination-wrapper .sl-pagination li.active a, body.template-color-51 .sl-pagination-wrapper .sl-pagination li:hover a, body.template-color-51 .blog-post.blog-classic a.post-meta-comments:hover, body.template-color-51 .widget-social-media .social-icon.icon-solid-rounded li a:hover, body.template-color-51 .sidebar-wrapper .widget-tag-cloud a:hover, body.template-color-51 .sidebar-wrapper .widget-search .submit-search:hover, body.template-color-51 .post-nav-list .nav-item a:hover, body.template-color-51 .social-icon.tooltip-layout.theme-color li a.tooltip-theme[aria-label]::after, body.template-color-51 .isotope-nav ul:not(.gradient-style) li.active, body.template-color-51 .animated-dot .middle-dot, body.template-color-51 .animated-dot .signal, body.template-color-51 .animated-dot .signal2, body.template-color-51 .feature-slider.owl-carousel .owl-nav button.owl-next:hover, body.template-color-51 .feature-slider.owl-carousel .owl-nav button.owl-prev:hover, body.template-color-51 .circle-dots .owl-dots button.owl-dot.active, body.template-color-51 .social-icon.liquid-animate.theme-color li a:before, body.template-color-51 .pricing-box .header .feature-mark, body.template-color-51 .sl-testimonial .pic:after, body.template-color-51 .sl-testimonial .pic:before, body.template-color-51 #common-footer:before, body.template-color-51 #common-footer .footer_item:before, body.template-color-51 #common-footer .footer_menu:before, body.template-color-51 #common-footer .footer_contacts__item:before, body.template-color-51 .section-title.under-line h2::after {
+	background: var(--blue) !important;
+}
+
+body.template-color-51 .footer-part.footer-classic .contact-mata:hover i {
+	background: var(--red) !important;
+	color: #fff ;
+	transition: .2s ease-in-out;
+}
+.footer-part.footer-classic .contact-mata i {
+	color: var(--red) !important;
+}
+.footer-part.footer-classic .contact-mata:hover i {
+	color: #fff !important;
+}
+.footer-part.footer-classic .contact-mata p, .footer-part.footer-classic .contact-mata a {
+	color: var(--dark) !important;
+}

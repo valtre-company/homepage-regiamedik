@@ -571,7 +571,7 @@
 					<div class="row justify-content-center">
 							<div class="col-md-8">
 									<form
-										action="https://submit-form.com/1RIy4FbZ"
+										action="{{ env('CONTACT_FORM_ACTION') }}"
 										target="_blank"
 										class="border-style"
 									>

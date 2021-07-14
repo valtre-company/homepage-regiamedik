@@ -4,5 +4,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('index');
-})->name('index');
+    return view('welcome');
+})->name('welcome');

@@ -4,20 +4,18 @@
 		<div class="container">
 			<div class="st-hero-text">
 				<h1 class="st-hero-title cd-headline slide">
-					Take best quality <br>
-					treatment for 
-					<span class="cd-words-wrapper" style="width: 326px;">
-						<b class="is-hidden">Crutches.</b>
-						<b class="is-hidden">Laboratory.</b>
-						<b class="is-visible">Cardiology.</b>
-						<b class="is-hidden">Dentist.</b>
-						<b class="is-hidden">Neurology.</b>
+					Ofrecemos<br>
+					<span class="cd-words-wrapper" style="width: 330px;">
+						<b class="is-hidden">distribución médica.</b>
+						<b class="is-visible">exámenes clínicos.</b>
+						<b class="is-hidden">laboratorios médicos.</b>
+						<b class="is-hidden">resultados confiables.</b>
+						<b class="is-hidden">unidades médicas.</b>
 					</span>
 				</h1>
-				<div class="st-hero-subtitle">The art of medicine consists in amusing the patient while nature cures the disease. <br>
-				Treatment without prevention is simply unsustainable.</div>
+				<div class="st-hero-subtitle">Conoce nuestra una amplia gama de servicios integrales de salud.</div>
 				<div class="st-hero-btn">
-					<a href="#appointment" class="st-btn st-style1 st-color1 st-smooth-move">Appointment</a>
+					<a href="#contacto" class="st-btn st-style1 st-color1 st-smooth-move">Estoy interesado</a>
 				</div>
 			</div>
 		</div>

@@ -48,9 +48,9 @@
               <li>
                 <a href="#inicio" class="st-smooth-move">Inicio</a>
               </li>
-              <li>
+              {{-- <li>
                 <a href="#servicios" class="st-smooth-move">Servicios</a>
-              </li>
+              </li> --}}
               <li>
                 <a href="#acerca-de" class="st-smooth-move">Acerca</a>
               </li>

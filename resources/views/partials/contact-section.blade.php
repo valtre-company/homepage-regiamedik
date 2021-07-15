@@ -25,7 +25,7 @@
         <form method="POST" action="{{ env('CONTACT_FORM_ACTION') }}" class="st-appointment-form" id="appointment-form">
           <div id="st-alert1" style="display: none;"></div>
 
-          <input type="hidden" id="sitio" name="sitio" value="Distribuidora Regia Medi-K">
+          <input type="hidden" id="sitio" name="sitio" value="Home Page Regia Medi-K">
           
           <div class="row">
             <div class="col-lg-6">
@@ -37,7 +37,7 @@
             <div class="col-lg-6">
               <div class="st-form-field st-style1">
                 <label>Correo</label>
-                <input type="text" id="uemail" name="email" minlength="10" placeholder="ejemplo@email.com" required>
+                <input type="text" id="uemail" name="email" minlength="5" placeholder="ejemplo@email.com" required>
               </div>
             </div>
             <div class="col-lg-6">

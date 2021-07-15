@@ -7,7 +7,7 @@
   
   @include('partials.hero2-section')
 
-  @include('partials.hero-section')
+  @include('partials.sites-links')
 
   @include('partials.about-section')
 

@@ -29,12 +29,9 @@
               <li>
                 <a href="#acerca-de"><i class="fas fa-chevron-right"></i>Acerca</a>
               </li>
-              <li>
+              {{-- <li>
                 <a href="#servicios"><i class="fas fa-chevron-right"></i>Servicios</a>
-              </li>
-              <li>
-                <a href="#catalogo"><i class="fas fa-chevron-right"></i>Catálogo</a>
-              </li>
+              </li> --}}
               <li>
                 <a href="#contacto"><i class="fas fa-chevron-right"></i>Contacto</a>
               </li>
@@ -51,13 +48,18 @@
                 </a>
               </li>
               <li>
-                <a href="https://farma.regiamedik.com" target="_blank">
-                  <i class="fas fa-chevron-right"></i>Farmacia
+                <a href="https://um.regiamedik.com" target="_blank">
+                  <i class="fas fa-chevron-right"></i>Unidad Médica
                 </a>
               </li>
               <li>
-                <a href="https://um.regiamedik.com" target="_blank">
-                  <i class="fas fa-chevron-right"></i>Unidad Médica
+                <a href="https://dist.regiamedik.com" target="_blank">
+                  <i class="fas fa-chevron-right"></i>Distribuidora
+                </a>
+              </li>
+              <li>
+                <a href="https://farma.regiamedik.com" target="_blank">
+                  <i class="fas fa-chevron-right"></i>Farmacia
                 </a>
               </li>
             </ul>

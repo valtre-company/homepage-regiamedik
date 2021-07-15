@@ -25,7 +25,7 @@
               <h2 class="st-text-block-title">Atenderte es nuestra prioridad</h2>
               <div class="st-height-b20 st-height-lg-b20"></div>
               <div class="st-text-block-text">
-                <p>Venta de medicamentos, insumos para farmacias, clínicas y hospitales, contamos con una gran variedad a los mejores precios.</p>
+                <p>Somos una empresa regio-montana que nace por la necesidad de contar con una alternativa diferente en soluciones integrales de salud. Cada uno de los integrantes de nuestro equipo están comprometidos en ofrecer servicios que cumplan y superen las expectativas de cada uno de nuestros clientes y socios comerciales.</p>
                 <p>Ofrecemos una amplia gama de servicios y medicamentos de alta calidad con la finalidad de mejorar la salud y el bienestar de nuestra comunidad.</p>
               </div>
             </div>

@@ -9,7 +9,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content>
-	<meta name="description" content="Servicios integrales de salud para todo tipo de clientes. Correo; {{ env('EMAIL') }}; Teléfono: {{ env('PHONE_NUMBER') }}. Copyright {{ Carbon\Carbon::now()->year }} Regia MediK." />
+	<meta name="description" content="Servicios integrales de salud para todo tipo de clientes, ¡Conócenos!. Correo; {{ env('EMAIL') }}; Teléfono: {{ env('PHONE_NUMBER') }}. Copyright {{ Carbon\Carbon::now()->year }} Regia MediK." />
 	<!-- Page Title -->
 	<title>Regia Medi-K {{ isset($title) ? ' / '. $title : '' }} @yield('title')</title>
 

@@ -46,6 +46,12 @@
                 <input type="text" id="unumber" name="phone" minlength="10" maxlength="13" placeholder="811 123 45 67" required>
               </div>
             </div>
+            <div class="col-lg-6">
+              <div class="st-form-field st-style1">
+                <label>Dirección</label>
+                <input type="text" id="udirection" name="direction" placeholder="Dirección" required>
+              </div>
+            </div>
             <div class="col-lg-12">
               <div class="st-form-field st-style1">
                 <label>Mensaje</label>

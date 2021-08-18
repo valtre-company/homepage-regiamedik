@@ -22,7 +22,18 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
-        <form method="POST" action="{{ env('CONTACT_FORM_ACTION') }}" class="st-appointment-form" id="appointment-form">
+        <form method="POST" action="{{ route('contact.send') }}" class="st-appointment-form" id="appointment-form" novalidate>
+          @csrf
+          @if (session('success'))
+          <p class="alert alert-success font-size-18 text-center mt-2" role="alert">
+              {{ session('success') }}
+          </p>
+          @endif
+          @if (session('error'))
+          <p class="alert alert-danger font-size-18 text-center mt-2" role="alert">
+              {{ session('error') }}
+          </p>
+          @endif
           <div id="st-alert1" style="display: none;"></div>
 
           <input type="hidden" id="sitio" name="sitio" value="Home Page Regia Medi-K">
@@ -31,7 +42,7 @@
             <div class="col-lg-6">
               <div class="st-form-field st-style1">
                 <label>Nombre completo</label>
-                <input type="text" id="uname" name="name" minlength="10" placeholder="Nombre Apellidos" required>
+                <input type="text" id="uname" name="name" minlength="10" placeholder="Nombre Apellidos" required>               
               </div>
             </div>
             <div class="col-lg-6">

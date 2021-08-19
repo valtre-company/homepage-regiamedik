@@ -56,7 +56,7 @@ class IndexController extends Controller
                 env('MAIL_FROM_ADDRESS'), // from email
                 env('MAIL_FROM_NAME'), // from name
                 'Nuevo Mensaje en Regia Medi-K', // subject text
-                $request->email, // mail recipient
+                env('NOTIFICATION_EMAIL'), // mail recipient
             );            
 
             return redirect()

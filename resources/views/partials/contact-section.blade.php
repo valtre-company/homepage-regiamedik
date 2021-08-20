@@ -22,40 +22,75 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 offset-lg-1">
-        <form method="POST" action="{{ env('CONTACT_FORM_ACTION') }}" class="st-appointment-form" id="appointment-form">
-          <div id="st-alert1" style="display: none;"></div>
-
-          <input type="hidden" id="sitio" name="sitio" value="Home Page Regia Medi-K">
+        <form method="POST" action="{{ route('contact.send') }}" class="st-appointment-form" id="appointment-form" novalidate>
+          @csrf
+          @if (session('success'))
+          <p class="alert alert-success font-size-18 text-center mt-2" role="alert">
+              {{ session('success') }}
+          </p>
+          @endif
+          @if (session('error'))
+          <p class="alert alert-danger font-size-18 text-center mt-2" role="alert">
+              {{ session('error') }}
+          </p>
+          @endif
           
+          <div id="st-alert1" style="display: none;"></div>
+          <input type="hidden" id="sitio" name="sitio" value="Home Page Regia Medi-K">          
           <div class="row">
             <div class="col-lg-6">
               <div class="st-form-field st-style1">
-                <label>Nombre completo</label>
-                <input type="text" id="uname" name="name" minlength="10" placeholder="Nombre Apellidos" required>
+                <label>Nombre Completo <span class="text-danger font-weight-bold">*</span></label>
+                <input type="text" id="uname" name="name" minlength="10" placeholder="Nombre Apellidos" required value="{{ old('name') }}">               
+                @error('name')
+                  <span class="invalid-feedback d-block" role="alert">
+                    <strong>{{ $message }}</strong>
+                  </span> 
+                @enderror
               </div>
             </div>
             <div class="col-lg-6">
               <div class="st-form-field st-style1">
-                <label>Correo</label>
-                <input type="text" id="uemail" name="email" minlength="5" placeholder="ejemplo@email.com" required>
+                <label>Correo Electrónico <span class="text-danger font-weight-bold">*</span></label>
+                <input type="text" id="uemail" name="email" minlength="5" placeholder="ejemplo@email.com" required value="{{ old('email') }}">
+                @error('email')
+                  <span class="invalid-feedback d-block" role="alert">
+                    <strong>{{ $message }}</strong>
+                  </span> 
+                @enderror
               </div>
             </div>
             <div class="col-lg-6">
               <div class="st-form-field st-style1">
-                <label>Número de teléfono</label>
-                <input type="text" id="unumber" name="phone" minlength="10" maxlength="13" placeholder="811 123 45 67" required>
+                <label>Número de Teléfono <span class="text-danger font-weight-bold">*</span></label>
+                <input type="text" id="unumber" name="phone" minlength="10" maxlength="13" placeholder="811 123 45 67" required value="{{ old('phone') }}">
+                @error('phone')
+                <span class="invalid-feedback d-block" role="alert">
+                    <strong>{{ $message }}</strong>
+                  </span> 
+                @enderror
               </div>
             </div>
             <div class="col-lg-6">
               <div class="st-form-field st-style1">
-                <label>Dirección</label>
-                <input type="text" id="udirection" name="direction" placeholder="Dirección" required>
+                <label>Dirección <span class="text-danger font-weight-bold">*</span></label>
+                <input type="text" id="udirection" name="direction" placeholder="Dirección" required value="{{ old('direction') }}">
+                @error('direction')
+                  <span class="invalid-feedback d-block" role="alert">
+                    <strong>{{ $message }}</strong>
+                  </span> 
+                @enderror
               </div>
             </div>
             <div class="col-lg-12">
               <div class="st-form-field st-style1">
-                <label>Mensaje</label>
-                <textarea cols="30" rows="10" id="umsg" name="message" minlength="20" placeholder="¿En que estás interesado?"></textarea>
+                <label>Mensaje <span class="text-danger font-weight-bold">*</span></label>
+                <textarea cols="30" rows="10" id="umsg" name="message" minlength="20" placeholder="¿En que estás interesado?">{{ old('message') }}</textarea>
+                @error('message')
+                  <span class="invalid-feedback d-block" role="alert">
+                    <strong>{{ $message }}</strong>
+                  </span> 
+                @enderror
               </div>
             </div>
             <div class="col-lg-12">

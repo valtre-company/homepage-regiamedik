@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
 
-
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/',[IndexController::class,'index'])->name('welcome');
+Route::post('/', [IndexController::class, 'contactSend'])->name('contact.send');

@@ -17,6 +17,8 @@ class InvalidKeywords {
         '<a ',
         '</a>',
         '</b>',
+        'http://',
+        'https://',
 
         // Email
         'revers@o5o5.ru',

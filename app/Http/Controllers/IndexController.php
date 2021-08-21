@@ -20,32 +20,30 @@ class IndexController extends Controller
 
     public function contactSend (Request $request)
     {
-        try {
+        try {            
             $validator = Validator::make($request->all(), [
                 'name' => 'required|min:10',
                 'email' => 'required|email|min:6',
                 'phone' => 'required|min:10|max:20',
                 'message' => 'required|min:20',
-                'direction' => 'required|min:20',
             ]);
 
             if ($validator->fails()) {
                 return redirect()
-                    ->action([IndexController::class,'index'],'#appointment-form')
+                    ->action([IndexController::class,'index'],'#contacto')
                     ->withErrors($validator)
                     ->withInput()
-                    ->with('error', '¡Oops! Los datos no son válidos.');
+                    ->with('error', '¡Oops! Los campos no son válidos.');
             }
-
+            
             $data = [ // data to render on view
                 'name' => $request->name,
                 'email' => $request->email,
                 'phone' => $request->phone,
                 'message' => $request->message,
-                'direction' => $request->direction,
                 'date' => (new Carbon)->isoFormat('D/M/YYYY H:m'),
             ];
-                        
+            
             /** Validate spam */
             resolve(Spam::class)->detect( request('message') );
             resolve(Spam::class)->detect( request('email') );
@@ -55,17 +53,17 @@ class IndexController extends Controller
                 $data,
                 env('MAIL_FROM_ADDRESS'), // from email
                 env('MAIL_FROM_NAME'), // from name
-                'Nuevo Mensaje en Regia Medi-K', // subject text
-                env('NOTIFICATION_EMAIL'), // mail recipient
-            );            
+                'Nuevo Mensaje en www.regiamediK.com', // subject text
+                env('NOTIFICATION_EMAIL'),
+            );
 
-            return redirect()
-                ->action([IndexController::class,'index'],'#appointment-form')
-                ->with('success', '¡Gracias por tu mensaje! En breve te responderémos.'); 
+            return redirect('/#contacto')
+                ->with('success', '¡Gracias por tu mensaje! En breve te responderémos.');            
+
         } catch (\Throwable $th) {
-            return redirect()
-                ->action([IndexController::class,'index'],'#appointment-form')
-                ->with('success', '¡Gracias por tu mensaje! En breve te responderémos.');             
-        }        
+            Log::debug($th->getMessage());
+            return redirect('/#contacto')
+                ->with('success', '¡Gracias por tu mensaje! En breve te responderémos.');
+        }
     }
 }

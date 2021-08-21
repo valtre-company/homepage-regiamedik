@@ -89,7 +89,7 @@
             }
         }
 		a {
-			color: #fe3714 !important;
+			color: #fa0a0a !important;
 			text-decoration: none !important; 
 		}
     </style>
@@ -113,7 +113,7 @@
                 <tbody>
                     <tr>
                         <td
-                            style="border-bottom:#333 solid 5px;direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+                            style="border-bottom:#fa0a0a solid 5px;direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
                             <!--[if mso | IE]>
 							<table role="presentation" border="0" cellpadding="0" cellspacing="0">
 								<tr>
@@ -211,20 +211,6 @@
                                                 border="0"
                                                 style="cellspacing:0;color:#000;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;text-align:left;margin-bottom:7px;">
                                                 <tr>
-                                                    <th style="padding: 0 15px 0px 0;text-align: left;">Direccion</th>
-                                                    <th style="padding: 0 15px;"></th>
-                                                    <th style="padding: 0 0 0 15px;" align="right"></th>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding: 0px 15px 10px 0;">{{ $data['direction'] }}</td>
-                                                    <td style="padding: 0 15px;"></td>
-                                                    <td style="padding: 0 0 0 15px;" align="right"></td>
-                                                </tr>
-                                            </table>
-											<table
-                                                border="0"
-                                                style="cellspacing:0;color:#000;font-family:'Helvetica Neue',Arial,sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;text-align:left;margin-bottom:7px;">
-                                                <tr>
                                                     <th style="padding: 0 15px 0px 0;text-align: left;">Número de teléfono</th>
                                                     <th style="padding: 0 15px;"></th>
                                                     <th style="padding: 0 0 0 15px;" align="right"></th>
@@ -278,8 +264,7 @@
                                                             style="font-size:0px;padding:0;word-break:break-word;">
                                                             <div
                                                                 style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:300;line-height:1;text-align:center;color:#575757;">
-                                                                Carretera a Reynosa #148 Local A <br>
-                                                                Frac. El Sabinal, Juárez, N.L.                                                                
+                                                                Enviado desde {{ env('APP_URL') }}                                     
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -289,7 +274,7 @@
                                                             <div
                                                                 style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:12px;font-weight:300;line-height:1.5;text-align:center;color:#575757;">
 																info@regiamedik.com | 811 357 36 57 <br>
-																Regiamedik {{ Carbon\Carbon::now()->year }} &copy;
+																Regia Medi-K {{ Carbon\Carbon::now()->year }} &copy;
                                                             </div>
                                                         </td>
                                                     </tr>

@@ -1,5 +1,5 @@
 <!-- Start Contact Section -->
-<section id="contacto" class="st-shape-wrap st-gray-bg" style="padding-bottom: 5rem;">
+<section id="contacto" class="st-shape-wrap" style="padding-bottom: 5rem;">
   {{-- <div class="st-shape4">
     <img src="{{ asset('assets/images/section_shape.png') }}" alt="shape1">
   </div> --}}

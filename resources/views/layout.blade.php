@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="js sizes customelements history pointerevents webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" >
 <head>
-        
 	<style>.jquery-ripples { position: relative; z-index: 0; }</style>
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<!-- Meta Tags -->
@@ -39,7 +38,7 @@
 	@include('partials.footer')
 
 
-	<!-- Template Scripts -->
+	<!-- Template Scripts -->	
 	<script src="{{ asset('assets/js/modernizr-3.5.0.min.js') }}"></script>
 	<script src="{{ asset('assets/js/jquery-1.12.4.min.js') }}"></script>
 	<script src="{{ asset('assets/js/isotope.pkg.min.js') }}"></script>
@@ -54,6 +53,13 @@
 	<script src="{{ asset('assets/js/select2.min.js') }}"></script>
 	<script src="{{ asset('assets/js/main.js') }}"></script>
 	<script src="{{ asset('assets/js/test.js') }}"></script>
+	<script src="{{ asset('assets/js/app.js')}}"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
 	<script>
 		const goToTopBtn = document.getElementById('st-backtotop')
 		if (goToTopBtn) {
@@ -64,5 +70,6 @@
 	</script>
 	<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
 
+	@include('layouts.modal')
 </body>
 </html>

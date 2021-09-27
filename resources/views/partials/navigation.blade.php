@@ -32,6 +32,7 @@
             <a href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}" target="_blank">{{ env('WHATSAPP_WITHOUT_CODE') }}</a>
           </li>
         </ul>
+        <a target="_blank" href="{{ env('URL_LAB') }}pacientes/login" class="st-top-header-btn st-smooth-move">Resultados</a>
         <a target="_blank" href="#contacto" class="st-top-header-btn st-smooth-move">Cotizar Pedido</a>
       </div>
     </div>

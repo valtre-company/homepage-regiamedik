@@ -11,10 +11,31 @@
               <div class="st-height-b25 st-height-lg-b25"></div>
               <div class="st-footer-text">Somos una empresa regiomontana que nace por la necesidad de contar con una alternativa diferente en soluciones integrales de salud.</div>
               <div class="st-height-b25 st-height-lg-b25"></div>
-              <ul class="st-social-btn st-style1 st-mp0">
-                <li><a target="_blank" href="{{ env('FACEBOOK_URL') }}"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a target="_blank" href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}"><i class="fab fa-whatsapp-square"></i></a></li>
-                <li><a target="_blank" href="{{ env('LINKEDIN_URL') }}"><i class="fab fa-linkedin"></i></a></li>
+              <ul class="redes-sociales st-social-btn st-style1 st-mp0">
+                <li>
+                  <a target="_blank" rel="noreferrer" href="{{ env("FACEBOOK_URL") }}">
+                    <span class="sr-only"><i class="fab fa-facebook-square"></i>Facebook </span>
+                  </a>
+                  {{-- <a target="_blank" rel="noreferrer" href="{{ env('FACEBOOK_URL') }}">
+                    <i class="fab fa-facebook-square"></i>
+                  </a> --}}
+                </li>
+                <li>
+                  <a target="_blank" rel="noreferrer" href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}">
+                    <span class="sr-only"><i class="fab fa-whatsapp-square"></i>WhatsApp </span>
+                  </a>
+                  {{-- <a target="_blank" rel="noreferrer" href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}">
+                    <i class="fab fa-whatsapp-square"></i>
+                  </a> --}}
+                </li>
+                <li>
+                  <a target="_blank" rel="noreferrer" href="{{ env("LINKEDIN_URL") }}">
+                    <span class="sr-only"><i class="fab fa-linkedin"></i>LinkedIn</span>
+                  </a>
+                  {{-- <a target="_blank" rel="noreferrer" href="{{ env('LINKEDIN_URL') }}">
+                    <i class="fab fa-linkedin"></i>
+                  </a> --}}
+                </li>
               </ul>
             </div>
           </div>
@@ -43,22 +64,22 @@
             <h2 class="st-footer-widget-title">Otros</h2>
             <ul class="st-footer-widget-nav st-mp0">
               <li>
-                <a href="https://lab.regiamedik.com" target="_blank">
+                <a href="https://lab.regiamedik.com" target="_blank" rel="noreferrer">
                   <i class="fas fa-chevron-right"></i>Laboratorio
                 </a>
               </li>
               <li>
-                <a href="https://um.regiamedik.com" target="_blank">
+                <a href="https://um.regiamedik.com" target="_blank" rel="noreferrer">
                   <i class="fas fa-chevron-right"></i>Unidad Médica
                 </a>
               </li>
               <li>
-                <a href="https://dist.regiamedik.com" target="_blank">
+                <a href="https://dist.regiamedik.com" target="_blank" rel="noreferrer">
                   <i class="fas fa-chevron-right"></i>Distribuidora
                 </a>
               </li>
               <li>
-                <a href="https://farma.regiamedik.com" target="_blank">
+                <a href="https://farma.regiamedik.com" target="_blank" rel="noreferrer">
                   <i class="fas fa-chevron-right"></i>Farmacia
                 </a>
               </li>

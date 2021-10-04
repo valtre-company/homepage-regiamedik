@@ -163,9 +163,9 @@ button:focus {
     outline: none;
 }
 
-.st-top-header-list li a:hover {
-    /* color: #; */
-}
+/* .st-top-header-list li a:hover {
+    
+} */
 
 body>header>div.st-main-header>div>div>div.st-main-header-right>div>ul>div {
     border-left: 1px solid #c5c5c5 !important;
@@ -193,8 +193,8 @@ body>header>div.st-main-header>div>div>div.st-main-header-right>div>ul>div {
 /** Homepage Links **/
 
 .st-hero.st-style1 .st-hero-title span {
-  max-width: 100% !important  ;  
-  width: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
 }
 
 @media (min-width: 768px) {
@@ -209,7 +209,8 @@ body>header>div.st-main-header>div>div>div.st-main-header-right>div>ul>div {
     }
 }
 
-.st-shedule-wrap, .st-shedule {
+.st-shedule-wrap,
+.st-shedule {
     height: 100%;
 }
 
@@ -223,21 +224,41 @@ body>header>div.st-main-header>div>div>div.st-main-header-right>div>ul>div {
     width: 100%;
 }
 
-/** Phone **/
-.st-shedule {
-    /* height: 100%; */
+/** Footer **/
+.redes-sociales li a::before {
+    font-family: "Font Awesome 5 Brands";
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
 }
 
-/** Tablet **/
-/* @media (min-width: 768px) {
-    .st-shedule {
-        min-height: 350px;
-    }
-} */
+.redes-sociales li a[href*="facebook.com"]::before {
+    content: '\f082';
+}
 
-/** Desktop **/
-/* @media (min-width: 1024px) {
-    .st-shedule{
-        min-height: 380px;        
-    }
-} */
+.redes-sociales li a[href*="twitter.com"]::before {
+    content: '\f081';
+}
+
+.redes-sociales li a[href*="instagram.com"]::before {
+    content: '\f16d';
+}
+
+.redes-sociales li a[href*="pinterest.com"]::before {
+    content: '\f0d2';
+}
+
+.redes-sociales li a[href*="youtube.com"]::before {
+    content: '\f167';
+}
+
+.redes-sociales li a[href*="linkedin.com"]::before {
+    content: '\f08c';
+}
+
+.redes-sociales li a[href*="wa.me"]::before {
+    content: '\f40c';
+}

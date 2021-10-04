@@ -1,4 +1,3 @@
-console.log('testinit');
 (function ($) {
   "use strict";
 
@@ -48,10 +47,8 @@ console.log('testinit');
     $(window).trigger("resize");
     preloaderSetup();
     isotopInit();
-  });
-  console.log('testinit2');
-  $(document).on("ready", function () {
-    console.log('testinit3');
+  });  
+  $(document).on("ready", function () {    
     $(window).trigger("resize");
     dynamicBackground();
     isotopInit();
@@ -274,10 +271,8 @@ console.log('testinit');
   /*--------------------------------------------------------------
     9. Slick Slider
   --------------------------------------------------------------*/
-  function slickInit() {
-    console.log('testinit4');
-    $('.st-slider').each(function () {
-      console.log('testinit5');
+  function slickInit() {    
+    $('.st-slider').each(function () {      
       // Slick Variable
       var $ts = $(this).find('.slick-container');
       var $slickActive = $(this).find('.slick-wrapper');
@@ -679,8 +674,7 @@ console.log('testinit');
           }
         };
 
-        touchstart = function (e) {
-          console.log(e);
+        touchstart = function (e) {          
           mousedown({ preventDefault: e.preventDefault, clientX: e.originalEvent.changedTouches[0].pageX });
         };
         touchmove = function (e) {

@@ -1,4 +1,4 @@
-<section class="container" style="margin-top: -130px;">
+<section class="site-links container" style="margin-top: -130px;">
     <div class="row">
         {{-- Unidad médica --}}
         <a href="https://um.regiamedik.com" class="col-lg-3">
@@ -123,7 +123,7 @@
                         </g>
                     </svg>
                 </div>
-                <h2 class="st-iconbox-title">Laboratorio</h2>
+                <h2 class="st-iconbox-title">Laboratorios</h2>
                 <div class="st-iconbox-text">Exámenes clínicos con resultados precisos el mismo día.</div>
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>

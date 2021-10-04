@@ -25,14 +25,30 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <a>{{ env('PHONE_NUMBER') }}</a>
+            <a href="tel://{{ str_replace(' ', '',env('PHONE_NUMBER')) }}">{{ env('PHONE_NUMBER') }}</a>
           </li>
           <li>
             <img src="{{ asset('assets/images/whatsapp-icon.png') }}" width="18px" height="auto" style="margin-right: 8px;" alt="Whtasapp Logo">
-            <a href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}" target="_blank">{{ env('WHATSAPP_WITHOUT_CODE') }}</a>
+            <a href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}" rel="noreferrer" target="_blank">{{ env('WHATSAPP_WITHOUT_CODE') }}</a>
           </li>
         </ul>
-        <a target="_blank" href="#contacto" class="st-top-header-btn st-smooth-move">Cotizar Pedido</a>
+        
+        <ul class="st-top-header-list">
+          <li>
+            <a href="https://um.regiamedik.com/#contacto" rel="noreferrer" target="_blank"class="st-top-header-btn st-smooth-move">Empresas</a>
+            {{-- <ul>
+              <li>
+                <a href="#">Medicos</a>
+              </li>
+            </ul> --}}
+          </li>
+          <li>
+            <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}pacientes/login" class="st-top-header-btn st-smooth-move">Resultados</a>
+          </li>
+          <li>
+            <a target="_blank" href="#contacto" rel="noreferrer" class="st-top-header-btn st-smooth-move">Cotizar Pedido</a>
+          </li>
+        </ul>        
       </div>
     </div>
   </div>
@@ -44,7 +60,7 @@
         </div>
         <div class="st-main-header-right">
           <div class="st-nav">
-            <ul class="st-nav-list st-onepage-nav" style>
+            <ul class="st-nav-list st-onepage-nav">
               <li>
                 <a href="#inicio" class="st-smooth-move">Inicio</a>
               </li>
@@ -56,6 +72,15 @@
               </li>
               <li>
                 <a href="#contacto" class="st-smooth-move">Contacto</a>
+              </li>
+              <li class="d-block d-md-none">
+                <a href="https://um.regiamedik.com/#contacto" rel="noreferrer" target="_blank" class="st-smooth-move">Empresas</a>
+              </li>
+              <li>
+                <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}pacientes/login" class="st-smooth-move">Resultados</a>
+              </li>
+              <li class="d-block d-md-none">
+                <a target="_blank" href="#contacto" rel="noreferrer" class="st-smooth-move">Cotizar Pedido</a>
               </li>
             </ul>
             <span class="st-munu-toggle"></span>

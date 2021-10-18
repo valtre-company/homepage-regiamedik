@@ -3,20 +3,20 @@
 	<div class="st-hero st-style1">
 		<div class="container">
 			<div class="st-hero-text">
-					<h1 class="st-hero-title cd-headline slide">
-						Ofrecemos<br>
-						<span class="cd-words-wrapper" style="width: 330px;">
-							<b class="is-hidden">distribución médica.</b>
-							<b class="is-visible">exámenes clínicos.</b>
-							<b class="is-hidden">laboratorios médicos.</b>
-							<b class="is-hidden">resultados confiables.</b>
-							<b class="is-hidden">unidades médicas.</b>
-						</span>
-					</h1>
-					<div class="st-hero-subtitle">Conoce nuestra una amplia gama de servicios integrales de salud.</div>
-					{{-- <div class="st-hero-btn">
-						<a href="#contacto" class="st-btn st-style1 st-color1 st-smooth-move">Estoy interesado</a>
-					</div> --}}
+				<h1 class="st-hero-title cd-headline slide">
+					Ofrecemos<br>
+					<span class="cd-words-wrapper" style="width: 330px;">
+						<b class="is-hidden">distribución médica.</b>
+						<b class="is-visible">exámenes clínicos.</b>
+						<b class="is-hidden">laboratorios médicos.</b>
+						<b class="is-hidden">resultados confiables.</b>
+						<b class="is-hidden">unidades médicas.</b>
+					</span>
+				</h1>
+				<div class="st-hero-subtitle">Conoce nuestra una amplia gama de servicios integrales de salud.</div>
+				{{-- <div class="st-hero-btn">
+					<a href="#contacto" class="st-btn st-style1 st-color1 st-smooth-move">Estoy interesado</a>
+				</div> --}}
 			</div>
 		</div>
 	</div>

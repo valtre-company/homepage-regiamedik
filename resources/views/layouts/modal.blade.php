@@ -5,7 +5,7 @@
             <div id="map"></div>
          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-close-modal">Cerrar</button>      
+            <button class="st-btn st-style1 st-color1 st-size-medium  btn-close-modal" type="button">Cerrar</button>      
          </div>
       </div>
    </div>

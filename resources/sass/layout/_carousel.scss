@@ -1,0 +1,124 @@
+/** Bootstrap Carousel **/
+.carousel {
+    .carousel-item {      
+        .carousel-img {
+            background-color: rgba(0,0,0,.65);
+            background-blend-mode: darken;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh;
+            width: 100%;
+
+            @include tablet {
+                height: 80vh;
+            }
+
+            &.carousel-slider-1 {
+                background-image: url(/assets/img/slider/header-slider-1.jpg) ;
+                @supports (background-image: -webkit-image-set(url('/assets/img/slider/header-slider-1.webp') 1x)) {                    
+                    background-image: -webkit-image-set(url(/assets/img/slider/header-slider-1.webp) 1x ) ;
+                }
+                
+            }
+
+            &.carousel-slider-2 {
+                background-image: url(/assets/img/slider/header-slider-2.jpg);
+                @supports (background-image: -webkit-image-set(url('/assets/img/slider/header-slider-2.webp') 1x)) {                    
+                    background-image: -webkit-image-set(url(/assets/img/slider/header-slider-2.webp) 1x ) ;
+                }                
+            }
+                        
+        }
+    }
+}
+/** Owl Carousel */
+.owl-carousel {
+    .owl-nav {
+        overflow: hidden;
+        height: 0px;
+    }
+
+    .item {
+        text-align: center;
+    }
+
+    .nav-btn {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        height: 47px;
+        position: absolute;
+        width: 26px;
+        cursor: pointer;
+        top: 150px !important;
+
+        @include tablet {
+            top: 30% !important;
+        }
+    }
+
+    .next-slide,
+    .prev-slide {
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        vertical-align: top;
+        padding: 0.4rem;
+        -webkit-font-smoothing: antialiased;
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: $white;
+        width: 55px;
+        height: 55px;
+        background: #343a40;
+
+        @include tablet {
+            width: 60px;
+            height: 60px;
+        }
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+
+    .prev-slide {
+        left: 10px;
+
+        @include tablet {
+            left: -10px;
+        }
+
+        @media (min-width:992px) {
+            left: -20px;
+        }
+
+        @include desktop {
+            left: -40px;
+        }
+
+        &::before {
+            content: "\f053";
+        }
+    }
+
+    .next-slide {
+        right: 10px;
+
+        @include tablet {
+            right: -10px;
+        }
+
+        @media (min-width:992px) {
+            right: -20px;
+        }
+
+        @include desktop {
+            right: -40px;
+        }
+
+        &::before {
+            content: "\f054";
+        }
+    }
+}

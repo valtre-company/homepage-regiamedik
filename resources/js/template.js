@@ -1,26 +1,28 @@
 // Function on DOM Content Loading execute function eventListeners
-document.addEventListener("DOMContentLoaded", () => {
-   eventListeners();
-});
+document.addEventListener("DOMContentLoaded", eventListeners );
 
 // Function to create event listeners
 function eventListeners () {
-   document.querySelector("#acerca-de").addEventListener("click", (e) => {
-      if (e.target.classList.contains("btn-map")) {
-         e.preventDefault();
-         const lat = e.target.dataset.lat;
-         const lng = e.target.dataset.lng;
-         openModalMap(lat,lng);
-      }
-   });
-
+   if (document.querySelector("#acerca-de")){
+      document.querySelector("#acerca-de").addEventListener("click", (e) => {
+         if (e.target.classList.contains("btn-map")) {
+            e.preventDefault();
+            const lat = e.target.dataset.lat;
+            const lng = e.target.dataset.lng;
+            openModalMap(lat,lng);
+         }
+      });   
+   }
+   
    // Event Listener for click close modal and reset html map
-   document.querySelector(".modal").addEventListener("click", (e) => {      
-      if(e.target.classList.contains("btn-close-modal")) {
-         $("#modal-map").modal("hide");
-         cleanHTML(document.querySelector("#map"));
-      }
-   });
+   if (document.querySelector(".modal")) {
+      document.querySelector(".modal").addEventListener("click", (e) => {      
+         if(e.target.classList.contains("btn-close-modal")) {
+            $("#modal-map").modal("hide");
+            cleanHTML(document.querySelector("#map"));
+         }
+      });   
+   }
 }
 
 // Function to open modal map on click and set iframe on modal

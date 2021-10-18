@@ -1,0 +1,38 @@
+/** Footer **/
+.redes-sociales li a::before {
+   font-family: "Font Awesome 5 Brands";
+   display: inline-block;
+   vertical-align: top;
+   padding: 0.4rem;
+   content: '\f08e';
+   -webkit-font-smoothing: antialiased;
+   font-size: 2rem;
+}
+
+.redes-sociales li a[href*="facebook.com"]::before {
+   content: '\f082';
+}
+
+.redes-sociales li a[href*="twitter.com"]::before {
+   content: '\f081';
+}
+
+.redes-sociales li a[href*="instagram.com"]::before {
+   content: '\f16d';
+}
+
+.redes-sociales li a[href*="pinterest.com"]::before {
+   content: '\f0d2';
+}
+
+.redes-sociales li a[href*="youtube.com"]::before {
+   content: '\f167';
+}
+
+.redes-sociales li a[href*="linkedin.com"]::before {
+   content: '\f08c';
+}
+
+.redes-sociales li a[href*="wa.me"]::before {
+   content: '\f40c';
+}

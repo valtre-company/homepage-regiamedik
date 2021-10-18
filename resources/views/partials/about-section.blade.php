@@ -1,4 +1,4 @@
-<!-- Start About Seciton -->
+<!-- Start About Section -->
 <section class="st-about-wrap" id="acerca-de">
   <div class="st-shape-bg">
     <img src="{{ asset('assets/fonts/about-bg-shape.svg') }}" alt="shape">
@@ -48,7 +48,7 @@
       </div><!-- .col -->
     </div>
   </div>
-  <div class="container-fluid pt-5 pb-3">
+  <div class="container-fluid pt-5 pb-3 ubications">
     <div class="st-section-heading st-style1">
       <h2 class="st-section-heading-title">Ubicaciones</h2>
       <div class="st-seperator">
@@ -59,15 +59,19 @@
     </div>
     <h2 class="st-shedule-title text-center mt-3 mb-0">Laboratorios</h2>
     {{-- Laboratorios --}}
-    <div class="row justify-content-center justify-content-lg-start">
+    <div class="row justify-content-center justify-content-lg-start container-services">
       {{-- Laboratorio Regia Medi-K 1  --}}
       <div class="col-12 col-md-6 col-lg-4 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInRight;">
         <div class="st-shedule-wrap">
           <div class="st-shedule">
             <div class="d-flex flex-column text-center mb-1">
               <div>
-                <i class="fas fa-map-marker-alt mr-2" style="font-size: 22px;"></i>
-                <p class="m-0 font-weight-bold">Monterrey <br> Semillero Obispado <br> Local #10</p>
+                <i class="fas fa-map-marker-alt icon-location mr-2" style="font-size: 22px;"></i>
+                <p class="m-0 font-weight-bold">
+                  <span class="city">Monterrey </span>
+                  <span class="suburb">Semillero Obispado</span> 
+                  <span class="number_interior">Local #10 </span>
+                </p>
                 <button href="#" class="btn btn-link btn-map" data-lat="25.6733463" data-lng="-100.346845">Ver mapa</button>                                
               </div>
             </div>
@@ -127,8 +131,12 @@
           <div class="st-shedule">            
             <div class="d-flex flex-column text-center mb-1">              
               <div>
-                <i class="fas fa-map-marker-alt mr-2" style="font-size: 22px;"></i>
-                <p class="m-0 font-weight-bold">Juárez <br> Frac. El Sabinal <br> Local A</p>                
+                <i class="fas fa-map-marker-alt icon-location mr-2" style="font-size: 22px;"></i>
+                <p class="m-0 font-weight-bold">
+                  <span class="city">Juárez</span>
+                  <span class="suburb">El Sabinal </span>
+                  <span class="number_interior">Local A</span>                  
+                </p>                
                 <button href="#" class="btn btn-link btn-map" data-lat="25.6526782" data-lng="-100.110516">Ver mapa</button>
               </div>                
             </div>
@@ -192,8 +200,12 @@
           <div class="st-shedule">
             <div class="d-flex flex-column text-center mb-1"> 
                 <div>
-                  <i class="fas fa-map-marker-alt mr-2" style="font-size: 22px;"></i>
-                  <p class="m-0 font-weight-bold">Apodaca  <br> Plaza los Molinos <br> Local B131 -132</p>
+                  <i class="fas fa-map-marker-alt icon-location mr-2" style="font-size: 22px;"></i>
+                  <p class="m-0 font-weight-bold">
+                    <span class="city">Apodaca</span>
+                    <span class="suburb">Plaza los Molinos</span>
+                    <span class="number_interior">Local B131 - 132</span>                                        
+                  </p>
                   <button href="#" class="btn btn-link btn-map" data-lat="25.772116" data-lng="-100.1931361">Ver mapa</button>  
                 </div>                 
             </div>
@@ -253,15 +265,19 @@
     </div>
 
     <h2 class="st-shedule-title text-center mt-3 mb-0">Unidad Médica</h2>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center container-services">
       {{-- Unidad Médica 1 --}}
       <div class="col-12 col-md-6 col-lg-4 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInRight;">
         <div class="st-shedule-wrap">
           <div class="st-shedule ">            
             <div class="d-flex flex-column text-center mb-1"> 
               <div>
-                <i class="fas fa-map-marker-alt mr-2" style="font-size: 22px;"></i>
-                <p class="m-0 font-weight-bold">Juárez <br> Paseo Juárez <br> Local #A19</p>
+                <i class="fas fa-map-marker-alt icon-location mr-2" style="font-size: 22px;"></i>
+                <p class="m-0 font-weight-bold">                  
+                  <span class="city">Juárez</span>
+                  <span class="suburb">Paseo Juárez</span>
+                  <span class="number_interior">Local #A19</span>                     
+                </p>
                 <button href="#" class="btn btn-link btn-map" data-lat="25.6482889" data-lng="-100.11142,17">Ver mapa</button>                    
               </div>                                        
             </div>
@@ -325,8 +341,12 @@
           <div class="st-shedule">            
             <div class="d-flex flex-column text-center mb-1">                              
               <div>
-                <i class="fas fa-map-marker-alt mr-2" style="font-size: 22px;"></i>
-                <p class="m-0 font-weight-bold">Apodaca <br> Plaza Los Molinos <br> Local B131 - 132</p>
+                <i class="fas fa-map-marker-alt icon-location mr-2" style="font-size: 22px;"></i>
+                <p class="m-0 font-weight-bold">
+                  <span class="city">Apodaca</span>
+                  <span class="suburb">Plaza Los Molinos</span>
+                  <span class="number_interior">Local B131 - 132</span>                     
+                </p>
                 <button href="#" class="btn btn-link btn-map" data-lat="25.772116" data-lng="-100.1931361">Ver mapa</button>
               </div>
             </div>

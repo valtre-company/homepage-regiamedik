@@ -1,0 +1,54 @@
+.st-hero-wrap.st-color1 {
+   // background-color: #FFF;
+}
+
+.st-seperator .st-seperator-left, .st-seperator .st-seperator-right {
+   color: $primary;
+}
+
+/** Servicios **/
+.st-blue-box {
+   color: $primary;
+   fill: $primary;
+   background-color: rgba(55, 175, 71, 0.1);
+}
+.st-red-box {
+   color: $red;
+   fill: $red;
+}
+
+.st-call.st-style1 .st-call-number {
+   color: $primary;
+}
+.st-shedule-title {
+   color: $gray;
+}
+/** Ubicaciones **/
+.ubications {
+   .container-services {
+      .st-shedule {
+         border: 2px solid #CACACA;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+         -o-border-radius: 10px;         
+         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }   
+      .icon-location {
+         color: $primary;
+      }
+      .city, .suburb, .number_interior {
+         display: block;
+         color: $gray;
+      }   
+      .city, .st-call.st-style1 .st-call-number {
+         font-size: 16px;
+      }
+   }
+}
+
+/** **/
+/** **/
+/** **/
+/** **/

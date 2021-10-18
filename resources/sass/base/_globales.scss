@@ -1,0 +1,16 @@
+body {
+   font-family: $font-family !important;   
+}
+
+a {
+   text-decoration: none !important;
+   color: inherit !important;
+   &:hover {
+      text-decoration: none !important;
+      color: inherit !important;
+   }
+}
+
+h1, h2, h3, h4, h3, h6 {
+   color: $gray;
+}

@@ -79,7 +79,7 @@
               <li class="d-block d-md-none">
                 <a href="https://um.regiamedik.com/#contacto" rel="noreferrer" target="_blank" class="st-smooth-move">Empresas</a>
               </li>
-              <li>
+              <li class="d-block d-md-none">
                 <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}pacientes/login" class="st-smooth-move">Resultados</a>
               </li>
               <li class="d-block d-md-none">

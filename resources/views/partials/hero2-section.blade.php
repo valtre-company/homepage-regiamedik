@@ -13,7 +13,7 @@
 						<b class="is-hidden">unidades médicas.</b>
 					</span>
 				</h1>
-				<div class="st-hero-subtitle">Conoce nuestra una amplia gama de servicios integrales de salud.</div>
+				<div class="st-hero-subtitle">Conoce nuestra amplia gama de servicios integrales de salud.</div>
 				{{-- <div class="st-hero-btn">
 					<a href="#contacto" class="st-btn st-style1 st-color1 st-smooth-move">Estoy interesado</a>
 				</div> --}}

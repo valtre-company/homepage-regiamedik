@@ -1,3 +1,27 @@
+.title-header {
+   text-align: center;
+   background: #09315b;
+   color: #fff;
+   display: inline-block;
+   padding: 6px;
+   font-size: 21px;
+   line-height: 17px;
+   margin-bottom: 2rem;
+   padding-right: 2rem;
+   padding-left: 2rem;
+   padding-top: 1rem;
+   padding-bottom: 12px;
+   padding: 12px 10px;
+   -webkit-border-radius: 6px;
+   border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+   p {
+      font-size: 25px;
+   }
+}
+
 .st-nav .st-nav-list>li>a:before {
    background-color: $red;
 }

@@ -1,8 +1,9 @@
 {{-- <section class="site-links container" style="margin-top: -130px;"> --}}
-<section class="site-links container py-5">
-    <p style="font-size: 24px; line-height: 1.6em; text-align: center">Conoce nuestra amplia gama de servicios integrales de salud.</p>
+<section class="site-links container py-5 text-center">
+    <div class="title-header">
+        <p class="p-0 m-0">Conoce nuestra amplia gama de servicios integrales de salud</p>
+    </div>
     <div class="row justify-content-center">
-
         <a href="https://dist.regiamedik.com" class="col-lg-3">
             <div class="st-iconbox st-style1">
                 {{-- <div class="st-iconbox-icon st-green-box"> --}}

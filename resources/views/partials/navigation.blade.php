@@ -71,7 +71,7 @@
                 <a href="#servicios" class="st-smooth-move">Servicios</a>
               </li> --}}
               <li>
-                <a href="#acerca-de" class="st-smooth-move">Acerca</a>
+                <a href="#acerca-de" class="st-smooth-move">Nosotros</a>
               </li>
               <li>
                 <a href="#contacto" class="st-smooth-move">Contacto</a>

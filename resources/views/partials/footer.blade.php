@@ -92,8 +92,11 @@
             <ul class="st-footer-contact-list st-mp0">
               <li>{{ env('EMAIL') }}</li>
               <li>
-                Tel. {{ env('PHONE_NUMBER') }}<br>
-                WhatsApp: {{ env('WHATSAPP_WITHOUT_CODE') }}
+                <p>
+                  <span class="d-block font-weight-normal">Tel. {{ env('PHONE_NUMBER') }}</span>
+                  <span class="d-block font-weight-normal">WhatsApp: {{ env('WHATSAPP_WITHOUT_CODE') }}</span>                                    
+                </p>                  
+                
               </li>
             </ul>
           </div>

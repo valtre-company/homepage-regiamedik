@@ -3,6 +3,13 @@
    .st-footer-widget-title {
       color: $red;
    }
+   ul {
+      li {
+         svg {            
+            width: 20px;
+         }
+      }
+   }
 }
 
 #st-backtotop {

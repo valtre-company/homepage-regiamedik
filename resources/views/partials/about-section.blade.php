@@ -14,7 +14,7 @@
       </div>
       <div class="st-section-heading-subtitle">¡En Regia Medi-K cuidamos de tu salud y la de tu empresa!</div>
       <div class="row mt-5 valores justify-content-center">
-        <div class="col-12 col-md-3 mr-3">                  
+        <div class="col-12 col-md-3 mr-3 mb-3 mb-md-0">                  
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -26,7 +26,7 @@
             </div>
           </div>          
         </div>
-        <div class="col-12 col-md-3 mr-3">
+        <div class="col-12 col-md-3 mr-3 mb-3 mb-md-0">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -38,7 +38,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-3 mr-3">
+        <div class="col-12 col-md-3 mr-3 mb-3 mb-md-0">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">

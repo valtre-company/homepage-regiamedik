@@ -1,6 +1,7 @@
+<div class="st-height-b125 st-height-lg-b80" id="inicio"></div>
 <div class="st-hero-wrap st-color1 overflow-hidden">
 	<div class="st-wave-animation"></div>
-	<div class="st-hero st-style1">
+	<div class="st-hero st-style1 py-5">
 		<div class="container">
 			<div class="st-hero-text">
 				<h1 class="st-hero-title cd-headline slide">
@@ -13,7 +14,7 @@
 						<b class="is-hidden">unidades médicas.</b>
 					</span>
 				</h1>
-				<div class="st-hero-subtitle">Conoce nuestra amplia gama de servicios integrales de salud.</div>
+				{{-- <div class="st-hero-subtitle">Conoce nuestra amplia gama de servicios integrales de salud.</div> --}}
 				{{-- <div class="st-hero-btn">
 					<a href="#contacto" class="st-btn st-style1 st-color1 st-smooth-move">Estoy interesado</a>
 				</div> --}}

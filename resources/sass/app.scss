@@ -1,10 +1,10 @@
 @import 'base/font-family';
-@import 'base/variables';
-@import 'base/globales';
+@import 'variables';
+@import 'base/globals';
 @import 'base/mixins';
-@import 'base/utilidades';
+@import 'base/utilities';
 @import 'base/darkMode';
-@import 'base/botones';
+@import 'base/buttons';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';

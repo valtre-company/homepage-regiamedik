@@ -3,7 +3,7 @@
   <div class="st-shape-bg">
     <img src="{{ asset('assets/fonts/about-bg-shape.svg') }}" alt="shape">
   </div>
-  <div class="st-height-b120 st-height-lg-b50"></div>
+  {{-- <div class="st-height-b120 st-height-lg-b50"></div> --}}
   <div class="container">
     <div class="st-section-heading st-style1">
       <h2 class="st-section-heading-title">¿Quiénes somos?</h2>
@@ -13,28 +13,46 @@
         <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInRight;"></div>
       </div>
       <div class="st-section-heading-subtitle">¡En Regia Medi-K cuidamos de tu salud y la de tu empresa!</div>
-      <div class="row mt-5 valores">
-        <div class="col-12 col-md-4">
-          <h2>Misión</h2>
-          <div class="mx-auto w-75">
-            <p>Ser una solución integral sólida y confiable a las necesidades médicas de nuestros clientes y socios comerciales, brindando un servicio de excelencia.</p>            
+      <div class="row mt-5 valores justify-content-center">
+        <div class="col-12 col-md-3 mr-3">                  
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h2>Misión</h2>
+              </div>
+              <div class="flip-card-back">
+                <p>Ser una solución integral sólida y confiable a las necesidades médicas de nuestros clientes y socios comerciales, brindando un servicio de excelencia.</p>                  
+              </div>
+            </div>
+          </div>          
+        </div>
+        <div class="col-12 col-md-3 mr-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h2>Visión</h2>
+              </div>
+              <div class="flip-card-back">
+                <p>Consolidarnos como líderes en soluciones médicas integrales con un sistema de salud empresarial y privada, con asistencia de calidez, profesional y de la más alta calidad.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-md-4">
-          <h2>Visión</h2>
-          <div class="mx-auto w-75">
-            <p>Consolidarnos como líderes en soluciones médicas integrales con un sistema de salud empresarial y privada, con asistencia de calidez, profesional y de la más alta calidad.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <h2>Valores</h2>
-          <div class="mx-auto w-75">
-            <ul>
-              <li><p>Ética</p></li>
-              <li><p>Excelencia</p></li>
-              <li><p>Vocación de servicio</p></li>
-            </ul>
-          </div>
+        <div class="col-12 col-md-3 mr-3">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h2>Valores</h2>
+              </div>
+              <div class="flip-card-back">
+                <div class="text-left">
+                  <p class="d-block p-0">■ Excelencia</p>
+                  <p class="d-block p-0">■ Ética</p>
+                  <p class="d-block p-0">■ Vocación de servicio</p>
+                </div>  
+              </div>
+            </div>
+          </div>  
         </div>
       </div>
     </div>

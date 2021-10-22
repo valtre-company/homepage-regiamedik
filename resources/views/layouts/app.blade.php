@@ -24,9 +24,8 @@
 	<link rel="stylesheet" href="{{ asset('assets/css/jQueryUi.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/textRotate.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">	
-	
-	<link rel="stylesheet" href="{{ mix('css/app.css') }}?{{ time() }}">
+	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">		
+	<link rel="stylesheet" href="{{ mix('css/app.css') }}?v={{ time() }}">
 </head>
 <body>
 

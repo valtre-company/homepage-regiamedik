@@ -9,7 +9,6 @@
   
   @include('partials.sites-links')
 
-
   @include('partials.about-section')
 
   <!-- pólia de gastos -->

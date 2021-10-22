@@ -44,13 +44,16 @@
                 <a href="#">Medicos</a>
               </li>
             </ul> --}}
+          </li>          
+          <li>
+            <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}admin/login" class="st-smooth-move">Medicos</a>
           </li>
           <li>
             <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}pacientes/login" class="st-top-header-btn st-smooth-move">Resultados</a>
           </li>
-          <li>
+          {{-- <li>
             <a target="_blank" href="#contacto" rel="noreferrer" class="st-top-header-btn st-smooth-move">Cotizar Pedido</a>
-          </li>
+          </li> --}}
         </ul>        
       </div>
     </div>
@@ -59,7 +62,7 @@
     <div class="container">
       <div class="st-main-header-in">
         <div class="st-main-header-left">
-          <a class="st-site-branding" href="{{ route('welcome') }}"><img src="{{ asset('logo.png') }}" width="100px" height="auto" class="brand-logo" alt="Regia Medi-K Logo"></a>
+          <a class="st-site-branding" href="{{ route('welcome') }}"><img src="{{ asset('logo.png') }}" class="brand-logo img-fluid" alt="Regia Medi-K Logo"></a>
         </div>
         <div class="st-main-header-right">
           <div class="st-nav">
@@ -77,14 +80,17 @@
                 <a href="#contacto" class="st-smooth-move">Contacto</a>
               </li>
               <li class="d-block d-md-none">
-                <a href="https://um.regiamedik.com/#contacto" rel="noreferrer" target="_blank" class="st-smooth-move">Empresas</a>
+                <a href="https://um.regiamedik.com/" rel="noreferrer" target="_blank" class="st-smooth-move">Empresas</a>
+              </li>
+              <li class="d-block d-md-none">
+                <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}admin/login" class="st-smooth-move">Medicos</a>
               </li>
               <li class="d-block d-md-none">
                 <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}pacientes/login" class="st-smooth-move">Resultados</a>
               </li>
-              <li class="d-block d-md-none">
+              {{-- <li class="d-block d-md-none">
                 <a target="_blank" href="#contacto" rel="noreferrer" class="st-smooth-move">Cotizar Pedido</a>
-              </li>
+              </li> --}}
             </ul>
             <span class="st-munu-toggle"></span>
           </div>

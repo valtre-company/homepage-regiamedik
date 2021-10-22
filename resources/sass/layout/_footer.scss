@@ -1,38 +1,66 @@
-/** Footer **/
-.redes-sociales li a::before {
-   font-family: "Font Awesome 5 Brands";
-   display: inline-block;
-   vertical-align: top;
-   padding: 0.4rem;
-   content: '\f08e';
-   -webkit-font-smoothing: antialiased;
-   font-size: 2rem;
+// /** Footer **/
+.st-footer-widget {
+   .st-footer-widget-title {
+      color: $red;
+   }
 }
 
-.redes-sociales li a[href*="facebook.com"]::before {
-   content: '\f082';
+#st-backtotop {
+   background-color: $red;
 }
 
-.redes-sociales li a[href*="twitter.com"]::before {
-   content: '\f081';
-}
-
-.redes-sociales li a[href*="instagram.com"]::before {
-   content: '\f16d';
-}
-
-.redes-sociales li a[href*="pinterest.com"]::before {
-   content: '\f0d2';
-}
-
-.redes-sociales li a[href*="youtube.com"]::before {
-   content: '\f167';
-}
-
-.redes-sociales li a[href*="linkedin.com"]::before {
-   content: '\f08c';
-}
-
-.redes-sociales li a[href*="wa.me"]::before {
-   content: '\f40c';
+.redes-sociales  {
+   li{
+      color: $red !important;
+      a{
+         color: $red;
+         &:hover {
+            color: $red !important;
+         }
+         &::before{
+            font-family: "Font Awesome 5 Brands";
+            display: inline-block;
+            vertical-align: top;
+            padding: 0.4rem;
+            content: '\f08e';
+            -webkit-font-smoothing: antialiased;
+            font-size: 2rem;
+         }
+      }
+      a[href*="facebook.com"] {
+         &::before{
+            content: '\f082';
+         }
+      }
+      a[href*="twitter.com"] {
+         &::before{
+            content: '\f081';
+         }
+      }
+      a[href*="instagram.com"] {
+         &::before{
+            content: '\f16d';
+         }
+      }
+      a[href*="pinterest.com"] {
+         &::before{
+            content: '\f0d2';
+         }
+      }
+      a[href*="youtube.com"] {
+         &::before{
+            content: '\f167';
+         }
+      }
+      a[href*="linkedin.com"] {
+         &::before{
+            content: '\f08c';
+         }
+      }
+      a[href*="wa.me"] {
+         &::before{
+            content: '\f40c';
+         }
+      }
+   }
 }

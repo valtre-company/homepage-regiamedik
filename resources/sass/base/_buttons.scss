@@ -1,3 +1,8 @@
 .st-btn.st-style1.st-color1 {
    background-color: $primary;
 }
+.btn-link {
+   &:hover {
+      text-decoration: none;
+   }
+}

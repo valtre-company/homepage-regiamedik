@@ -2,9 +2,14 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family: 'Montserrat', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+// Size of Media Queries
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
 
 // Colors
 $blue: #3490dc;
@@ -17,3 +22,10 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$black: #090808;
+
+$transparent: transparent;
+$primary: #09315B;
+$white: #FFF;
+$red: #C6202C;
+$gray: #343a40;

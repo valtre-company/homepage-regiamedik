@@ -1,3 +1,7 @@
+.st-nav .st-nav-list>li>a:before {
+   background-color: $red;
+}
+
 .st-top-header {
    background: $primary;
    border-bottom: 0;
@@ -31,5 +35,11 @@
             }
          }
       }
+   }
+}
+
+.st-main-header {
+   .st-site-branding {
+      width: 200px;
    }
 }

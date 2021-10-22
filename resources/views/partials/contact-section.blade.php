@@ -6,13 +6,13 @@
   <div class="st-shape6">
     <img src="{{ asset('assets/fonts/contact-shape3.svg') }}" alt="shape3">
   </div>
-  <div class="st-height-b120 st-height-lg-b80"></div>
-  <div class="container">
+  {{-- <div class="st-height-b120 st-height-lg-b80"></div> --}}
+  <div class="container mt-5">
     <div class="st-section-heading st-style1">
       <h2 class="st-section-heading-title">Esperamos tu mensaje</h2>
       <div class="st-seperator">
         <div class="st-seperator-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInLeft;"></div>
-        <div class="st-seperator-center"><img src="{{ asset('assets/images/regia-medik-heart-icon.png') }}" width="16px" alt="icon"></div>
+        <div class="st-seperator-center"><img src="{{ asset('assets/images/regia-medik-heart-icon.png') }}" alt="icon"></div>
         <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInRight;"></div>
       </div>
       <div class="st-section-heading-subtitle">Envíanos un mensaje con tus datos y pronto uno de nuestros agentes de ventas se pondrán en conacto.</div>

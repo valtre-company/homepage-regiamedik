@@ -11,6 +11,8 @@
 
   @include('partials.about-section')
 
+  @include('partials.ubications-section')
+  
   <!-- pólia de gastos -->
   {{-- @include('partials.poliza-section') --}}
 

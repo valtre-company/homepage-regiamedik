@@ -1,6 +1,6 @@
 {{-- <section class="site-links container" style="margin-top: -130px;"> --}}
 <section class="site-links container py-5 text-center">
-    <div class="title-header">
+    <div class="title-header text-center mb-5">
         <p class="p-0 m-0">Conoce nuestra amplia gama de servicios integrales de salud</p>
     </div>
     <div class="row justify-content-center">

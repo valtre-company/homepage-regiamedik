@@ -1,0 +1,19 @@
+.title-header {
+   display: inline-block;
+   background: $primary;
+   color: $white;
+   font-size: 21px;
+   line-height: 17px;
+   margin-bottom: 2rem;
+   -webkit-border-radius: 6px;
+   border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+   padding: 12px 10px;
+   
+   p {
+      font-size: 25px;
+      line-height: 26px;
+   }
+}

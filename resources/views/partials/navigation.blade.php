@@ -80,7 +80,7 @@
                 <a href="#contacto" class="st-smooth-move">Contacto</a>
               </li>
               <li class="d-block d-md-none">
-                <a href="https://um.regiamedik.com/" rel="noreferrer" target="_blank" class="st-smooth-move">Empresas</a>
+                <a href="https://dist.regiamedik.com/" rel="noreferrer" target="_blank" class="st-smooth-move">Empresas</a>
               </li>
               <li class="d-block d-md-none">
                 <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}admin/login" class="st-smooth-move">Medicos</a>

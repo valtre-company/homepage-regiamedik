@@ -38,7 +38,7 @@
         
         <ul class="st-top-header-list">
           <li>
-            <a href="https://dist.regiamedik.com/#contacto" rel="noreferrer" target="_blank"class="st-top-header-btn st-smooth-move">Empresas</a>
+            <a href="https://dist.regiamedik.com/" rel="noreferrer" target="_blank"class="st-top-header-btn st-smooth-move">Empresas</a>
             {{-- <ul>
               <li>
                 <a href="#">Medicos</a>

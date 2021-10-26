@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", eventListeners );
 
 // Function to create event listeners
 function eventListeners () {
-   if (document.querySelector("#acerca-de")){
-      document.querySelector("#acerca-de").addEventListener("click", (e) => {
+   if (document.querySelector("#ubications")){      
+      document.querySelector("#ubications").addEventListener("click", (e) => {         
          if (e.target.classList.contains("btn-map")) {
             e.preventDefault();
             const lat = e.target.dataset.lat;

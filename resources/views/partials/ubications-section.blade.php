@@ -299,7 +299,7 @@
               <i class="fas fa-map-marker-alt icon-location mr-2" style="font-size: 22px;"></i>
               <p class="m-0 font-weight-bold">
                 <span class="city">Apodaca</span>
-                <span class="suburb">Plaza Los Molinos</span>
+                <span class="suburb">Plaza El Molino</span>
                 <span class="number_interior">Local B131 - 132</span>                     
               </p>
               <button href="#" class="btn btn-link btn-map" data-lat="25.772116" data-lng="-100.1931361">Ver mapa</button>

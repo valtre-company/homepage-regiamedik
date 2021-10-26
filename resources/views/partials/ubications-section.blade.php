@@ -27,7 +27,7 @@
                 <span class="suburb">Semillero Obispado</span> 
                 <span class="number_interior">Local #10 </span>
               </p>
-              <button href="#" class="btn btn-link btn-map" data-lat="25.6733463" data-lng="-100.346845">Ver mapa</button>                                
+              <button href="#" class="btn btn-link btn-map" data-ubication="lab" data-place="mty" data-lat="25.6733463" data-lng="-100.346845">Ver mapa</button>                                
             </div>
           </div>
           @if (!empty(env('LAB_RM1_PHONE_NUMBER')) || !empty(env('LAB_RM1_WHATSAPP_NUMBER')))
@@ -92,7 +92,7 @@
                 <span class="suburb">El Sabinal </span>
                 <span class="number_interior">Local A</span>                  
               </p>                
-              <button href="#" class="btn btn-link btn-map" data-lat="25.6526782" data-lng="-100.110516">Ver mapa</button>
+              <button href="#" class="btn btn-link btn-map" data-ubication="lab" data-place="juarez" data-lat="25.6526782" data-lng="-100.110516">Ver mapa</button>
             </div>                
           </div>
           @if (!empty(env('LAB_RM2_PHONE_NUMBER')) || !empty(env('LAB_RM2_WHATSAPP_NUMBER')))
@@ -161,7 +161,7 @@
                   <span class="suburb">Plaza El Molino</span>
                   <span class="number_interior">Local B131 - 132</span>                                        
                 </p>
-                <button href="#" class="btn btn-link btn-map" data-lat="25.772116" data-lng="-100.1931361">Ver mapa</button>  
+                <button href="#" class="btn btn-link btn-map" data-ubication="lab" data-place="apodaca" data-lat="25.772116" data-lng="-100.1931361">Ver mapa</button>  
               </div>                 
           </div>
           @if (!empty(env('LAB_RM3_PHONE_NUMBER')) || !empty(env('LAB_RM3_WHATSAPP_NUMBER')))
@@ -233,7 +233,7 @@
                 <span class="suburb">Paseo Juárez</span>
                 <span class="number_interior">Local #A19</span>                     
               </p>
-              <button href="#" class="btn btn-link btn-map" data-lat="25.6482889" data-lng="-100.11142,17">Ver mapa</button>                    
+              <button href="#" class="btn btn-link btn-map" data-ubication="um" data-place="juarez" data-lat="25.6482889" data-lng="-100.11142,17">Ver mapa</button>                    
             </div>                                        
           </div>
           @if (!empty(env('UM_RM1_PHONE_NUMBER')) || !empty(env('UM_RM1_WHATSAPP_NUMBER')))
@@ -302,7 +302,7 @@
                 <span class="suburb">Plaza El Molino</span>
                 <span class="number_interior">Local B131 - 132</span>                     
               </p>
-              <button href="#" class="btn btn-link btn-map" data-lat="25.772116" data-lng="-100.1931361">Ver mapa</button>
+              <button href="#" class="btn btn-link btn-map"  data-ubication="um" data-place="apodaca" data-lat="25.772116" data-lng="-100.1931361">Ver mapa</button>
             </div>
           </div>
           @if (!empty(env('UM_RM2_PHONE_NUMBER')) || !empty(env('UM_RM2_WHATSAPP_NUMBER')))

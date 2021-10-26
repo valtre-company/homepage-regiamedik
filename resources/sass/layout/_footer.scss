@@ -1,12 +1,17 @@
 // /** Footer **/
-.st-footer-widget {
-   .st-footer-widget-title {
-      color: $red;
-   }
-   ul {
-      li {
-         svg {            
-            width: 20px;
+.st-site-footer {
+   .st-footer-widget {
+      img {
+         width: 200px;
+      }
+      .st-footer-widget-title {
+         color: $red;
+      }
+      ul {
+         li {
+            svg {            
+               width: 20px;
+            }
          }
       }
    }

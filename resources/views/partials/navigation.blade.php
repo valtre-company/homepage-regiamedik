@@ -80,13 +80,13 @@
                 <a href="#contacto" class="st-smooth-move">Contacto</a>
               </li>
               <li class="d-block d-md-none">
-                <a href="https://dist.regiamedik.com/" rel="noreferrer" target="_blank" class="st-smooth-move">Empresas</a>
+                <a target="_blank" rel="noreferrer" href="https://dist.regiamedik.com/">Empresas</a>
               </li>
               <li class="d-block d-md-none">
-                <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}admin/login" class="st-smooth-move">Medicos</a>
+                <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}admin/login">Medicos</a>
               </li>
               <li class="d-block d-md-none">
-                <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}pacientes/login" class="st-smooth-move">Resultados</a>
+                <a target="_blank" rel="noreferrer" href="{{ env('URL_LAB') }}pacientes/login">Resultados</a>
               </li>
               {{-- <li class="d-block d-md-none">
                 <a target="_blank" href="#contacto" rel="noreferrer" class="st-smooth-move">Cotizar Pedido</a>

@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-lg-3">
           <div class="st-footer-widget">
-            <div class="st-text-field">
+            <div class="st-text-field text-center">
               <img src="{{ asset('assets/images/regia-medik-logo.png') }}" alt="Regia Medi-K" class="st-footer-logo img-fluid">
               <div class="st-height-b25 st-height-lg-b25"></div>
               <div class="st-footer-text text-center">Somos una empresa regiomontana que nace por la necesidad de contar con una alternativa diferente en soluciones integrales de salud.</div>

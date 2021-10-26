@@ -6,7 +6,8 @@
 			<div class="st-hero-text">
 				<h1 class="st-hero-title cd-headline slide">
 					Ofrecemos<br>
-					<span class="cd-words-wrapper" style="width: 330px;">
+					{{-- <span class="cd-words-wrapper" style="width: 330px;"> --}}
+					<span class="cd-words-wrapper">
 						<b class="is-hidden">distribución médica.</b>
 						<b class="is-visible">exámenes clínicos.</b>
 						<b class="is-hidden">laboratorios médicos.</b>

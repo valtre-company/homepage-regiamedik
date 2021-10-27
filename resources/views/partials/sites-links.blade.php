@@ -1,7 +1,7 @@
 {{-- <section class="site-links container" style="margin-top: -130px;"> --}}
 <section class="site-links container py-5 text-center">
     <div class="title-header text-center mb-5">
-        <p class="p-0 m-0 text-white">Conoce nuestra amplia gama de servicios integrales de salud</p>
+        <p class="p-0 m-0 text-white">Conoce nuestra amplia gama de servicios integrales para la salud</p>
     </div>
     <div class="row justify-content-center">
         <a href="https://dist.regiamedik.com" class="col-lg-3 mb-3 mb-lg-0">
@@ -12,7 +12,7 @@
                 </div>
                 <h2 class="st-iconbox-title">Distribuidora</h2>
                 <div class="st-iconbox-text mb-1 mb-lg-3">Medicamentos e insumos para empresas y hospitales.</div>                
-                <button type="button" class="btn btn-primary btn-block btn-sm w-auto mx-auto mt-auto">Conoce mas</button>                
+                <button type="button" class="btn btn-primary btn-block btn-sm w-auto mx-auto mt-auto">Conoce más</button>                
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
         </a><!-- .col -->           
@@ -26,7 +26,7 @@
                 </div>
                 <h2 class="st-iconbox-title">Laboratorios</h2>
                 <div class="st-iconbox-text mb-1 mb-lg-3">Exámenes clínicos con resultados precisos el mismo día.</div>
-                <button type="button" class="btn btn-primary btn-block btn-sm w-auto mx-auto mt-auto">Conoce mas</button>                
+                <button type="button" class="btn btn-primary btn-block btn-sm w-auto mx-auto mt-auto">Conoce más</button>                
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
         </a><!-- .col -->
@@ -40,7 +40,7 @@
                 </div>
                 <h2 class="st-iconbox-title">Unidad Médica</h2>
                 <div class="st-iconbox-text mb-1 mb-lg-3">Atención médica de calidad con doctor general.</div>
-                <button type="button" class="btn btn-primary btn-block btn-sm w-auto mx-auto mt-auto">Conoce mas</button>                
+                <button type="button" class="btn btn-primary btn-block btn-sm w-auto mx-auto mt-auto">Conoce más</button>                
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
         </a><!-- .col -->
@@ -54,7 +54,7 @@
                 </div>
                 <h2 class="st-iconbox-title">Farmacia</h2>
                 <div class="st-iconbox-text mb-1 mb-lg-3">Los medicamentos que necesitas desde tu farmacia en línea.</div>
-                <button type="button" class="btn btn-primary btn-block btn-sm w-auto mx-auto mt-auto">Conoce mas</button>                
+                <button type="button" class="btn btn-primary btn-block btn-sm w-auto mx-auto mt-auto">Conoce más</button>                
             </div>
             {{-- <div class="st-height-b0 st-height-lg-b30"></div> --}}
         </a><!-- .col -->        

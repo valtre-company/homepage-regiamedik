@@ -4,7 +4,7 @@
     <img src="{{ asset('assets/images/section_shape.png') }}" alt="shape1">
   </div> --}}
   <div class="st-shape6">
-    <img src="{{ asset('assets/fonts/contact-shape3.svg') }}" alt="shape3">
+    {{-- <img src="{{ asset('assets/fonts/contact-shape3.svg') }}" alt="shape3"> --}}
   </div>
   {{-- <div class="st-height-b120 st-height-lg-b80"></div> --}}
   <div class="container mt-5">
@@ -20,7 +20,7 @@
         </div>
         <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInRight;"></div>
       </div>
-      <div class="st-section-heading-subtitle">Envíanos un mensaje con tus datos y pronto uno de nuestros agentes de ventas se pondrán en conacto.</div>
+      <div class="st-section-heading-subtitle">Envíanos un mensaje con tus datos y pronto uno de nuestros agentes de ventas se pondrán en contacto.</div>
     </div>
     <div class="st-height-b40 st-height-lg-b40"></div>
   </div>

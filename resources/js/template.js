@@ -9,6 +9,8 @@ function eventListeners () {
             e.preventDefault();
             const ubication = e.target.dataset.ubication;
             const place = e.target.dataset.place;
+            const lat = e.target.dataset.lat;
+            const lng = e.target.dataset.lng;
             openModalMap(ubication,place);
          }
       });   

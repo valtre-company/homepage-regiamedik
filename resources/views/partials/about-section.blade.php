@@ -22,10 +22,10 @@
         <div class="col-12 col-md-4 mb-3 mb-md-0">                  
           <div class="flip-card">
             <div class="flip-card-inner">
-              <div class="flip-card-front">
+              <div class="flip-card-front card-blue">
                 <h2>Misión</h2>
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back card-blue">
                 <p>Ser una solución integral sólida y confiable a las necesidades médicas de nuestros clientes y socios comerciales, brindando un servicio de excelencia.</p>                  
               </div>
             </div>
@@ -34,10 +34,10 @@
         <div class="col-12 col-md-4 mb-3 mb-md-0">
           <div class="flip-card">
             <div class="flip-card-inner">
-              <div class="flip-card-front">
+              <div class="flip-card-front card-blue">
                 <h2>Visión</h2>
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back card-blue">
                 <p>Consolidarnos como líderes en soluciones médicas integrales con un sistema de salud empresarial y privada, con asistencia de calidez, profesional y de la más alta calidad.</p>
               </div>
             </div>
@@ -46,10 +46,10 @@
         <div class="col-12 col-md-4 mb-3 mb-md-0">
           <div class="flip-card">
             <div class="flip-card-inner">
-              <div class="flip-card-front">
+              <div class="flip-card-front card-blue">
                 <h2>Valores</h2>
               </div>
-              <div class="flip-card-back">
+              <div class="flip-card-back card-blue">
                 <div class="text-left">
                   <p class="d-block p-0">■ Excelencia</p>
                   <p class="d-block p-0">■ Ética</p>

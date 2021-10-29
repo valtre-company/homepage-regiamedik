@@ -12,8 +12,16 @@
    -o-border-radius: 6px;
    padding: 12px 10px;
    
-   p {
+   p, span {
       font-size: 25px;
       line-height: 26px;
    }
+}
+
+.fw-600 {
+   font-weight: 600;
+}
+
+.font-32 {
+   font-size: 32px;
 }

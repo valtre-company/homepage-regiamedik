@@ -1,8 +1,10 @@
+import Typed from 'typed.js';
 // Function on DOM Content Loading execute function eventListeners
 document.addEventListener("DOMContentLoaded", eventListeners );
 
 // Function to create event listeners
-function eventListeners () {
+function eventListeners () {   
+   addTypedJS();
    if (document.querySelector("#ubications")){      
       document.querySelector("#ubications").addEventListener("click", (e) => {         
          if (e.target.classList.contains("btn-map")) {
@@ -80,4 +82,22 @@ function cleanHTML (container) {
          container.removeChild(container.firstChild);
       }	
    }
+}
+
+function addTypedJS () {
+   var options = {
+      strings: [
+         "Nuestra amplia gama de servicios integrales para la salud.", 
+         "Nuestra amplia gama de servicios de análisis clínicos.", 
+         "Nuestra amplia gama de servicios y medicamentos.",          
+         "Nuestra amplia gama de servicios y pruebas toxicológicas.",          
+         "Nuestra amplia gama de servicios y pruebas COVID.",          
+      ],
+      typeSpeed: 60,      
+      loop: true,      
+      cursorChar: '|',
+   };
+
+   var typed = new Typed('#typed', options);
+
 }

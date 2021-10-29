@@ -1,8 +1,15 @@
 {{-- <section class="site-links container" style="margin-top: -130px;"> --}}
-<section class="site-links container py-5 text-center">
-    <div class="title-header text-center mb-5">
-        <p class="p-0 m-0 text-white">Conoce nuestra amplia gama de servicios integrales para la salud</p>
+<section class="site-links container py-3">
+    <div class="d-flex flex-column mb-1">
+        <h2 class="display-4 font-weight-bold text-primary m-0">Conoce</h2>
+        <p class="text-black fw-600">
+            <span id="typed"></span>
+        </p>
     </div>
+    {{-- <div class="title-header text-center mb-5">        
+        <p class="p-0 m-0 text-white d-block">Conoce nuestra amplia gama de </p>
+        <span id="typed"></span>
+    </div> --}}
     <div class="row justify-content-center">
         <a href="https://dist.regiamedik.com" class="col-lg-3 mb-3 mb-lg-0">
             <div class="st-iconbox st-style1 d-flex flex-column">

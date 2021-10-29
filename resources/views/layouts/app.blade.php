@@ -16,7 +16,7 @@
 	<link rel="icon" href="{{ asset('assets/images/regia-medik-heart-icon.png') }}">
 	
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+	{{-- <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}"> --}}
 	<link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/slick.css') }}">
 	<link rel="stylesheet" href="{{ asset('assets/css/lightgallery.min.css') }}">

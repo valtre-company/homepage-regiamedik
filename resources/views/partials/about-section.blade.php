@@ -1,5 +1,5 @@
 <!-- Start About Section -->
-<section class="st-about-wrap" id="acerca-de">
+<section class="st-about-wrap pt-5" id="acerca-de">
   <div class="st-shape-bg">
     <img src="{{ asset('assets/fonts/about-bg-shape.svg') }}" alt="shape">
   </div>
@@ -51,8 +51,8 @@
               </div>
               <div class="flip-card-back card-blue">
                 <div class="text-left">
-                  <p class="d-block p-0">■ Excelencia</p>
                   <p class="d-block p-0">■ Ética</p>
+                  <p class="d-block p-0">■ Excelencia</p>
                   <p class="d-block p-0">■ Vocación de servicio</p>
                 </div>  
               </div>

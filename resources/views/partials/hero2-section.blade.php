@@ -1,12 +1,19 @@
 <div class="st-height-b125 st-height-lg-b80" id="inicio"></div>
-<div class="st-hero-wrap st-color1 overflow-hidden">
-	<div class="st-wave-animation"></div>
+<div class="st-hero-wrap st-color1 overflow-hidden">	
+	<picture>
+		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}" type="image/webp">
+		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.png') }}" type="image/png">
+		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.png"); }}" type="image/png">
+		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.webp")}}" type="image/webp">		
+		<img src="{{ asset("assets/images/banner_rm.png"); }}" alt="Banner RegiaMedik" class="img-fluid w-100">
+	</picture>
+	{{-- <div class="st-wave-animation"></div>
 	<div class="st-hero st-style1 py-5">
 		<div class="container">
 			<div class="st-hero-text">
 				<h1 class="st-hero-title cd-headline slide">
 					Ofrecemos<br>
-					{{-- <span class="cd-words-wrapper" style="width: 330px;"> --}}
+					<span class="cd-words-wrapper" style="width: 330px;">
 					<span class="cd-words-wrapper">
 						<b class="is-hidden">distribución médica.</b>
 						<b class="is-visible">exámenes clínicos.</b>
@@ -15,13 +22,13 @@
 						<b class="is-hidden">unidades médicas.</b>
 					</span>
 				</h1>
-				{{-- <div class="st-hero-subtitle">Conoce nuestra amplia gama de servicios integrales de salud.</div> --}}
-				{{-- <div class="st-hero-btn">
+				<div class="st-hero-subtitle">Conoce nuestra amplia gama de servicios integrales de salud.</div>
+				<div class="st-hero-btn">
 					<a href="#contacto" class="st-btn st-style1 st-color1 st-smooth-move">Estoy interesado</a>
-				</div> --}}
+				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<div class="st-slider st-style1 st-hero-slider1" id="home">
 		<div class="slick-container" data-autoplay="1" data-loop="1" data-speed="800" data-autoplay-timeout="1000" data-center="0" data-slides-per-view="1" data-fade-slide="1">
 			<div class="slick-wrapper slick-initialized slick-slider slick-dotted">

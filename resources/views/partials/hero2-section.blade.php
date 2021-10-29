@@ -2,7 +2,7 @@
 <div class="st-hero-wrap st-color1 overflow-hidden">	
 	<picture>
 		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}" type="image/webp">
-		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.png') }}" type="image/png">
+		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpeg') }}" type="image/jpeg">
 		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.png"); }}" type="image/png">
 		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.webp")}}" type="image/webp">		
 		<img src="{{ asset("assets/images/banner_rm.png"); }}" alt="Banner RegiaMedik" class="img-fluid w-100">

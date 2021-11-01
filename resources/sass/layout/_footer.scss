@@ -5,29 +5,42 @@
          width: 150px;
       }
       .st-footer-widget-title {
-         color: $red;
+         color: $primary;
       }
       ul {
-         li {
-            svg {            
-               width: 20px;
-            }
+         li { 
+            p {
+               svg {            
+                  width: 24px;
+                  height: 24px;
+                  color: $primary;                    
+               }
+               &:last-child {
+                  svg { 
+                     fill: $primary;
+                  }
+               }
+            }            
          }
       }
    }
 }
 
 #st-backtotop {
-   background-color: $red;
+   background-color: $primary;
+   &:hover {
+      background-color: lighten($primary,5%);      
+   }  
 }
+
 
 .redes-sociales  {
    li{
-      color: $red !important;
+      color: $primary !important;
       a{
-         color: $red;
+         color: $primary;
          &:hover {
-            color: $red !important;
+            color: $primary !important;
          }
          &::before{
             font-family: "Font Awesome 5 Brands";

@@ -8,7 +8,7 @@ class ScheduleController extends Controller
 {
     //
     public function index () {
-        return abort(404);
+        return redirect('welcome');
         return view('schedule.index');
     }
 }

@@ -202,8 +202,8 @@
               <div class="st-call-text">
                 <div class="st-call-title">WhatsApp</div>
                 <div class="st-call-number">
-                  <a href="tel:{{ str_replace(' ', '',env('LAB_RM3_WHATSAPP_NUMBER')) }}">
-                  {{ env('LAB_RM3_WHATSAPP_NUMBER') }}
+                  <a target="_blank" rel="noreferrer" href="https://wa.me/{{ env('LADA') . str_replace(' ', '',env('LAB_RM3_WHATSAPP_NUMBER')) }}?text={{ env('WHATSAPP_MESSAGE') }}">
+                    {{ env('LAB_RM3_WHATSAPP_NUMBER') }}
                   </a>
                 </div>
               </div>

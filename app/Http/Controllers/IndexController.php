@@ -47,16 +47,15 @@ class IndexController extends Controller
             /** Validate spam */
             resolve(Spam::class)->detect( request('message') );
             resolve(Spam::class)->detect( request('email') );
-
+                        
             SendMailJob::dispatch(
                 'emails.contact', // view
                 $data,
                 env('MAIL_FROM_ADDRESS'), // from email
                 env('MAIL_FROM_NAME'), // from name
-                'Nuevo Mensaje en www.regiamediK.com', // subject text
-                env('NOTIFICATION_EMAIL'),
+                'Nuevo Mensaje en www.regiamedik.com', // subject text
+                env('APP_ENV') === 'local' ? "giancarlozapata13@gmail.com" : env('NOTIFICATION_EMAIL') ,
             );
-
             return redirect('/#contacto')
                 ->with('success', '¡Gracias por tu mensaje! En breve te responderémos.');            
 

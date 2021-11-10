@@ -1,11 +1,11 @@
 <div class="st-height-b125 st-height-lg-b80" id="inicio"></div>
 <div class="st-hero-wrap st-color1 overflow-hidden">	
 	<picture>
-		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}" type="image/webp">
-		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpeg') }}" type="image/jpeg">
-		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.png"); }}" type="image/png">
-		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.webp")}}" type="image/webp">		
-		<img src="{{ asset("assets/images/banner_rm.png"); }}" alt="Banner RegiaMedik" class="img-fluid w-100">
+		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}?t={{ time() }}" type="image/webp">
+		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpg') }}?t={{ time() }}" type="image/jpg">
+		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.png") }}?t={{ time() }}" type="image/png">
+		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.webp")}}?t={{ time() }}" type="image/webp">		
+		<img src="{{ asset("assets/images/banner_rm.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
 	</picture>
 	{{-- <div class="st-wave-animation"></div>
 	<div class="st-hero st-style1 py-5">

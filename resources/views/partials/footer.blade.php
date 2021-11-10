@@ -13,29 +13,25 @@
               <div class="st-height-b25 st-height-lg-b25"></div>
               <ul class="redes-sociales st-social-btn st-style1 st-mp0">
                 <li>
-                  <a target="_blank" rel="noreferrer" href="{{ env("FACEBOOK_URL") }}">
-                    <span class="sr-only"><i class="fab fa-facebook-square"></i>Facebook </span>
-                  </a>
-                  {{-- <a target="_blank" rel="noreferrer" href="{{ env('FACEBOOK_URL') }}">
-                    <i class="fab fa-facebook-square"></i>
-                  </a> --}}
-                </li>
-                <li>
-                  <a target="_blank" rel="noreferrer" href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}">
-                    <span class="sr-only"><i class="fab fa-whatsapp-square"></i>WhatsApp </span>
-                  </a>
-                  {{-- <a target="_blank" rel="noreferrer" href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}">
-                    <i class="fab fa-whatsapp-square"></i>
-                  </a> --}}
-                </li>
-                <li>
                   <a target="_blank" rel="noreferrer" href="{{ env("LINKEDIN_URL") }}">
                     <span class="sr-only"><i class="fab fa-linkedin"></i>LinkedIn</span>
                   </a>
-                  {{-- <a target="_blank" rel="noreferrer" href="{{ env('LINKEDIN_URL') }}">
-                    <i class="fab fa-linkedin"></i>
-                  </a> --}}
                 </li>
+                <li>
+                  <a target="_blank" rel="noreferrer" href="{{ env("INSTAGRAM_URL") }}">
+                    <span class="sr-only"><i class="fab fa-instagram-square"></i>Instagram </span>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noreferrer" href="{{ env("FACEBOOK_URL") }}">
+                    <span class="sr-only"><i class="fab fa-facebook-square"></i>Facebook </span>
+                  </a>
+                </li>
+                {{-- <li>
+                  <a target="_blank" rel="noreferrer" href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}">
+                    <span class="sr-only"><i class="fab fa-whatsapp-square"></i>WhatsApp </span>
+                  </a>
+                </li> --}}
               </ul>
             </div>
           </div>

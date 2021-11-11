@@ -103,7 +103,7 @@
                   <div class="st-shedule-right">07:00hrs - 20:00hrs</div>
                 </li>
                 <li>
-                  <div class="st-shedule-left">Sab - Dom</div>                  
+                  <div class="st-shedule-left">Sab</div>                  
                   <div class="st-shedule-right">07:00hrs - 15:00hrs</div>
                 </li>
               </ul>
@@ -244,7 +244,7 @@
                   <div class="st-shedule-right">08:00hrs - 18:00hrs</div>
                 </li>
                 <li>
-                  <div class="st-shedule-left">Sab - Dom</div>                  
+                  <div class="st-shedule-left">Sab</div>                  
                   <div class="st-shedule-right">08:00hrs - 14:00hrs</div>
                 </li>
               </ul>
@@ -313,7 +313,7 @@
                   <div class="st-shedule-right">08:00hrs - 21:00pm</div>
                 </li>
                 <li>
-                  <div class="st-shedule-left">Sab - Dom</div>                  
+                  <div class="st-shedule-left">Sab</div>                  
                   <div class="st-shedule-right">08:00hrs - 14:00hrs</div>
                 </li>
               </ul>

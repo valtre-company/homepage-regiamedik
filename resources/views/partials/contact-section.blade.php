@@ -20,7 +20,7 @@
         </div>
         <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInRight;"></div>
       </div>
-      <div class="st-section-heading-subtitle">Envíanos un mensaje con tus datos y pronto uno de nuestros agentes de ventas se pondrán en contacto.</div>
+      <div class="st-section-heading-subtitle mx-auto">Envíanos un mensaje con tus datos y pronto uno de nuestros agentes de ventas se pondrán en contacto.</div>
     </div>
     <div class="st-height-b40 st-height-lg-b40"></div>
   </div>

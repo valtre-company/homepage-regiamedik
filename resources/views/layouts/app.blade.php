@@ -66,5 +66,8 @@
 	<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
 
 	@include('layouts.modal')
+
+	@yield('scripts')
+
 </body>
 </html>

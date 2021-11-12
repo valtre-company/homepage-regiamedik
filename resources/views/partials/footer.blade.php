@@ -18,13 +18,13 @@
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" rel="noreferrer" href="{{ env("INSTAGRAM_URL") }}">
-                    <span class="sr-only"><i class="fab fa-instagram-square"></i>Instagram </span>
+                  <a target="_blank" rel="noreferrer" href="{{ env("FACEBOOK_URL") }}">
+                    <span class="sr-only"><i class="fab fa-facebook-square"></i>Facebook </span>
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" rel="noreferrer" href="{{ env("FACEBOOK_URL") }}">
-                    <span class="sr-only"><i class="fab fa-facebook-square"></i>Facebook </span>
+                  <a target="_blank" rel="noreferrer" href="{{ env("INSTAGRAM_URL") }}">
+                    <span class="sr-only"><i class="fab fa-instagram-square"></i>Instagram </span>
                   </a>
                 </li>
                 {{-- <li>
@@ -44,7 +44,7 @@
                 <a href="#inicio"><i class="fas fa-chevron-right"></i>Inicio</a>
               </li>
               <li>
-                <a href="#acerca-de"><i class="fas fa-chevron-right"></i>Acerca</a>
+                <a href="#acerca-de"><i class="fas fa-chevron-right"></i>Nosotros</a>
               </li>
               {{-- <li>
                 <a href="#servicios"><i class="fas fa-chevron-right"></i>Servicios</a>
@@ -74,11 +74,11 @@
                   <i class="fas fa-chevron-right"></i>Distribuidora
                 </a>
               </li>
-              <li>
+              {{-- <li>
                 <a href="https://farma.regiamedik.com" target="_blank" rel="noreferrer">
                   <i class="fas fa-chevron-right"></i>Farmacia
                 </a>
-              </li>
+              </li> --}}
             </ul>
           </div>
         </div><!-- .col -->

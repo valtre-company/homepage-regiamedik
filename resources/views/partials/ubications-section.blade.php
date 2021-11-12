@@ -12,8 +12,8 @@
       <div class="st-seperator-right wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInRight;"></div>
     </div>      
   </div>
-  <h2 class="st-shedule-title text-center mt-3 mb-0">Laboratorios</h2>
   {{-- Laboratorios --}}
+  <h2 class="st-shedule-title text-center mt-3 mb-0">Laboratorios</h2>
   <div class="row justify-content-center justify-content-lg-start container-services">
     {{-- Laboratorio Regia Medi-K 1  --}}
     <div class="col-12 col-md-6 col-lg-4 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInRight;">
@@ -169,11 +169,11 @@
               <ul class="st-shedule-list">
                 <li class="jus">
                   <div class="st-shedule-left">Lun - Vie</div>
-                  <div class="st-shedule-right">08:00hrs - 21:00hrs</div>
+                  <div class="st-shedule-right">07:00hrs - 20:00hrs</div>
                 </li>
                 <li>
                   <div class="st-shedule-left">Sab</div>                  
-                  <div class="st-shedule-right">08:00hrs - 14:00hrs</div>
+                  <div class="st-shedule-right">07:00hrs - 15:00hrs</div>
                 </li>
               </ul>
             </div>
@@ -218,7 +218,7 @@
       </div>
     </div><!-- .col -->
   </div>
-
+  {{-- Unidades Medicas --}}
   <h2 class="st-shedule-title text-center mt-3 mb-0">Unidad Médica</h2>
   <div class="row justify-content-center container-services">
     {{-- Unidad Médica 1 --}}
@@ -309,12 +309,12 @@
             <div class="d-flex flex-column text-center">
               <ul class="st-shedule-list">
                 <li class="jus">
-                  <div class="st-shedule-left">Lu - Vie</div>
-                  <div class="st-shedule-right">08:00hrs - 21:00pm</div>
+                  <div class="st-shedule-left">Lun - Vie</div>
+                  <div class="st-shedule-right">07:00hrs - 20:00pm</div>
                 </li>
                 <li>
                   <div class="st-shedule-left">Sab</div>                  
-                  <div class="st-shedule-right">08:00hrs - 14:00hrs</div>
+                  <div class="st-shedule-right">07:00hrs - 15:00hrs</div>
                 </li>
               </ul>
             </div>

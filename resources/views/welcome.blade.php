@@ -1,6 +1,5 @@
 
 @extends('layouts.app')
-
 @section('content')
 
 <div class="st-content" style="margin-bottom: 1045px;">

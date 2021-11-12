@@ -1,0 +1,29 @@
+.sticky-whatsapp {
+   position: fixed;
+   left: 3rem;
+   bottom: 3rem;
+   z-index: 9999;
+   background: $primary;
+   padding: 6px 16px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: all .3s ease;   
+   span {
+      font-size: 2rem;
+      color: rgba(255,255,255,.8);
+      cursor: pointer;
+   }
+   &:hover {
+      background-color: lighten($primary,5%);    
+   }
+}
+
+#st-backtotop {
+   position: fixed;
+   background-color: $primary;
+   font-size: 2rem;
+   right: 3rem;
+   bottom: 3rem;
+   width: 58.25px;
+   height: 60px;
+}

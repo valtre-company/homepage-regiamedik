@@ -54,7 +54,6 @@
 
 	<script src="{{ mix('js/app.js') }}"></script>
 	
-</body>
 	<script>
 		const goToTopBtn = document.getElementById('st-backtotop')
 		if (goToTopBtn) {
@@ -63,11 +62,12 @@
 			})
 		}
 	</script>
+
 	<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
 
 	@include('layouts.modal')
-
-	@yield('scripts')
-
+	<a class="sticky-whatsapp" href="https://wa.me/{{ env('WHATSAPP_WITH_CODE') }}?text={{ env('WHATSAPP_MESSAGE') }}" target="_blank" rel="noopener">
+		<span><i class="fab fa-whatsapp"></i></span>
+	</a>
 </body>
 </html>

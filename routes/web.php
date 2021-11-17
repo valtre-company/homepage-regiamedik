@@ -9,4 +9,4 @@ Route::get('/',[IndexController::class,'index'])->name('welcome');
 Route::post('/', [IndexController::class, 'contactSend'])->name('contact.send');
 
 Route::get('/calendario',[ScheduleController::class, 'index'])->name('schedule.index');
-Route::get('/servicios',[ServiceController::class, 'index'])->name('service.index');
+Route::get('/servicios-rmk',[ServiceController::class, 'index'])->name('service.index');

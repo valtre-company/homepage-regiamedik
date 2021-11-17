@@ -98,6 +98,7 @@ function addTypedJS () {
       cursorChar: '|',
    };
 
-   var typed = new Typed('#typed', options);
-
+   if(document.getElementById("typed")){
+      var typed = new Typed('#typed', options);
+   }
 }

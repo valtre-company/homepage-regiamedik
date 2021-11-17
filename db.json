@@ -1,0 +1,2612 @@
+{
+   "analysis": [
+      {
+         "name": "17 ALFA HIDROXI PROGESTERONA (17aOHp4)", 
+         "price": 625.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "17 ALFA HIDROXI PROGESTERONA NEONATAL (17aOHp4NEO) ", 
+         "price": 450.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "17 CETOESTEROIDES", 
+         "price": 600.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "17 HIDROXI CORTICOESTEROIDES", 
+         "price": 600.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "Ac 5 Hidroxi indol acético (Catabolito Serotonina) ", 
+         "price": 1100.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ÁCIDO DELTA AMINO LEVULÍNICO (ALA)(DAL) ", 
+         "price": 930.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ÁCIDO LÁCTICO EN PLASMA (LACTATO) ", 
+         "price": 760.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ÁCIDO ÚRICO EN SUERO ", 
+         "price": 75.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ÁCIDO ÚRICO URINARIO ", 
+         "price": 62.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ÁCIDO VALPROICO (DEPAKENE) (ATEMPERATOR)", 
+         "price": 420.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ÁCIDO VANILLIL MANDÉLICO (VMA) ", 
+         "price": 670.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ACTIVIDAD DEL COMPLEMENTO CH50 ", 
+         "price": 499.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ADENOSIN DEAMINASA (FLUIDOS VARIOS) ", 
+         "price": 1450.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ADENOSIN DEAMINASA (LCR) ", 
+         "price": 1450.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALANINO AMINO TRANSFERASA (TGP)(ALT) ", 
+         "price": 100.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALBÚMINA EN SUERO ", 
+         "price": 80.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALCOHOL ETÍLICO EN ORINA ", 
+         "price": 600.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALCOHOL ETÍLICO EN SUERO ", 
+         "price": 970.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALDOLASA ", 
+         "price": 385.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALDOSTERONA ", 
+         "price": 575.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALFA 1 ANTITRIPSINA ", 
+         "price": 780.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALFAFETO PROTEÍNA (AFP) ", 
+         "price": 450.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ALUMINIO EN SUERO ", 
+         "price": 900.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "AMILASA EN SUERO ", 
+         "price": 340.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "AMINOÁCIDO FENILALANINA ", 
+         "price": 380.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANDROSTENEDIONA ", 
+         "price": 414.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTI TROMBINA III ", 
+         "price": 890.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICOAGULANTE LÚPICO ", 
+         "price": 1010.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI ÁCIDO GLUTÁMICO DESCARBOXILASA (GAD-65)", 
+         "price": 1400.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI ACTINA (IgG) ", 
+         "price": 1200.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI AG 'CORE' HEP B IgM (HBcAc-IgM)", 
+         "price": 640.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI AG 'CORE' HEP B TOTALES ", 
+         "price": 640.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI AG 'E' HEP B (HBeAc) ", 
+         "price": 655.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI AG 'S' HEP B (HBsAc) ", 
+         "price": 580.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI AMIBIANOS IgG ", 
+         "price": 630.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI BETA 2 GLICOPROTEINA IgA ", 
+         "price": 900.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI BETA 2 GLICOPROTEÍNA IgG ", 
+         "price": 740.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI BETA 2 GLICOPROTEÍNA IgM ", 
+         "price": 720.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI BORRELIA BURGDORFERI IgG E IgM", 
+         "price": 1460.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI BRUCELLA SPP (2 MERCAPTO ETANOL)", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI BRUCELLA SPP (ROSA DE BENGALA)", 
+         "price": 520.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CARDIOLIPINAS IgG ", 
+         "price": 890.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CARDIOLIPINAS IgG E IgM ", 
+         "price": 1000.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CARDIOLIPINAS IgM ", 
+         "price": 890.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CENTRÓMERO ", 
+         "price": 615.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CHAGAS (TOTALES) ", 
+         "price": 670.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CHIKUNGUNYA IgM ", 
+         "price": 720.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CHIKUNGUNYA IgM e IgG", 
+         "price": 1500.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CHLAMYDIA TRACHOMATIS IgA", 
+         "price": 1600.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CHLAMYDIA TRACHOMATIS IgG", 
+         "price": 670.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CHLAMYDIA TRACHOMATIS IgM", 
+         "price": 830.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CISTICERCO IgG EN LCR ", 
+         "price": 750.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CISTICERCO IgG EN SUERO ", 
+         "price": 750.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CITOMEGALOVIRUS IgG ", 
+         "price": 615.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CITOMEGALOVIRUS IgM ", 
+         "price": 540.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI CITOPLASMA DE NEUTRÓFILO (ANCA)", 
+         "price": 1370.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI COCCIDIOIDES (IgG E IgM) ", 
+         "price": 2500.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI DENGUE (IgG E IgM) ", 
+         "price": 680.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI DENGUE IgG ", 
+         "price": 750.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI DENGUE IgM ", 
+         "price": 750.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI DNA (NATIVO)(DE DOBLE CADENA)", 
+         "price": 540.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI E. BARR AG NUCLEAR IgG (EBNA IgG)", 
+         "price": 820.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI E. BARR CÁPSIDE IgG (VCA IgG)", 
+         "price": 580.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI E. BARR CÁPSIDE IgM (VCA IgM)", 
+         "price": 620.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI ENDOMISIALES IgA ", 
+         "price": 2100.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI EPSTEIN BARR AG TEMPRANO (EA-D)", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI ESPERMÁTICOS (PAREJA) ", 
+         "price": 1300.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI ESPERMÁTICOS (INDIVIDUAL)", 
+         "price": 1090.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI HEPATITIS C (CUALITATIVA)", 
+         "price": 420.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI MYCOPLASMA PNEUMONIAE IgM", 
+         "price": 1250.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI NUCLEARES (ANA) ", 
+         "price": 550.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI PAROTIDITIS IgG E IgM ", 
+         "price": 980.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI PARVOVIRUS B19 IgG ", 
+         "price": 820.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI PARVOVIRUS B19 IgG E IgM", 
+         "price": 1200.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI PARVOVIRUS B19 IgM ", 
+         "price": 820.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI PLAQUETARIOS ", 
+         "price": 2400.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI PM-SCL(PM-1) ", 
+         "price": 1040.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI RECEPTOR DE ACETIL COLINA", 
+         "price": 1040.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI RECEPTOR DE TSH ", 
+         "price": 3600.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI RIBONÚCLEOPROTEÍNA (RNP)", 
+         "price": 545.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI RUBÉOLA IgG ", 
+         "price": 470.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI RUBÉOLA IgM ", 
+         "price": 670.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI SARAMPIÓN IgG E IgM ", 
+         "price": 1070.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI SMITH (Sm) ", 
+         "price": 530.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI SSA (Ro) ", 
+         "price": 590.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI SSB (La) ", 
+         "price": 640.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI TIROGLOBULINA (COLOIDE TIROIDEO)", 
+         "price": 840.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI TIROIDEOS ", 
+         "price": 990.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI TOXOPLASMA IgG ", 
+         "price": 570.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI TOXOPLASMA IgM ", 
+         "price": 790.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI TRANSGLUTAMINASA IgG E IgA", 
+         "price": 1280.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI TREPONEMA ", 
+         "price": 540.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI Treponema pallidum POR FLUORESCENCIA (FTA)", 
+         "price": 700.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI TUBERCULOSIS EN LCR IgG ", 
+         "price": 760.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI TUBERCULOSIS EN SUERO IgG ", 
+         "price": 760.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI VIH 1/2 (PRUEBA PRESUNTIVA Ag/Acs.)", 
+         "price": 340.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI VIH-1 (W. BLOT CONFIRMATORIO)", 
+         "price": 2690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS ANTI VIH-2 (W. BLOT CONFIRMATORIA)", 
+         "price": 3050.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS IGG COVID 19 (CUANTITATIVA)", 
+         "price": 670.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTICUERPOS SCL-70 (ESCLERODERMIA (TOPOISOMERASA)", 
+         "price": 1580.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTIDOPING DE 5 ELEMENTOS (opiaceos, metanfetaminas, anfetaminas, thc, cocaina).", 
+         "price": 350.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTÍGENO 'E' DE HEPATITIS 'B' (AGeHB) ", 
+         "price": 430.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTÍGENO 'S' DE HEPATITIS 'B' (AUSTRALIA) ", 
+         "price": 620.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTÍGENO CA 125 ", 
+         "price": 980.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTÍGENO CA 15-3 ", 
+         "price": 1030.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ANTÍGENO DE HELICOBACTER PYLORI EN HECES", 
+         "price": 1150.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "AST", 
+         "price": 100.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BAAR EN ESPUTO (MICROSCOPIA) 3 MUESTRAS (BAAR SERIADO)", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BAAR EN ORINA (MICROSCOPIA) 3 MUESTRAS ", 
+         "price": 288.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BAAR MICROSCOPIA ", 
+         "price": 300.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BANDAS OLIGOCLONALES EN LCR ", 
+         "price": 2368.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BENZODIACEPINAS EN ORINA ", 
+         "price": 462.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BETA GONADOTROFINA CORIÓNICA (HCG-B) ", 
+         "price": 710.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BILIRRUBINA DIRECTA ", 
+         "price": 140.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BILIRRUBINA INDIRECTA ", 
+         "price": 140.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BILIRRUBINA TOTAL ", 
+         "price": 120.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BIOMETRÍA HEMÁTICA ", 
+         "price": 145.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "BIOTINIDASA ", 
+         "price": 19.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "C2, COMPONENTE DE COMPLEMENTO ", 
+         "price": 1760.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CALCIO EN SUERO ", 
+         "price": 130.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CALCITONINA ", 
+         "price": 558.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CALPROTECTINA ", 
+         "price": 2050.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CAPACIDAD TOTAL DE FIJACIÓN DE HIERRO ", 
+         "price": 216.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CARBAMAZEPINA (CBZ) ", 
+         "price": 430.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CARBOXIHEMOGLOBINA ", 
+         "price": 910.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CAROTENOS ", 
+         "price": 1030.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CATECOLAMINAS EN PLASMA ", 
+         "price": 1220.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CATECOLAMINAS URINARIAS ", 
+         "price": 1050.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CÉLULAS LE ", 
+         "price": 188.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CERULOPLASMINA ", 
+         "price": 614.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CICLOSPORINA ", 
+         "price": 910.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CISTATINA C ", 
+         "price": 750.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA DE LÍQUIDOS VARIOS ", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA EXFOLIATIVA (VARIOS) ", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA EXFOLIATIVA DE LCR ", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA EXFOLIATIVA DE LÍQUIDO PLEURAL ", 
+         "price": 600.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA EXFOLIATIVA DE LÍQUIDO SINOVIAL ", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA EXFOLIATIVA DE LÍQUIDO PERITONEAL", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA EXFOLIATIVA DE ORINA ", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA EXFOLIATIVA DE SECRECIÓN DE MAMA", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA EXFOLIATIVA NASAL ", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA VAGINAL BASE LÍQUIDA ", 
+         "price": 336.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOLOGÍA VAGINAL EXFOLIATIVA (PAPANICOLAOU)", 
+         "price": 307.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOQUÍMICO DE LCR ", 
+         "price": 630.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOQUÍMICO DE LÍQUIDO PERITONEAL ", 
+         "price": 454.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITOQUÍMICO DE LÍQUIDO SINOVIAL ", 
+         "price": 454.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CITRATO EN ORINA DE 24 HRS. ", 
+         "price": 849.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CLONAZEPAM EN SUERO (RIVOTRIL) ", 
+         "price": 1380.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CLORO EN ORINA ", 
+         "price": 108.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CLORO SÉRICO ", 
+         "price": 105.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CLOSTRIDIUM DIFFICILE A Y B ", 
+         "price": 1290.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COBRE EN ORINA ", 
+         "price": 1120.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COBRE EN SUERO ", 
+         "price": 1120.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COLESTEROL DE ALTA DENSIDAD (HDL) ", 
+         "price": 270.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COLESTEROL DE BAJA DENSIDAD (LDL) ", 
+         "price": 270.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COLESTEROL DE MUY BAJA DENSIDAD (VLDL) ", 
+         "price": 250.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COLESTEROL TOTAL ", 
+         "price": 80.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COLINESTERASA ", 
+         "price": 206.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COMPLEMENTO C1Q COMPLEJOS INMUNES (C1Q IgG)", 
+         "price": 812.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COMPLEMENTO C3", 
+         "price": 400.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COMPLEMENTO C4", 
+         "price": 400.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COOMBS DIRECTO ", 
+         "price": 150.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COOMBS INDIRECTO ", 
+         "price": 220.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COPROCULTIVO ", 
+         "price": 358.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COPROLÓGICO ", 
+         "price": 155.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COPROPARASITOSCÓPICO 1 MUESTRA ", 
+         "price": 80.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "COPROPARASITOSCÓPICO 3 MUESTRAS ", 
+         "price": 170.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CORTISOL EN SUERO ", 
+         "price": 550.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CORTISOL LIBRE EN ORINA ", 
+         "price": 252.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CORTISOL, CURVA DE 2 MUESTRAS ", 
+         "price": 435.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CORTISOL, CURVA DE 4 MUESTRAS ", 
+         "price": 578.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CREATINFOSFOCINASA FRACCIÓN MB (CPK MB)", 
+         "price": 630.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CREATINFOSFOCINASA TOTAL (CPK) ", 
+         "price": 185.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CREATININA EN SUERO ", 
+         "price": 81.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CREATININA URINARIA ", 
+         "price": 62.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CROMO EN SANGRE ", 
+         "price": 1190.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE ESPUTO (SIN M. TUBERCULOSIS) ", 
+         "price": 339.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE EXUDADO VAGINAL ", 
+         "price": 360.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE HERIDAS (AEROBIOS) ", 
+         "price": 428.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE HONGOS ", 
+         "price": 360.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE LÍQUIDO CEFALORRAQUÍDEO ", 
+         "price": 480.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE MYCOBACTERIUM SPP EN ESPUTO ", 
+         "price": 324.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE MYCOBACTERIUM SPP EN ORINA ", 
+         "price": 324.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE MYCOBACTERIUM SPP (CUALQUIER FLUIDO)", 
+         "price": 449.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE MYCOPLASMA (HOMINIS, U.UREALYTICUM)", 
+         "price": 611.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE SECRECIÓN OCULAR ", 
+         "price": 428.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE SECRECIÓN ÓTICA ", 
+         "price": 428.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO DE SECRECIÓN URETRAL ", 
+         "price": 376.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO FARÍNGEO ", 
+         "price": 273.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO NASAL ", 
+         "price": 376.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO NASOFARÍNGEO ", 
+         "price": 339.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO PARA VIBRIO CHOLERAE ", 
+         "price": 529.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVO UNGUEAL ", 
+         "price": 339.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CULTIVOS VARIOS ", 
+         "price": 630.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "DEHIDROEPIANDROSTERONA (DHEA) ", 
+         "price": 372.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "DEHIDROEPIANDROSTERONA SULFATO ", 
+         "price": 324.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "DEPURACIÓN DE CREATININA ", 
+         "price": 179.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "DESHIDROGENASA LÁCTICA (DHL) ", 
+         "price": 120.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "DIFENILHIDANTOINA (FENITOINA) (EPAMIN) ", 
+         "price": 376.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "DIGOXINA ", 
+         "price": 376.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "DIHIDROTESTOSTERONA (DHT) ", 
+         "price": 588.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "DÍMERO D ", 
+         "price": 670.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ELECTROFORESIS DE HEMOGLOBINA ", 
+         "price": 943.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ELECTROFORESIS DE LIPOPROTEÍNAS ", 
+         "price": 462.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ELECTROFORESIS DE PROTEÍNAS EN LCR ", 
+         "price": 777.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ELECTROFORESIS DE PROTEÍNAS SÉRICAS ", 
+         "price": 512.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ELECTROFORESIS DE PROTEÍNAS URINARIAS ", 
+         "price": 777.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ELECTROLITOS SÉRICOS (NA,K,Cl) ", 
+         "price": 251.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ELECTROLITOS URINARIOS (NA,K,Cl) ", 
+         "price": 251.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ENOLASA NEURONA ESPECIFICA ", 
+         "price": 910.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "EOSINÓFILOS EN MOCO NASAL ", 
+         "price": 260.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ERITROPOYETINA ", 
+         "price": 638.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ESPERMATOBIOSCOPÍA ", 
+         "price": 300.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ESPERMOCULTIVO ", 
+         "price": 600.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ESTRADIOL (E2) ", 
+         "price": 380.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ESTRIOL LIBRE (E3) ", 
+         "price": 415.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ESTRÓGENOS TOTALES ", 
+         "price": 222.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "EXAMEN GENERAL DE ORINA ", 
+         "price": 100.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR DE VON WILLEBRAND ", 
+         "price": 1791.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR II DE COAGULACIÓN ", 
+         "price": 649.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR IX DE COAGULACIÓN ", 
+         "price": 728.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR REUMATOIDE ", 
+         "price": 250.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR V DE COAGULACIÓN ", 
+         "price": 775.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR VII DE COAGULACIÓN ", 
+         "price": 625.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR VIII ANTIGÉNICO ", 
+         "price": 1856.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR VIII DE COAGULACIÓN ", 
+         "price": 700.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR X DE COAGULACIÓN ", 
+         "price": 625.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR XI DE COAGULACIÓN ", 
+         "price": 625.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR XII DE COAGULACIÓN ", 
+         "price": 625.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FACTOR XIII DE COAGULACIÓN ", 
+         "price": 625.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FENOBARBITAL ", 
+         "price": 488.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FERRITINA ", 
+         "price": 450.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FIBRINÓGENO ", 
+         "price": 840.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FIBROSIS HEPÁTICA E HÍGADO GRASO (FIBROMAX) ", 
+         "price": 6561.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FOLATOS (ÁCIDO FÓLICO) ", 
+         "price": 339.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FOSFATASA ÁCIDA TOTAL (ACT. ENZIMÁTICA) ", 
+         "price": 147.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FOSFATASA ÁCIDA TOTAL + FRACCIÓN PROSTÁTICA ", 
+         "price": 316.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FOSFATASA ALCALINA (ALP)", 
+         "price": 115.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FOSFATASA ALCALINA FRACCIÓN ÓSEA ", 
+         "price": 910.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FÓSFORO EN SUERO ", 
+         "price": 95.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "FRAGILIDAD OSMÓTICA (OSMOLARIDAD GLOBULAR)", 
+         "price": 292.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GABAPENTINA (NEURONTIN) ", 
+         "price": 1309.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GALACTOSA URIDILTRANSFERASA ", 
+         "price": 278.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GAMMA GLUTAMIL TRANSPEPTIDASA (GGT)(GGTP) ", 
+         "price": 121.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GASTRINA ", 
+         "price": 505.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GLOBULINA FIJADORA DE HORMONAS SEXUALES ", 
+         "price": 630.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GLUCOSA 6 FOSFATO DESHIDROGENASA ", 
+         "price": 757.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GLUCOSA 6 FOSFATODESHIDROGENASA NEONATAL ", 
+         "price": 278.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GLUCOSA EN SUERO ", 
+         "price": 55.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GONADOTROFINAS HIPOFISARIAS (LH+FSH) ", 
+         "price": 380.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "GRUPO SANGUÍNEO (A,B,O) Y FACTOR RH ", 
+         "price": 110.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HAPTOGLOBINAS ", 
+         "price": 638.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HEMOCULTIVO ", 
+         "price": 502.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HEMOGLOBINA GLICOSILADA (Hb-A1c) ", 
+         "price": 380.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HEPATITIS C PRUEBA CONFIRMATORIA (RIBA) ", 
+         "price": 2953.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HIERRO SÉRICO ", 
+         "price": 325.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HOMOCISTEÍNA ", 
+         "price": 569.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA ADRENOCORTICOTRÓFICA (ACTH) ", 
+         "price": 435.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA ANTIMULLERIANA ", 
+         "price": 1120.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA DE CRECIMIENTO (HGH) ", 
+         "price": 366.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA DE CRECIMIENTO CURVA DE 2 MUESTRAS", 
+         "price": 618.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA DE CRECIMIENTO CURVA DE 3 MUESTRAS", 
+         "price": 954.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA DE CRECIMIENTO CURVA DE 4 MUESTRAS", 
+         "price": 1279.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA ESTIMULANTE DE FOLÍCULO (FSH) ", 
+         "price": 300.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA ESTIMULANTE DE TIROIDES (TSH) ", 
+         "price": 355.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA LUTEINIZANTE (LH) ", 
+         "price": 300.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "HORMONA PARATIROIDEA (PTH) ", 
+         "price": 960.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IDENTIFICACION DE MICROORGANISMOS ", 
+         "price": 508.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA ASPERGILLUS FUMIGATUS ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CAMARÓN ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CANDIDA ALBICANS ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CARNE DE CERDO ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CARNE DE POLLO ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CARNE DE RES ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CASEÍNA ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CASPA DE PERRO ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CLARA DE HUEVO ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA CUCARACHA ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA EPITELIO DE GATO ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA EPITELIO DE PERRO ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA LECHE DE VACA ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA PASTO COMÚN ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA PENICILLOYL G ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA PENICILLOYL V ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA YEMA DE HUEVO ", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA DERMATOPHAGOIDES FARINAE", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "IGE ESPECÍFICA CONTRA DERMATOPHAGOIDES PTERONYSSINUS", 
+         "price": 690.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ÍNDICE DE RESISTENCIA A LA INSULINA ", 
+         "price": 316.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INHIBIDOR DE C1 ESTERASA ", 
+         "price": 1198.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOFIJACIÓN DE PROTEÍNAS EN ORINA ", 
+         "price": 1190.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOFIJACIÓN DE PROTEÍNAS EN SANGRE ", 
+         "price": 1190.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOGLOBULINA A (IgA) ", 
+         "price": 385.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOGLOBULINA D (IgD) ", 
+         "price": 593.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOGLOBULINA E TOTAL (IgE) ", 
+         "price": 230.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOGLOBULINA G (IgG) ", 
+         "price": 328.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOGLOBULINA G IgG SUBCLASES (1,2,3 Y 4) ", 
+         "price": 1372.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOGLOBULINA M (IgM) ", 
+         "price": 246.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INMUNOTRIPSINA REACTIVA (IRT) ", 
+         "price": 278.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INSULINA EN SUERO ", 
+         "price": 236.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INSULINA, CURVA DE 2 MUESTRAS ", 
+         "price": 446.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INSULINA, CURVA DE 3 MUESTRAS ", 
+         "price": 561.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INSULINA, CURVA DE 4 MUESTRAS ", 
+         "price": 758.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INTERLEUCINA IL 6", 
+         "price": 3000.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "INTOLERANCIA ALIMENTARIA IgG ", 
+         "price": 9000.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ISOENZIMAS DE CPK ", 
+         "price": 1477.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ISOENZIMAS DE DESHIDROGENASA LÁCTICA ", 
+         "price": 1330.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "ISOENZIMAS DE FOSFATASA ALCALINA ", 
+         "price": 14.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "LAMOTRIGINA ", 
+         "price": 1374.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "LEVETIRACETAM (KEPPRA) ", 
+         "price": 2376.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "LINFOCITOS CD3,CD4 Y CD8 ", 
+         "price": 1617.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "LIPASA ", 
+         "price": 350.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "LIPOPROTEÍNA (a) ", 
+         "price": 630.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "LITIO ", 
+         "price": 224.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MAGNESIO EN ORINA ", 
+         "price": 290.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MAGNESIO EN SUERO ", 
+         "price": 109.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MANGANESO ", 
+         "price": 910.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MERCURIO EN SANGRE ", 
+         "price": 956.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "METAHEMOGLOBINA ", 
+         "price": 334.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "METANFETAMINAS EN ORINA", 
+         "price": 500.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MICROALBUMINURIA  ORINA 24 HRS", 
+         "price": 340.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MICROALBUMINURIA ORINA ALEATORIA", 
+         "price": 340.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MICROGLOBULINA BETA 2 EN ORINA ", 
+         "price": 505.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MICROGLOBULINA BETA 2 EN SUERO ", 
+         "price": 505.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "MIOGLOBINA ", 
+         "price": 576.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "NICOTINA EN ORINA (COTININA) ", 
+         "price": 446.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "NICOTINA EN SUERO ", 
+         "price": 560.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "NÍQUEL EN SANGRE ", 
+         "price": 1190.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "NITRÓGENO UREICO ", 
+         "price": 85.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "OSMOLALIDAD SÉRICA ", 
+         "price": 358.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "OSMOLALIDAD URINARIA ", 
+         "price": 358.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "OSTEOCALCINA ", 
+         "price": 1120.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "OXALATO EN ORINA DE 24 HRS. ", 
+         "price": 723.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "OXCARBAZEPINA (TRILEPTAL) ", 
+         "price": 1449.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PANEL DE ALERGIA MOLECULAR EN LACTANTES ", 
+         "price": 1567.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PÉPTIDO C ", 
+         "price": 491.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PÉPTIDO C, CURVA DE 2 MUESTRAS ", 
+         "price": 824.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PÉPTIDO C, CURVA DE 3 MUESTRAS ", 
+         "price": 1220.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PÉPTIDO C, CURVA DE 5 MUESTRAS ", 
+         "price": 1839.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PÉPTIDO CÍCLICO CITRULINADO IgG ", 
+         "price": 798.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PÉPTIDO NATRIURETICO CEREBRAL (BNP) ", 
+         "price": 658.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL AMINOÁCIDOS NEONATALES ", 
+         "price": 192.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL BIOQUÍMICO DE 12 ELEMENTOS ", 
+         "price": 450.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL BIOQUÍMICO DE 15 ELEMENTOS ", 
+         "price": 510.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL BIOQUIMICO DE 18 ELEMENTOS", 
+         "price": 590.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL BIOQUÍMICO DE 24 ELEMENTOS ", 
+         "price": 750.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL BIOQUÍMICO DE 27 ELEMENTOS ", 
+         "price": 850.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL BIOQUÍMICO DE 35 ELEMENTOS ", 
+         "price": 1210.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ALÉRGENOS ALIMENTICIOS (INMUNOBLOT)", 
+         "price": 2311.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ALÉRGENOS COMBINADOS (INMUNOBLOT)", 
+         "price": 4494.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ALÉRGENOS INHALATORIOS (INMUNOBLOT)", 
+         "price": 2407.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ANDRÓGENOS ", 
+         "price": 1065.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ANEMIA MEGALOBLASTICA ", 
+         "price": 764.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ANEMIAS 1 ", 
+         "price": 1181.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ANEMIAS 2 ", 
+         "price": 601.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ANTICUERPOS ANTI BETA 2 GLICOPROTEINA (IgG, IgM E IgA)", 
+         "price": 1372.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ANTICUERPOS ESPECÍFICOS DE NÚCLEO (ENA)", 
+         "price": 1275.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ARTRITIS ", 
+         "price": 1045.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE AUTOINMUNIDAD 1 ", 
+         "price": 980.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE AUTOINMUNIDAD 2 ", 
+         "price": 1615.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE CINÉTICA DE HIERRO ", 
+         "price": 299.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE CLIMATERIO ", 
+         "price": 432.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE COLESTEROL ", 
+         "price": 160.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE DROGAS COMPLETO (ANF+COC+BAR+BENZ+OP/MOR+CAN)", 
+         "price": 1348.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE DROGAS COMÚN (COC+CAN+ANF) ANTIDOPIN 3", 
+         "price": 320.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE DROGAS PARCIAL (COC+CAN+ANF+BENZ)", 
+         "price": 837.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE ENFERMEDAD CELIACA (GLUTEN) ", 
+         "price": 1568.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE EPSTEIN BARR ", 
+         "price": 1143.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE EPSTEIN BARR (4 MARCADORES) ", 
+         "price": 1292.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE EPSTEIN BARR (PARCIAL) ", 
+         "price": 1148.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE FUNCIONAMIENTO HEPÁTICO ", 
+         "price": 740.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HEPATITIS A ", 
+         "price": 758.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HEPATITIS A + B ", 
+         "price": 1628.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HEPATITIS A+B+C ", 
+         "price": 1825.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HEPATITIS B ", 
+         "price": 1365.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HEPATITIS B (CRÓNICA) ", 
+         "price": 1082.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HEPATITIS B (INFECCIÓN RECIENTE) ", 
+         "price": 1294.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HEPATITIS B (RECUPERACIÓN) ", 
+         "price": 1152.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HERPES ", 
+         "price": 1041.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HERPES + HTLV I/II ", 
+         "price": 1320.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HIPERTENSIÓN 1 ", 
+         "price": 2384.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HIPERTENSIÓN 3 ", 
+         "price": 2166.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HIPERTENSIÓN ARTERIAL ", 
+         "price": 638.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE HIRSUTISMO ", 
+         "price": 1143.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE INFECCIONES DURANTE EL EMBARAZO ", 
+         "price": 2862.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE INFLUENZA A Y B ", 
+         "price": 758.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE INMUNOGLOBULINAS ", 
+         "price": 708.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE INMUNOVALORACIÓN 2 (PACIENTE VIH +)", 
+         "price": 2947.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE LÍPIDOS 1 ", 
+         "price": 310.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE LUPUS ", 
+         "price": 1416.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE MARCADORES TUMORALES 1 ", 
+         "price": 726.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE MARCADORES TUMORALES 2 ", 
+         "price": 1033.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE MARCADORES TUMORALES Y DE INFLAMACIÓN COLO/RECTAL", 
+         "price": 1440.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE METANEFRINAS ", 
+         "price": 1124.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE PRE-ECLAMPSIA ", 
+         "price": 2880.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE PRÓSTATA ", 
+         "price": 459.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE PROTEÍNAS 'C' Y 'S' ", 
+         "price": 2649.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE PSA LIBRE ", 
+         "price": 454.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE RIESGO CARDÍACO ", 
+         "price": 842.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE RIESGO CORONARIO 1 ", 
+         "price": 1412.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE RIESGO CORONARIO 2 ", 
+         "price": 2058.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE TORCH 1 (INMUNOGLOBULINAS TIPO IgM)", 
+         "price": 1232.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE TORCH 2 (INMUNOGLOBULINAS TIPO G)", 
+         "price": 1204.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE TORCH 3 (INMUNOGLOBULINAS TIPO G Y M)", 
+         "price": 2109.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL DE VIRILIZACIÓN ", 
+         "price": 1044.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL FEMENINO (HORMONAS) ", 
+         "price": 645.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL GINECOLÓGICO 1 ", 
+         "price": 708.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL GINECOLÓGICO 2 ", 
+         "price": 744.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL GINECOLÓGICO 3 ", 
+         "price": 693.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL GINECOLÓGICO 4 ", 
+         "price": 574.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL GINECOLÓGICO 5 CON DHEA ", 
+         "price": 868.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL GINECOLÓGICO 6 ", 
+         "price": 725.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL HIPOFISIARIO ", 
+         "price": 757.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL HORMONAL FEMENINO I ", 
+         "price": 771.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL HORMONAL FEMENINO II ", 
+         "price": 1222.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL HORMONAL MASCULINO ", 
+         "price": 810.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL MARCADOR TUMORAL COLO-RECTAL ", 
+         "price": 687.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL MARCADOR TUMORAL DE ESTÓMAGO ", 
+         "price": 1336.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL MARCADOR TUMORAL DE HÍGADO ", 
+         "price": 795.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL MARCADOR TUMORAL DE MAMA ", 
+         "price": 569.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL MARCADOR TUMORAL DE OVARIO ", 
+         "price": 691.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL MARCADOR TUMORAL DE TESTÍCULO ", 
+         "price": 540.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL MARCADOR TUMORAL DE TIROIDES ", 
+         "price": 1139.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL METABÓLICO NEONATAL AMPLIADO ", 
+         "price": 1377.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL METABÓLICO NEONATAL I ", 
+         "price": 432.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL METABÓLICO NEONATAL II ", 
+         "price": 484.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL METABÓLICO NEONATAL III ", 
+         "price": 537.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL METABÓLICO NEONATAL IV ", 
+         "price": 796.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL METABÓLICO NEONATAL V ", 
+         "price": 831.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL PARA SINDROME DE ANTI-FOSFOLIPIDOS ", 
+         "price": 1452.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL PARATIROIDEO ", 
+         "price": 1008.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL REUMÁTICO II ", 
+         "price": 1257.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL SUPRARRENAL ", 
+         "price": 2619.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TESTICULAR ", 
+         "price": 523.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO ", 
+         "price": 700.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO + ANTICUERPOS ANTI TIROIDEOS ", 
+         "price": 617.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO ESPECIAL ", 
+         "price": 513.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO II ", 
+         "price": 505.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO III ", 
+         "price": 528.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO IV ", 
+         "price": 528.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO V ", 
+         "price": 512.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO VI ", 
+         "price": 425.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PERFIL TIROIDEO VII ", 
+         "price": 388.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PLASMODIUM ", 
+         "price": 250.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PLOMO EN ORINA ", 
+         "price": 630.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PLOMO EN SANGRE ", 
+         "price": 630.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "POTASIO EN ORINA ", 
+         "price": 102.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "POTASIO EN SUERO ", 
+         "price": 105.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PRIMIDONA (MYSOLINE) ", 
+         "price": 1208.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROCALCITONINA ", 
+         "price": 1600.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PRODUCTOS DE DEGRADACIÓN FIBRINOLÍTICA ", 
+         "price": 868.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROGESTERONA ", 
+         "price": 380.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROLACTINA ", 
+         "price": 400.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROLACTINA, CURVA DE 2 MUESTRAS ", 
+         "price": 300.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNA 'C' ", 
+         "price": 1395.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNA 'S' ", 
+         "price": 1395.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNA A PLASMÁTICA ASOCIADA AL EMBARAZO ", 
+         "price": 588.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNA BÁSICA DE MIELINA ", 
+         "price": 1800.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNA C REACTIVA (CUANTIFICACIÓN) ", 
+         "price": 215.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNA C REACTIVA ULTRA SENSIBLE ", 
+         "price": 428.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNA DE BENCE JONES ", 
+         "price": 248.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNAS TOTALES SÉRICAS ", 
+         "price": 95.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PROTEÍNAS TOTALES URINARIAS ", 
+         "price": 108.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PRUEBA COVID ANTICUERPOS", 
+         "price": 550.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PRUEBA COVID ANTIGENOS", 
+         "price": 550.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "PRUEBA PCR COVID", 
+         "price": 2000.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "QUANTIFERON TB GOLD ", 
+         "price": 3500.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "QUÍMICA SANGUÍNEA DE 3 ELEMENTOS ", 
+         "price": 300.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "QUÍMICA SANGUÍNEA DE 5 ELEMENTOS ", 
+         "price": 330.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "QUÍMICA SANGUÍNEA DE 6 ELEMENTOS ", 
+         "price": 390.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "RAPAMUNE (SIROLIMUS) (RAPAMICINA) ", 
+         "price": 998.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "RENINA ", 
+         "price": 975.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "RESISTENCIA A LA PROTEÍNA C ACTIVADA ", 
+         "price": 1120.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "RETICULOCITOS (CUENTA) ", 
+         "price": 83.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "REVISIÓN MORFOLÓGICA ", 
+         "price": 308.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "SANGRE OCULTA ", 
+         "price": 160.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "SERVICIO A DOMICILIO", 
+         "price": 400.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "SÍNDROME METABÓLICO Y RIESGO CARDIOVASCULAR", 
+         "price": 712.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "SODIO EN ORINA ", 
+         "price": 108.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "SODIO EN SUERO ", 
+         "price": 108.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "SOMATOMEDINA C (FACTOR IGF-I) ", 
+         "price": 597.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "SUBPOBLACIONES LINFOCÍTICAS (LINFOCITOS T Y B)", 
+         "price": 250.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "T3 LIBRE (TRIYODOTIRONINA LIBRE) ", 
+         "price": 291.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "T3 REVERSA ", 
+         "price": 1680.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "T3 TOTAL (TRIYODOTIRONINA) ", 
+         "price": 295.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "T4 LIBRE (TIROXINA LIBRE) ", 
+         "price": 187.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "T4 TOTAL (TIROXINA) ", 
+         "price": 300.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TACROLIMUS ", 
+         "price": 992.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TEOFILINA (AMINOFILINA) ", 
+         "price": 560.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TESTOSTERONA LIBRE ", 
+         "price": 318.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TESTOSTERONA TOTAL ", 
+         "price": 171.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TIEMPO DE PROTROMBINA (TP) ", 
+         "price": 120.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TIEMPO DE TROMBINA (TT) ", 
+         "price": 206.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TIEMPO DE TROMBOPLASTINA PARCIAL (TTP) ", 
+         "price": 140.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TIROGLOBULINA (Tg) ", 
+         "price": 328.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TIROXINA NEONATAL (T4 NEONATAL) ", 
+         "price": 163.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TOPIRAMATO ", 
+         "price": 980.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TRANSFERRINA ", 
+         "price": 308.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TRIGLICÉRIDOS ", 
+         "price": 100.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TROPONINA-I ", 
+         "price": 566.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TSH NEONATAL ", 
+         "price": 168.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "UREA EN ORINA DE 24 HRS. ", 
+         "price": 68.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "UREA EN SUERO ", 
+         "price": 85.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "UROCULTIVO ", 
+         "price": 430.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "VASOPRESINA (HORMONA ANTI-DIURÉTICA) ", 
+         "price": 1384.60,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "VDRL EN SUERO ", 
+         "price": 150.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "VELOCIDAD DE SEDIMENTACION GLOBULAR ", 
+         "price": 100.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "VITAMINA B1 (TIAMINA) ", 
+         "price": 1800.00,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "VITAMINA B12 ", 
+         "price": 547.20,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "VITAMINA C (ÁCIDO ASCÓRBICO) ", 
+         "price": 1247.40,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "VITAMINA D (1,25 DIHIDROXI) ", 
+         "price": 2020.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "VITAMINA D (25-HIDROXI) ", 
+         "price": 716.80,
+         "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
+      }
+   ],
+   "services": [      
+      {
+         "name": "RETIRO DE PUNTOS",
+         "price": 250.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CURACION", 
+         "price": "$100 a $300",
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "APLICACIÓN DE SONDA",
+         "price": 1000.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "RETIRO DE SONDA",
+         "price": 300.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "APLICACIÓN DE INYECCION",
+         "price": 100.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TOMA DE PRESION",
+         "price": 100.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "TOMA DE GLUCOSA",
+         "price": 100.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "APLICACIÓN SUERO INTRAVENOSO",
+         "price": 500.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CANALIZACION DE PX",
+         "price": 300.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      },
+      {
+         "name": "CONFORT DE PX",
+         "price": 300.00,
+         "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
+      }
+   ],
+   "xRay" : []
+}

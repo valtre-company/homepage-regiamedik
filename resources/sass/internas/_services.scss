@@ -1,0 +1,14 @@
+.table-services {
+   th.styled-cell {
+      max-width: 125px;
+      min-width: 125px;
+      overflow-x: auto;
+      white-space: nowrap; 
+      @include tablet {
+         max-width: initial;
+         min-width: initial;
+         overflow-x: initial;
+         white-space: initial;
+      }
+   }
+}

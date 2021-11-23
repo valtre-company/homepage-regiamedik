@@ -1,6 +1,6 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React from 'react';
-import Schedule from './views/Schedule';
+import Service from './views/Service';
 import { esES } from '@mui/material/locale';
 
 const theme = createTheme({
@@ -15,7 +15,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <div className="container">
-                <Schedule/>    
+                <Service/>    
             </div>
         </ThemeProvider>
     );

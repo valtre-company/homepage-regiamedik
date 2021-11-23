@@ -1,28 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import AnalysisTab from './../components/AnalysisTab';
+import AnalysisTab from '../components/AnalysisTab';
 import analysisServiceObj from '../../../../db.json';
 import ServicesTab from '../components/ServicesTab';
 import XRayTab from '../components/XRayTab';
 
 const Schedule = () => { 
-   const { analysis, services, xRay } = analysisServiceObj;
-   const [analysisList, setAnalysisList] = useState(analysis);
-   const [servicesList, setServicesList] = useState(services);   
-   const [xRayList, setXRayList] = useState(xRay);
-   const [tab, setTab] = React.useState(0);
+   // const { analysis, services, xRay } = analysisServiceObj;
+   const [analysisList, setAnalysisList] = useState([]);
+   const [servicesList, setServicesList] = useState([]);   
+   const [xRayList, setXRayList] = useState([]);
+   const [tab, setTab] = useState(0);
+
+   useEffect(() => {
+      const getServices = async () => {
+         const response = await axios.get(`/api/services/${slug}`);
+         setServicesList(response.data);
+      };
+      getServices();
+   }, []);
+
    const handleTabs = (event, newValue) => setTab(newValue);   
    return ( 
       <>
          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-            <Tabs value={tab} onChange={handleTabs} textColor="primary" indicatorColor="primary">               
-               <Tab label="Laboratorio" {...a11yProps(0)} key={uuid()}/>
-               <Tab label="Unidad Médica" {...a11yProps(1)} key={uuid()}/>
-               <Tab label="Rayos X" {...a11yProps(2)} key={uuid()}/>            
+            <Tabs value={tab} onChange={handleTabs} textColor="primary" indicatorColor="primary">  
+               { serviceTypes.map(({name,slug}) => (
+                  <Tab key={slug} label={name} {...a11yProps(slug)} />
+               ))}                                       
             </Tabs>
          </Box>
          <TabPanel value={tab} index={0}>       

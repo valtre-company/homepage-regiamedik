@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class APIServiceTypeController extends Controller
 {
-    //
+    // get all services types
     public function getAllServiceTypes()
     {
         $servicesTypes = ServiceType::all();

@@ -11,17 +11,23 @@ import XRayTab from '../components/XRayTab';
 
 const Schedule = () => { 
    // const { analysis, services, xRay } = analysisServiceObj;
+   const analysis = [];
+   const services = [];
+   const xRay = [];
+   const [serviceTypesList, setServiceTypesList] = useState([]);
    const [analysisList, setAnalysisList] = useState([]);
    const [servicesList, setServicesList] = useState([]);   
    const [xRayList, setXRayList] = useState([]);
    const [tab, setTab] = useState(0);
 
    useEffect(() => {
-      const getServices = async () => {
-         const response = await axios.get(`/api/services/${slug}`);
-         setServicesList(response.data);
+      const getServicesTypes = async () => {
+         const response = await axios.get(`/api/services/types`);
+         setServiceTypesList(response.data);
       };
-      getServices();
+      if (serviceTypesList.length === 0) {
+         getServicesTypes();
+      }      
    }, []);
 
    const handleTabs = (event, newValue) => setTab(newValue);   
@@ -29,7 +35,7 @@ const Schedule = () => {
       <>
          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={tab} onChange={handleTabs} textColor="primary" indicatorColor="primary">  
-               { serviceTypes.map(({name,slug}) => (
+               { serviceTypesList.map(({name,slug}) => (
                   <Tab key={slug} label={name} {...a11yProps(slug)} />
                ))}                                       
             </Tabs>

@@ -3,14 +3,33 @@
 	<div id="flechas" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">    					
-				<picture>
+				{{-- <picture>
 					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}?t={{ time() }}" type="image/webp">
 					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpg') }}?t={{ time() }}" type="image/jpg">
 					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.png") }}?t={{ time() }}" type="image/png">
 					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.webp")}}?t={{ time() }}" type="image/webp">		
 					<img src="{{ asset("assets/images/banner_rm.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
+				</picture> --}}
+				<picture>					
+					<source srcset="{{ asset("assets/images/main_banner_web_1.png") }}?t={{ time() }}" type="image/png">
+					<source srcset="{{ asset("assets/images/main_banner_web_1.webp")}}?t={{ time() }}" type="image/webp">		
+					<img src="{{ asset("assets/images/main_banner_web_1.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
 				</picture>
 			</div>
+			<div class="carousel-item">
+				<picture>			
+					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_2.png") }}?t={{ time() }}" type="image/png">
+					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_2.webp")}}?t={{ time() }}" type="image/webp">		
+					<img src="{{ asset("assets/images/main_banner_web_2.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
+				</picture>
+			</div>	
+			<div class="carousel-item">
+				<picture>			
+					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_3.png") }}?t={{ time() }}" type="image/png">
+					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_3.webp")}}?t={{ time() }}" type="image/webp">		
+					<img src="{{ asset("assets/images/main_banner_web_3.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
+				</picture>
+			</div>	
 		</div>
 		<a class="carousel-control-prev" href="#flechas" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>

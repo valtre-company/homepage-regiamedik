@@ -3,9 +3,12 @@
 namespace App\Orchid\Screens\Service;
 
 use App\Models\Category;
+use App\Models\Location;
 use App\Models\Service;
 use App\Models\ServiceType;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Orchid\Screen\Actions\Button;
 use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Actions\ModalToggle;
@@ -61,7 +64,7 @@ class ServiceEditScreen extends Screen
     {
         return [
             Link::make('Ver servicios')
-                ->icon('location-pin')
+                ->icon('doc')
                 ->route('admin.service.list')
         ];
     }
@@ -83,28 +86,48 @@ class ServiceEditScreen extends Screen
                         ->title('Nombre'),
                     Input::make('service.description')
                         ->type('textarea')
-                        ->max(255)
-                        ->required()
+                        ->max(255)                        
                         ->title('Descripción'),
                 ]),
+                Group::make([
+                    Relation::make('service.category')
+                        ->fromModel(Category::class, 'id')
+                        ->max(1)
+                        ->displayAppend('full_info')
+                        ->required()                                                
+                        ->title('Categoría'),
+                ]),
                 Group::make([                    
-                    Input::make('service.price')
+                    Input::make('service.min_price')
                         ->type('number')
                         ->max(255)
                         ->required()
-                        ->title('Precio'),                        
-                    // Select::make('service.type')
-                    //     ->options([
-                    //         '1' => 'Análisis Clinico',
-                    //         '2' => 'Estudio',
-                    //     ])
-                    //     ->title('Tipo'),
+                        ->title('Precio Mínimo')
+                        ->help('Precio mínimo del servicio'),
+                    Input::make('service.max_price')
+                        ->type('number')
+                        ->max(255)
+                        ->required()                        
+                        ->title('Precio Máximo')
+                        ->help('Precio máximo del servicio'),
+                ]),
+                Group::make([
                     Relation::make('service.type')
                         ->title('Tipo')
                         ->fromModel(ServiceType::class,'id')
                         ->multiple()
-                        ->required()
+                        ->displayAppend('full_info')
+                        ->required()                        
+                        ->help('Seleccione un tipo de servicio')
                         ->max(1),
+                    Relation::make('service.locations')
+                        ->title('Sucursales')
+                        ->fromModel(Location::class,'id')
+                        ->multiple()
+                        ->required()
+                        ->min(1)
+                        ->displayAppend('full_address')
+                        ->help('Seleccione una sucursal'),                                                
                 ]),
                 Group::make([
                     Button::make('Crear Análisis')
@@ -149,6 +172,10 @@ class ServiceEditScreen extends Screen
 
     public function createOrUpdate(Service $service, Request $request)
     {
-        
+        try {
+            //code...
+        } catch (Exception $e) {
+            DB::rollBack();
+        }
     }
 }

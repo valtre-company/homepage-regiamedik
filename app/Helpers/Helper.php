@@ -19,7 +19,7 @@ class Helper {
             break;
          }
       }
-      return $number;
+      return "$" . $number . " MXN";
    }
 
    public static function get_services_by_category($category_id) {

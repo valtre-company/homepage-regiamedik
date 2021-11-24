@@ -48,7 +48,7 @@ class ServiceListScreen extends Screen
     {
         return [
             Link::make('Crear Servicio')
-                ->icon('icon-plus')
+                ->icon('plus')
                 ->method('create'),
         ];
     }

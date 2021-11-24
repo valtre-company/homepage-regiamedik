@@ -42,7 +42,8 @@ class CreateServicesTable extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('description')->nullable();            
-            $table->decimal('price', 10, 2);    
+            $table->decimal('min_price', 10, 2);    
+            $table->decimal('max_price', 10, 2);
             $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');        
             $table->foreignId('service_type_id')->constrained('service_types')->onDelete('cascade');
             $table->timestamps();      
@@ -50,7 +51,6 @@ class CreateServicesTable extends Migration
             $table->integer('updated_by')->references('id')->on('users');
             $table->integer('deleted_by')->references('id')->on('users')->nullable();
             $table->softDeletes();
-
         });
     }
 

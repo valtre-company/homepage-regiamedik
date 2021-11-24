@@ -9,6 +9,28 @@ class Category extends Model
 {
     use HasFactory;
 
+    protected $table = 'categories';
+
+    protected $fillable = [
+        'name',
+        'description',
+        'slug',
+        // 'image',
+        // 'parent_id',
+        // 'status',
+        // 'created_by',
+        // 'updated_by',
+    ];
+
+    protected $appends = [
+        'full_info'
+    ];
+
+    public function getFullInfoAttribute()
+    {
+        return $this->name . ' - ' . $this->slug;
+    }
+
     // Get all services by relation with category (Has Many)
     public function services()
     {

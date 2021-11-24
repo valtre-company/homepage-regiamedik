@@ -69,16 +69,16 @@
           <div class="st-nav">
             <ul class="st-nav-list st-onepage-nav">
               <li>
-                <a href="#inicio" class="st-smooth-move">Inicio</a>
+                <a href="#inicio">Inicio</a>
               </li>
               {{-- <li>
                 <a href="#servicios" class="st-smooth-move">Servicios</a>
               </li> --}}
               <li>
-                <a href="#acerca-de" class="st-smooth-move">Nosotros</a>
+                <a href="#acerca-de">Nosotros</a>
               </li>
               <li>
-                <a href="#contacto" class="st-smooth-move">Contacto</a>
+                <a href="#contacto">Contacto</a>
               </li>
               <li class="d-block d-md-none">
                 <a target="_blank" rel="noreferrer" href="https://dist.regiamedik.com/">Empresas</a>

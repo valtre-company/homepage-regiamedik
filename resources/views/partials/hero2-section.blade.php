@@ -1,12 +1,33 @@
 <div class="st-height-b125 st-height-lg-b80" id="inicio"></div>
 <div class="st-hero-wrap st-color1 overflow-hidden">	
-	<picture>
+	<div id="flechas" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">    					
+				<picture>
+					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}?t={{ time() }}" type="image/webp">
+					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpg') }}?t={{ time() }}" type="image/jpg">
+					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.png") }}?t={{ time() }}" type="image/png">
+					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.webp")}}?t={{ time() }}" type="image/webp">		
+					<img src="{{ asset("assets/images/banner_rm.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
+				</picture>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#flechas" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Anterior</span>
+		</a>
+		<a class="carousel-control-next" href="#flechas" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Siguiente</span>
+		</a>
+	</div>
+	{{-- <picture>
 		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}?t={{ time() }}" type="image/webp">
 		<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpg') }}?t={{ time() }}" type="image/jpg">
 		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.png") }}?t={{ time() }}" type="image/png">
 		<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.webp")}}?t={{ time() }}" type="image/webp">		
 		<img src="{{ asset("assets/images/banner_rm.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
-	</picture>
+	</picture> --}}
 	{{-- <div class="st-wave-animation"></div>
 	<div class="st-hero st-style1 py-5">
 		<div class="container">

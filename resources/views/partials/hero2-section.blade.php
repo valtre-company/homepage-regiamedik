@@ -10,14 +10,18 @@
 					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/banner_rm.webp")}}?t={{ time() }}" type="image/webp">		
 					<img src="{{ asset("assets/images/banner_rm.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
 				</picture> --}}
-				<picture>					
-					<source srcset="{{ asset("assets/images/main_banner_web_1.png") }}?t={{ time() }}" type="image/png">
-					<source srcset="{{ asset("assets/images/main_banner_web_1.webp")}}?t={{ time() }}" type="image/webp">		
+				<picture>		
+					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}?t={{ time() }}" type="image/webp">
+					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpg') }}?t={{ time() }}" type="image/jpg">			
+					<source media="(max-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_1.png") }}?t={{ time() }}" type="image/png">
+					<source media="(max-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_1.webp")}}?t={{ time() }}" type="image/webp">		
 					<img src="{{ asset("assets/images/main_banner_web_1.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
 				</picture>
 			</div>
 			<div class="carousel-item">
-				<picture>			
+				<picture>		
+					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}?t={{ time() }}" type="image/webp">
+					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpg') }}?t={{ time() }}" type="image/jpg">				
 					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_2.png") }}?t={{ time() }}" type="image/png">
 					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_2.webp")}}?t={{ time() }}" type="image/webp">		
 					<img src="{{ asset("assets/images/main_banner_web_2.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
@@ -25,6 +29,8 @@
 			</div>	
 			<div class="carousel-item">
 				<picture>			
+					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.webp') }}?t={{ time() }}" type="image/webp">
+					<source media="(max-width: 480px)" srcset="{{ asset('assets/images/banner_rm_mobile.jpg') }}?t={{ time() }}" type="image/jpg">			
 					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_3.png") }}?t={{ time() }}" type="image/png">
 					<source media="(min-width: 768px)" srcset="{{ asset("assets/images/main_banner_web_3.webp")}}?t={{ time() }}" type="image/webp">		
 					<img src="{{ asset("assets/images/main_banner_web_3.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">

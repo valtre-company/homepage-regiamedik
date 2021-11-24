@@ -1,11 +1,27 @@
 <?php
+namespace App\Helpers;
 
 use App\Models\Category;
 use App\Models\Service;
 use App\Models\ServiceType;
 
 class Helper {
-      
+   
+   public static function formatMoney($number, $fractional=false) {
+      if ($fractional) {
+         $number = sprintf('%.2f', $number);
+      }
+      while (true) {
+         $replaced = preg_replace('/(-?\d+)(\d\d\d)/', '$1,$2', $number);
+         if ($replaced != $number) {
+            $number = $replaced;
+         } else {
+            break;
+         }
+      }
+      return $number;
+   }
+
    public static function get_services_by_category($category_id) {
       $services = Service::where('category_id', $category_id)->get();
       return $services;

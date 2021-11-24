@@ -9,7 +9,7 @@ class APIServiceController extends Controller
 {
     public function getAllServices()
     {
-        $services = Service::with('categoryId','serviceTypeId')->get();
+        $services = Service::with('categoryId','serviceTypeId','createdBy', 'updatedBy')->get();
         return response()->json($services);
     }
 

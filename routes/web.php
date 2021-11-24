@@ -8,10 +8,22 @@ use App\Orchid\Screens\Category\CategoryEditScreen;
 use App\Orchid\Screens\Category\CategoryListScreen;
 use App\Orchid\Screens\Location\LocationEditScreen;
 use App\Orchid\Screens\Location\LocationListScreen;
+use App\Orchid\Screens\MainCarousel\MainCarouselEditScreen;
+use App\Orchid\Screens\MainCarousel\MainCarouselListScreen;
 use App\Orchid\Screens\Service\ServiceEditScreen;
 use App\Orchid\Screens\Service\ServiceListScreen;
 use App\Orchid\Screens\SubCategory\SubCategoryEditScreen;
 use App\Orchid\Screens\SubCategory\SubCategoryListScreen;
+
+Route::get('/json', function () {      
+   $json = file_get_contents(base_path('db.json'));
+   $json = json_decode($json, true);
+   foreach($json as $key => $value) {
+      foreach($value as $key2 => $value2) {
+      }      
+   }
+   return response()->json($json);   
+});
 
 Route::get('/',[IndexController::class,'index'])->name('welcome');
 Route::post('/', [IndexController::class, 'contactSend'])->name('contact.send');
@@ -41,4 +53,10 @@ Route::prefix('admin')->middleware('platform')->group(function () {
       ->name('admin.subcategory.list');
    Route::screen('subcategory/{subcategory?}',SubCategoryEditScreen::class)
       ->name('admin.subcategory.edit');   
+
+   // Main Carousel
+   Route::screen('main-carousels',MainCarouselListScreen::class)
+      ->name('admin.main_carousel.list');
+   Route::screen('main-carousel/{main_carousel?}',MainCarouselEditScreen::class)
+      ->name('admin.main_carousel.edit');   
 });

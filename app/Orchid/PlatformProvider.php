@@ -70,6 +70,14 @@ class PlatformProvider extends OrchidServiceProvider
                     Menu::make('Crear')->icon('plus')
                         ->route('admin.subcategory.edit'),
             ]),
+            Menu::make('Sliders Principal')
+                ->icon('loop')
+                ->list([
+                    Menu::make('Listar')->icon('list')
+                        ->route('admin.main_carousel.list'),
+                    Menu::make('Crear')->icon('plus')
+                        ->route('admin.main_carousel.edit'),
+            ]),
                 // ->canSee(function (ItemPermission $permission) {
                 //     return $permission->has('service.list') || $permission->has('service.create');
                 // }),

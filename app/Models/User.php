@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Orchid\Platform\Models\User as Authenticatable;
+use Illuminate\Support\Str;
 
 class User extends Authenticatable
 {
@@ -63,4 +64,14 @@ class User extends Authenticatable
         'updated_at',
         'created_at',
     ];
+    
+    protected $appends = [
+        'full_user_name'
+    ];
+
+    public function getFullUserNameAttribute()
+    {
+        return ucfirst(Str::lower($this->name . ' ' . $this->lastname));
+        
+    }
 }

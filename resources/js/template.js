@@ -1,8 +1,34 @@
 import Typed from 'typed.js';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'owl.carousel';
 // Function on DOM Content Loading execute function eventListeners
 document.addEventListener("DOMContentLoaded", eventListeners );
 
 // Function to create event listeners
+$(window).on('load', () => {
+   $('.owl-carousel').owlCarousel({
+      margin: 10,
+      loop: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
+      responsive: {
+         0: {
+            items: 1,
+         },
+         600: {
+            items: 2
+         },
+         1000: {
+            items: 3
+         }
+      },
+      nav: true,
+      dots: false,
+   });
+});
+
 function eventListeners () {   
    addTypedJS();
    if (document.querySelector("#ubications")){      

@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Orchid\Filters\Filterable;
+use Orchid\Screen\AsSource;
 
 class Service extends Model
 {
-    use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes, Filterable, AsSource;
 
     protected $table = 'services';
     
@@ -25,11 +27,11 @@ class Service extends Model
     ];
     
     // Get the category by id (BelongsTo) 
-    public function categoryId () {
+    public function category () {
         return $this->belongsTo(Category::class,'category_id');
     }
 
-    public function serviceTypeId () {
+    public function serviceType () {
         return $this->belongsTo(ServiceType::class,'service_type_id');
     }
 

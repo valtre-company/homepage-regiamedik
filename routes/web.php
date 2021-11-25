@@ -6,6 +6,8 @@ use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\ServiceController;
 use App\Orchid\Screens\Category\CategoryEditScreen;
 use App\Orchid\Screens\Category\CategoryListScreen;
+use App\Orchid\Screens\Faq\FaqEditScreen;
+use App\Orchid\Screens\Faq\FaqListScreen;
 use App\Orchid\Screens\Location\LocationEditScreen;
 use App\Orchid\Screens\Location\LocationListScreen;
 use App\Orchid\Screens\MainCarousel\MainCarouselEditScreen;
@@ -59,4 +61,10 @@ Route::prefix('admin')->middleware('platform')->group(function () {
       ->name('admin.main_carousel.list');
    Route::screen('main-carousel/{main_carousel?}',MainCarouselEditScreen::class)
       ->name('admin.main_carousel.edit');   
+
+   // FAQ
+   Route::screen('faqs', FaqListScreen::class)
+      ->name('admin.faq.list');
+   Route::screen('faq/{faq?}', FaqEditScreen::class)
+      ->name('admin.faq.edit');
 });

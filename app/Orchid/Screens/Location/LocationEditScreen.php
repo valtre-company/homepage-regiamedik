@@ -12,6 +12,7 @@ use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Fields\Group;
 use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Fields\Label;
+use Orchid\Screen\Fields\Select;
 use Orchid\Screen\Screen;
 use Orchid\Support\Color;
 use Orchid\Support\Facades\Alert;
@@ -98,7 +99,7 @@ class LocationEditScreen extends Screen
                 Group::make([
                     Input::make('location.country')
                         ->title('País')
-                        ->placeholder('México')                                                
+                        ->placeholder('México'),                    
                 ]),
                 Group::make([
                     Input::make('location.number_exterior')

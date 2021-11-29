@@ -27,6 +27,7 @@ class LocationSeeder extends Seeder
             'lng' => '',
             'opening_hours' => '',
             'closing_hours' => '',
+            'service_type_id' => 1,
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -42,6 +43,7 @@ class LocationSeeder extends Seeder
             'lng' => '',
             'opening_hours' => '',
             'closing_hours' => '',
+            'service_type_id' => 2,
             'created_at' => now(),
             'updated_at' => now()
         ]);
@@ -57,6 +59,7 @@ class LocationSeeder extends Seeder
             'lng' => '',
             'opening_hours' => '',
             'closing_hours' => '',
+            'service_type_id' => 1,
             'created_at' => now(),
             'updated_at' => now()
         ]);

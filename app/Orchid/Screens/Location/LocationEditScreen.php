@@ -3,6 +3,8 @@
 namespace App\Orchid\Screens\Location;
 
 use App\Models\Location;
+use App\Models\Service;
+use App\Models\ServiceType;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -12,6 +14,7 @@ use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Fields\Group;
 use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Fields\Label;
+use Orchid\Screen\Fields\Relation;
 use Orchid\Screen\Fields\Select;
 use Orchid\Screen\Screen;
 use Orchid\Support\Color;
@@ -126,6 +129,16 @@ class LocationEditScreen extends Screen
                         ->title('Horario de Cierre')
                         ->type('number')
                         ->placeholder('23'),
+                ]),
+                Group::make([
+                    Relation::make('location.service_type_id')
+                        ->title('Tipo de Servicio dirigido')
+                        ->type('select')
+                        ->fromModel(ServiceType::class,'id')
+                        ->displayAppend('full_info')                        
+                        ->placeholder('Selecciona un tipo de servicio')
+                        ->max(1)
+                        ->required(),
                 ])
             ])->title('Información general'),
 

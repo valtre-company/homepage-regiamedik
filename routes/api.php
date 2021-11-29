@@ -31,10 +31,10 @@ Route::group(['middleware' => 'auth:api'], function () {
 
 Route::group(['prefix' => 'services'], function () {
     Route::get('/', [APIServiceController::class, 'getAllServices'])->name('api.services.all');
-
+    // Search by type slug & search
+    Route::get('/type/{slugType}/search/{search}', [APIServiceController::class, 'getAllServicesByTypeAndSearch'])->name('api.services.type.search');
     Route::get('/types',[APIServiceTypeController::class,'getAllServiceTypes'])->name('api.service_types.all');
-
-    Route::get('/service/{slug}', [APIServiceController::class, 'getServiceBySlug'])->name('api.services.slug');
+    Route::get('/service/{type}', [APIServiceController::class, 'getAllServicesByType'])->name('api.services.types');
 });
 
 

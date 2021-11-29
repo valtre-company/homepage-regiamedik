@@ -43,18 +43,24 @@ class LocationLayoutScreen extends Table
             TD::make('city', 'Ciudad')
                 ->sort()
                 ->filter(TD::FILTER_TEXT),
-            TD::make('country', 'País')
-                ->sort()
-                ->filter(TD::FILTER_TEXT),
-            TD::make('state', 'Estado')
-                ->sort()
-                ->filter(TD::FILTER_TEXT),            
-            TD::make('number_exterior', 'Num Ext')
-                ->sort()
-                ->filter(TD::FILTER_TEXT),            
+            // TD::make('country', 'País')
+            //     ->sort()
+            //     ->filter(TD::FILTER_TEXT),
+            // TD::make('state', 'Estado')
+            //     ->sort()
+            //     ->filter(TD::FILTER_TEXT),            
+            // TD::make('number_exterior', 'Num Ext')
+            //     ->sort()
+            //     ->filter(TD::FILTER_TEXT),            
             TD::make('number_interior', 'Num Int')
                 ->sort()
-                ->filter(TD::FILTER_TEXT),                        
+                ->filter(TD::FILTER_TEXT),     
+            TD::make('service_type_id','Tipo de servicio dirigido') 
+            ->sort()
+            ->render(function (Location $location) {
+                return $location->serviceType->name;
+            })
+            ->filter(TD::FILTER_TEXT),                   
         ];
     }
 }

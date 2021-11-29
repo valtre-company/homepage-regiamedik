@@ -18,14 +18,30 @@ class Service extends Model
         'name',
         'slug',
         'description',
-        'price',
+        'min_price',
+        'max_price',
         'category_id',
         'service_type_id',
+        'lead_time',
         'created_by',
         'updated_by',
         'deleted_by',
     ];
     
+    protected $appends = [
+        'all_locations'        
+    ];
+
+    public function getAllLocationsAttribute()
+    {        
+        $title = "";            
+        // Title With line breaks
+        foreach ($this->locations as $location) {
+            $title .= $location->city . ", " ;
+        }
+        return rtrim($title, ", ");
+    }
+
     // Get the category by id (BelongsTo) 
     public function category () {
         return $this->belongsTo(Category::class,'category_id');
@@ -45,5 +61,9 @@ class Service extends Model
 
     public function deletedBy () {
         return $this->belongsTo(User::class, 'deleted_by');
+    }
+
+    public function locations () {
+        return $this->belongsToMany(Location::class, 'services_locations', 'service_id', 'location_id');
     }
 }

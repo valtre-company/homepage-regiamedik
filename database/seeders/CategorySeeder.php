@@ -18,19 +18,60 @@ class CategorySeeder extends Seeder
     {
         //
         DB::table('categories')->insert([
-            'name' => 'Pruebas COVID',
-            'slug' => Str::slug('Pruebas COVID'),
+            'name' => 'Uroanálisis',
+            'slug' => Str::slug('Uroanálisis'),
             'description' => '',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
         DB::table('categories')->insert([
-            'name' => 'Otros Servicios',
-            'slug' => Str::slug('Otros Servicios'),
+            'name' => 'Coproanálisis',
+            'slug' => Str::slug('Coproanálisis'),
             'description' => '',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Bacteriología',
+            'slug' => Str::slug('Bacteriología'),
+            'description' => '',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Subrogados',
+            'slug' => Str::slug('Subrogados'),
+            'description' => '',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Inmunología',
+            'slug' => Str::slug('Inmunología'),
+            'description' => '',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Serologías',
+            'slug' => Str::slug('Serologías'),
+            'description' => '',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Química clínica',
+            'slug' => Str::slug('Química clínica'),
+            'description' => '',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+
     }
 }

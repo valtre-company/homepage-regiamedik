@@ -52,12 +52,23 @@ class ServiceLayoutScreen extends Table
                     return $service->category->name;
                 })
                 ->filter(TD::FILTER_TEXT),
-            TD::make('service_type_id','Tipo de Servicio')
+            // TD::make('service_type_id','Tipo de Servicio')
+            //     ->sort()
+            //     ->render(function(Service $service) {
+            //         return $service->serviceType->name;
+            //     })
+            //     ->filter(TD::FILTER_TEXT),        
+            TD::make('locations', 'Sucursales')        
                 ->sort()
                 ->render(function(Service $service) {
-                    return $service->serviceType->name;
+                    return $service->all_locations;
+                }),
+            TD::make('update_at','Actualizado')
+                ->sort()
+                ->render(function(Service $service) {
+                    return $service->updated_at->diffForHumans();
                 })
-                ->filter(TD::FILTER_TEXT),                
+                ->filter(TD::FILTER_DATE),                
             TD::make('updated_by', 'Actualizado Por')   
                 ->sort()          
                 ->render(function(Service $service) {

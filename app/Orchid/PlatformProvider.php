@@ -8,7 +8,6 @@ use Orchid\Platform\Dashboard;
 use Orchid\Platform\ItemPermission;
 use Orchid\Platform\OrchidServiceProvider;
 use Orchid\Screen\Actions\Menu;
-use Orchid\Support\Color;
 
 class PlatformProvider extends OrchidServiceProvider
 {
@@ -61,14 +60,6 @@ class PlatformProvider extends OrchidServiceProvider
                         ->route('admin.category.list'),
                     Menu::make('Crear')->icon('plus')
                         ->route('admin.category.edit'),
-            ]),
-            Menu::make('Sub Categorias')
-                ->icon('tag')
-                ->list([
-                    Menu::make('Listar')->icon('list')
-                        ->route('admin.subcategory.list'),
-                    Menu::make('Crear')->icon('plus')
-                        ->route('admin.subcategory.edit'),
             ]),
             Menu::make('Sliders Principal')
                 ->icon('loop')

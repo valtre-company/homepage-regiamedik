@@ -1,0 +1,27 @@
+.btn {
+   &:hover {
+      transition: 0.3s ease-in-out;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+   }
+}
+
+.btn-primary {
+   background-color: $primary !important;
+   border-color: $primary !important;   
+   &:hover{ 
+      background-color: darken($primary, 10%) !important;
+      border-color: darken($primary, 10%) !important;
+   }
+}
+
+.btn-danger {
+   background-color: $red !important;
+   border-color: $red !important;
+   &:hover{ 
+      background-color: darken($red, 10%) !important;
+      border-color: darken($red, 10%) !important;
+   }
+}

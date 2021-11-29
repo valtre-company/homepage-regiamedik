@@ -25,6 +25,7 @@ class Location extends Model
         'lng',
         'opening_hours',
         'closing_hours',
+        'service_type_id'
     ];
 
     public $timestamps = false;
@@ -36,5 +37,10 @@ class Location extends Model
     public function getFullAddressAttribute()
     {
         return $this->street . ', ' . $this->suburb . ', ' . $this->city . ', ' . $this->state . ', ' . $this->country;
+    }
+
+    public function serviceType()
+    {
+        return $this->belongsTo(ServiceType::class);
     }
 }

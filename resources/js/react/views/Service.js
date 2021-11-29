@@ -1,53 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import ServiceContext from '../context/service/serviceContext';
 import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import AnalysisTab from '../components/AnalysisTab';
-import analysisServiceObj from '../../../../db.json';
-import ServicesTab from '../components/ServicesTab';
-import XRayTab from '../components/XRayTab';
+import ServicesTab from './../components/ServicesTab';
 
-const Schedule = () => { 
-   // const { analysis, services, xRay } = analysisServiceObj;
-   const analysis = [];
-   const services = [];
-   const xRay = [];
-   const [serviceTypesList, setServiceTypesList] = useState([]);
-   const [analysisList, setAnalysisList] = useState([]);
-   const [servicesList, setServicesList] = useState([]);   
-   const [xRayList, setXRayList] = useState([]);
-   const [tab, setTab] = useState(0);
-
+const Service = () => {    
+   const serviceContext = useContext(ServiceContext);   
+   const { loading, serviceTypesList, getAllServiceTypes, currentTabServiceType, setCurrentTabServiceType  } = serviceContext;         
+   const [tab, setTab] = useState(0);   
+   const [serviceTypesBoolean, setServicesTypesBoolean ] = useState(true);
    useEffect(() => {
-      const getServicesTypes = async () => {
-         const response = await axios.get(`/api/services/types`);
-         setServiceTypesList(response.data);
-      };
-      if (serviceTypesList.length === 0) {
-         getServicesTypes();
-      }      
-   }, []);
+      if (serviceTypesBoolean) {
+         getAllServiceTypes();
+         setServicesTypesBoolean(false);
+      }                  
+      setCurrentTabServiceType(currentTabServiceType);
+   }, [currentTabServiceType]);
 
-   const handleTabs = (event, newValue) => setTab(newValue);   
-   return ( 
+   const handleTabs = (event, newValue) => {  
+      if(!loading){
+         setCurrentTabServiceType(event.target.dataset.slug);      
+         setTab(newValue);   
+      }    
+   };
+
+   return (       
       <>
          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={tab} onChange={handleTabs} textColor="primary" indicatorColor="primary">  
                { serviceTypesList.map(({name,slug}) => (
-                  <Tab key={slug} label={name} {...a11yProps(slug)} />
+                  <Tab key={slug} label={name} data-slug={slug} {...a11yProps(slug)} />
                ))}                                       
-            </Tabs>
+            </Tabs>                         
+            <TabPanel value={tab} index={tab}>                  
+               <ServicesTab/>                  
+            </TabPanel>            
          </Box>
-         <TabPanel value={tab} index={0}>       
-            <AnalysisTab 
-               analysis={analysis}
-               analysisList={analysisList}
-               setAnalysisList={setAnalysisList}
-            />                              
-         </TabPanel>
-         <TabPanel value={tab} index={1}>
+         {/* <TabPanel value={tab} index={1}>
             <ServicesTab
                services={services}
                servicesList={servicesList}
@@ -60,7 +52,7 @@ const Schedule = () => {
                xRayList={xRayList}
                setXRayList={setXRayList}
             />
-         </TabPanel>
+         </TabPanel> */}
       </>
    );
 }
@@ -72,8 +64,8 @@ function TabPanel(props) {
       <div
          role="tabpanel"
          hidden={value !== index}
-         id={`simple-tabpanel-${index}`}
-         aria-labelledby={`simple-tab-${index}`}
+         // id={`simple-tabpanel-${currentTabServiceType}`}
+         // aria-labelledby={`simple-tab-${currentTabServiceType}`}
          {...other}
       >
          {value === index && (
@@ -98,4 +90,4 @@ function a11yProps(index) {
    };
 }
 
-export default Schedule;
+export default Service;

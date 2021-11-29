@@ -12,6 +12,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Orchid\Screen\Actions\Button;
 use Orchid\Screen\Actions\Link;
@@ -161,7 +162,7 @@ class ServiceEditScreen extends Screen
             Layout::modal('askIfDelete', [
                 Layout::rows([
                     Label::make('')
-                        ->title('Estás eliminando servcio'),
+                        ->title('Estás eliminando servicio'),
                         // ->help('Este proceso eliminará todos los exámenes y parámetros relacionados a este análisis. Una vez completado no podrá recuperar la información.'),
                     Input::make('password')
                         ->type('password')
@@ -250,5 +251,21 @@ class ServiceEditScreen extends Screen
                 }
             }
         }   
+    }
+
+    public function remove(Service $service, Request $request)
+    {
+        if(Hash::check($request->password, Auth::user()->password)) {
+            if($service->delete()) {
+                Alert::info('Servicio eliminado con éxito');
+            } else {
+                Alert::error('Hubo un error al eliminar el servicio');
+            }
+            Alert::info('Sevicio eliminado con éxito');
+            return redirect()->route('admin.service.list');
+        } else {
+            Alert::warning('Contraseña incorrecta');
+            return redirect()->back();
+        }
     }
 }

@@ -70,8 +70,7 @@ class User extends Authenticatable
     ];
 
     public function getFullUserNameAttribute()
-    {
-        return ucfirst(Str::lower($this->name . ' ' . $this->lastname));
-        
+    {      
+        return $this->name . ' ' . $this->lastname;        
     }
 }

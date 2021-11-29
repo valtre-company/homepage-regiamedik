@@ -104,8 +104,8 @@ const ServicesTab = () => {
                               currentServices.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(({name,description,category,min_price, max_price ,all_locations, updated_at}) => (                           
                                  <StyledTableRow key={name}>                                                            
                                     <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(name)}</TableCell>
-                                    <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(description)}</TableCell>
-                                    <TableCell>{ `${formatPrice(parseFloat(min_price))} - ${formatPrice(parseFloat(max_price))}` }</TableCell>                              
+                                    <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(description)}</TableCell>                                                            
+                                    <TableCell className="styled-cell" component="th" scope="row">{ min_price === max_price ? `${formatPrice(parseFloat(min_price))}`  : `${formatPrice(parseFloat(min_price))} - ${formatPrice(parseFloat(max_price))}` }</TableCell>
                                     <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(category.name)}</TableCell>
                                     <TableCell>{all_locations}</TableCell>
                                     <TableCell>{moment(updated_at).locale("es").format("D MMM YYYY, h:mm:ss a")}</TableCell>

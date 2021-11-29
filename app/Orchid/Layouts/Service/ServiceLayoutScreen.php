@@ -51,13 +51,7 @@ class ServiceLayoutScreen extends Table
                 ->render(function(Service $service) {
                     return $service->category->name;
                 })
-                ->filter(TD::FILTER_TEXT),
-            // TD::make('service_type_id','Tipo de Servicio')
-            //     ->sort()
-            //     ->render(function(Service $service) {
-            //         return $service->serviceType->name;
-            //     })
-            //     ->filter(TD::FILTER_TEXT),        
+                ->filter(TD::FILTER_TEXT),      
             TD::make('locations', 'Sucursales')        
                 ->sort()
                 ->render(function(Service $service) {

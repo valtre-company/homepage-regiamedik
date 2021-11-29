@@ -35,7 +35,7 @@ const filterArrayByValue = (array,value) => {
     return array.filter(({name,description, min_price, max_price, lead_time, all_locations }) => {    
         all_locations = removeAccents(all_locations.toLowerCase());
         name = removeAccents(name.toLowerCase());
-        lead_time = removeAccents(lead_time.toLowerCase());                      
+        lead_time = lead_time ? removeAccents(lead_time.toLowerCase()) : "" ;                      
         description =  removeAccents(description).toLowerCase()
         min_price = min_price.toString();         
         max_price = max_price.toString();

@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Orchid\Filters\Filterable;
+use Orchid\Screen\AsSource;
 
 class Category extends Model
 {
-    use HasFactory;
+    use HasFactory, Filterable, AsSource;
 
     protected $table = 'categories';
 
@@ -15,11 +17,6 @@ class Category extends Model
         'name',
         'description',
         'slug',
-        // 'image',
-        // 'parent_id',
-        // 'status',
-        // 'created_by',
-        // 'updated_by',
     ];
 
     protected $appends = [

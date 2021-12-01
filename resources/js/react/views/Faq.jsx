@@ -29,8 +29,10 @@ const Faq = () => {
    }, [currentTabServiceType]);
 
    const handleTabs = (event, newValue) => {        
-      setCurrentTabServiceType(event.target.dataset.slug);  
-      setTab(newValue);                  
+      if(!loading) {
+         setCurrentTabServiceType(event.target.dataset.slug);  
+         setTab(newValue);                  
+      }
    };
 
    return (

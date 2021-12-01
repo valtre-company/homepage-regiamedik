@@ -18,7 +18,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
-import { formatPrice, capitalizeFirstLetter, filterArrayByValue } from '../../helpers';
+import { formatPrice, capitalizeFirstLetter } from '../../helpers';
 
 const ServicesTab = () => {  
    const serviceContext = useContext(ServiceContext);
@@ -47,28 +47,33 @@ const ServicesTab = () => {
       [`&.${tableCellClasses.body}`]: {
          fontSize: 14,         
       },
-   }));           
+   }));
    return (
       <>
-         {            
-            <Paper className="table-services" sx={{ width: '100%', overflow: 'hidden' }}>
-               <FormControl fullWidth sx={{ m: 1, }} variant="standard">
-                  <TextField      
-                     disabled={loading}                  
-                     onChange= { e => searchServices(e.target.value)}
-                     label="Buscar servicios"
-                     InputProps={{
-                        startAdornment: (
-                           <InputAdornment position="start">
-                              <SearchIcon />
-                           </InputAdornment>
-                        ),
-                     }}
-                     variant="standard"
-                  />  
-               </FormControl>               
+         <Paper className="table-services" sx={{ width: '100%', overflow: 'hidden' }}>
+            <FormControl fullWidth sx={{ m: 1, }} variant="standard">
+               <TextField      
+                  disabled={loading || allServices.length === 0}                  
+                  onChange= { e => searchServices(e.target.value)}
+                  label="Buscar servicios"
+                  InputProps={{
+                     startAdornment: (
+                        <InputAdornment position="start">
+                           <SearchIcon />
+                        </InputAdornment>
+                     ),
+                  }}
+                  variant="standard"
+               />  
+            </FormControl>  
+            {loading && !allServices.length ? (
+               <Box sx={{ width: '100%' }}>
+                  <LinearProgress color="primary"/>                        
+               </Box>
+            ) : (
+               allServices.length > 0 ? ( 
                <>
-                  <TableContainer sx={{ maxHeight: 440 }}>
+                  <TableContainer>
                      <Table stickyHeader aria-label="sticky table">
                         <TableHead>
                            <TableRow>
@@ -93,16 +98,8 @@ const ServicesTab = () => {
                            </TableRow>
                         </TableHead>
                         <TableBody>
-                           { loading ? (
-                              <TableRow>
-                                 <TableCell colSpan={7}>
-                                    <Box sx={{ width: '100+%' }}>
-                                       <LinearProgress color="primary"/>                        
-                                    </Box>
-                                 </TableCell>   
-                              </TableRow>
-                           ) : (
-                              allServices && allServices.length ? (
+                           { 
+                              currentServices.length > 0 ? (
                                  currentServices.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(({slug,name,description,category,min_price, max_price ,all_locations, updated_at}) => (                           
                                     <StyledTableRow key={name}>                                                            
                                        <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(name)}</TableCell>
@@ -115,15 +112,14 @@ const ServicesTab = () => {
                                  ))
                               ) : (
                                  <TableRow>
-                                    <TableCell colSpan={6} align="center">
-                                       <Typography variant="h6">No se encontraron resultados</Typography>
+                                    <TableCell colSpan={6}>
+                                       <Typography variant="h6" align="center">No se encontraron resultados</Typography>
                                     </TableCell>
                                  </TableRow>
-                              )  
-                           )}
-                           
+                              )
+                           }
                         </TableBody>
-                     </Table> 
+                     </Table>
                   </TableContainer>
                   <TablePagination
                      rowsPerPageOptions={[10, 25, 100]}
@@ -134,11 +130,16 @@ const ServicesTab = () => {
                      onPageChange={handleChangePage}
                      onRowsPerPageChange={handleChangeRowsPerPage}
                   />
-               </>                 
-            </Paper>         
-         }
+               </>
+               ) : (
+                  <Box sx={{ py: 3 }}>
+                     <Typography variant="h6" align="center">No se encontraron resultados</Typography>
+                  </Box>
+               )
+            )}
+         </Paper>
       </>
-   );
+   );              
 }
 
 const useStyles = makeStyles({

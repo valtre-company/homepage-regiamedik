@@ -4,10 +4,13 @@ import FaqContext from './faqContext';
 import {
    GET_FAQS_SUCCESS,
    GET_FAQS_FAILURE,
+   SET_LOADING,
+   SEARCH_FAQS
 } from '../../types';
 
 const FaqState = props => {
    const initialState = {
+      loading: false,
       allFaqs: [],
       currentFaqs: [],
       currentTabServiceType: 'laboratorio',
@@ -16,6 +19,7 @@ const FaqState = props => {
    const [state, dispatch] = useReducer(FaqReducer, initialState);
 
    const getFaqs = async (serviceType) => {
+      setLoading();
       try {         
          const response = await axios.get(`/api/faqs/${serviceType}`);
          setTimeout(() => {
@@ -24,19 +28,24 @@ const FaqState = props => {
                payload: response.data
             });
          }, 1000);
-      } catch (error)   {
-         console.error(error.response);
+      } catch (error)   {         
          dispatch({
             type: GET_FAQS_FAILURE,
          });
       }
    };
 
-   const searchFaqs = (value) => {
+   const setLoading = () => {
+      dispatch({
+         type: SET_LOADING
+      });
+   };
+
+   const searchFaqs = (value) => {      
       dispatch({
          type: SEARCH_FAQS,
          payload: value
-      });
+      });      
    };
    
    return (
@@ -44,6 +53,7 @@ const FaqState = props => {
          value={{
             allFaqs: state.allFaqs,
             currentFaqs: state.currentFaqs,
+            loading: state.loading,
             getFaqs,
             searchFaqs
          }}

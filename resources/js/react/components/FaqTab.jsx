@@ -11,17 +11,18 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FaqContext from '../context/faq/faqContext';
+import LinearProgress from '@mui/material/LinearProgress';
+import Box from '@mui/material/Box';
 import '@fontsource/roboto/500.css';
 
 const FaqTab = () => {
    const faqContext = useContext(FaqContext);
-   const { allFaqs, currentFaqs, searchFaqs } = faqContext;
-
+   const { allFaqs, currentFaqs, searchFaqs, loading } = faqContext;
    return (
       <Paper sx={{ width: '100%', overflow: 'hidden' }}>    
          <FormControl fullWidth sx={{ m: 1, }} variant="standard">
             <TextField      
-               disabled={true}                  
+               disabled={loading || allFaqs.length === 0}                  
                onChange= { e => searchFaqs(e.target.value)}
                label="Buscar preguntas frecuentes"
                InputProps={{
@@ -35,34 +36,38 @@ const FaqTab = () => {
             />  
          </FormControl> 
          <>
-            {
-               allFaqs.length > 0 ? (
-                  currentFaqs.map(({id,question,answer,updated_by}) => (
-                     <Accordion key={id}>
-                        <AccordionSummary
-                           expandIcon={<ExpandMoreIcon />}
-                        >
-                           <Typography><strong>{question}</strong></Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>                  
-                           {parse(answer)}                  
-                           <Typography>
-                              Escrito por: <strong>{updated_by.name}</strong>
-                           </Typography>
-                        </AccordionDetails>
-                     </Accordion>
-                  ))
+               { loading === true ? (
+                  <Box sx={{ width: '100%' }}>
+                     <LinearProgress color="primary"/>                        
+                  </Box>
                ) : (
-                  <div>
-                     <Typography variant="h6" gutterBottom>
-                        <b>No hay preguntas frecuentes</b>
-                     </Typography>
-                     <Typography variant="body2" gutterBottom>
-                        Para agregar preguntas frecuentes, por favor, contacte con el administrador del sistema.
-                     </Typography>
-                  </div>
-               )
-            }
+                  allFaqs.length > 0 ? (
+                     currentFaqs.map(({id,question,answer,updated_by}) => (
+                        <Accordion key={id}>
+                           <AccordionSummary
+                              expandIcon={<ExpandMoreIcon />}
+                           >
+                              <Typography><strong>{question}</strong></Typography>
+                           </AccordionSummary>
+                           <AccordionDetails>                  
+                              {parse(answer)}                  
+                              <Typography>
+                                 Escrito por: <strong>{updated_by.name}</strong>
+                              </Typography>
+                           </AccordionDetails>
+                        </Accordion>
+                     ))
+                  ) : (
+                     <Box fullWidth sx={{ m:1 }}>
+                        <Typography variant="h6" gutterBottom>
+                           <b>No hay preguntas frecuentes</b>
+                        </Typography>
+                        <Typography variant="body2" gutterBottom>
+                           Para agregar preguntas frecuentes, por favor, contacte con el administrador del sistema.
+                        </Typography>
+                     </Box>
+                  )
+               )}
          </>
       </Paper>
       

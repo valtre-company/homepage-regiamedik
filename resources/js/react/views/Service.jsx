@@ -10,18 +10,15 @@ const Service = () => {
    const serviceContext = useContext(ServiceContext);   
    const { loading, serviceTypesList, getAllServiceTypes, currentTabServiceType, setCurrentTabServiceType  } = serviceContext;         
    const [tab, setTab] = useState(0);   
-
+   const [serviceTypeBool, setServiceTypeBool] = useState(true);
    useEffect(() => {
       getAllServiceTypes();
+      setCurrentTabServiceType(currentTabServiceType);
       // eslint-disable-next-line
    }, []);
 
-   useEffect(() => {                      
-      setCurrentTabServiceType(currentTabServiceType);
-   }, [currentTabServiceType]);
-
    const handleTabs = (event, newValue) => {  
-      if(!loading){
+      if(!loading){         
          setCurrentTabServiceType(event.target.dataset.slug);      
          setTab(newValue);   
       }    

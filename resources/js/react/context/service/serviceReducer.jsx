@@ -7,7 +7,7 @@ import {
    SET_CURRENT_SERVICE_TYPE,
 } from '../../types';
 
-export default (state = [], action) => {
+export default (state = [], action) => {   
    switch (action.type) {
       case GET_ALL_SERVICE_TYPES:
          return {
@@ -43,6 +43,7 @@ export default (state = [], action) => {
       case SEARCH_SERVICES: 
          return {
             ...state,
+            loading: false,
             currentServices: action.payload
          }
       default:

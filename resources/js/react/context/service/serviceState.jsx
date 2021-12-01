@@ -6,9 +6,9 @@ import {
    GET_CURRENT_SERVICES, 
    GET_ALL_SERVICE_TYPES,
    SET_CURRENT_SERVICE_TYPE,
-   SET_LOADING,
-   SET_PROGRESS,
-   SEARCH_SERVICES
+   SET_LOADING,   
+   SEARCH_SERVICES,
+   GET_CURRENT_SERVICES_ERROR
 } from '../../types';
 
 const ServiceState = props => {
@@ -21,14 +21,6 @@ const ServiceState = props => {
    };
    const [state,dispatch] = useReducer(ServiceReducer, initialState);
    
-   const setCurrentTabServiceType = (serviceType) => {
-      dispatch({
-         type: SET_CURRENT_SERVICE_TYPE,
-         payload: serviceType
-      });
-      getCurrentServices(serviceType);
-   };
-
    const getAllServiceTypes = async () => {
       try {
          const response = await axios.get('/api/services/types');         
@@ -43,11 +35,19 @@ const ServiceState = props => {
          });         
       }
    };
-   
-   const getCurrentServices = async () => {     
-      setLoading();           
-      try {
-         const response = await axios.get(`/api/services/service/${state.currentTabServiceType}`);
+
+   const setCurrentTabServiceType = (serviceType) => {      
+      dispatch({
+         type: SET_CURRENT_SERVICE_TYPE,
+         payload: serviceType
+      });
+      getCurrentServices(serviceType);
+   };
+      
+   const getCurrentServices = async (serviceType) => {     
+      setLoading();            
+      try {         
+         const response = await axios.get(`/api/services/service/${serviceType}`);
          setTimeout(() => {
             dispatch({
                type: GET_CURRENT_SERVICES,

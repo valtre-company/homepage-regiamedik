@@ -138,7 +138,7 @@ class ServiceEditScreen extends Screen
                         ->help('Seleccione una sucursal'),                                                
                 ]),
                 Group::make([
-                    Button::make('Crear Análisis')
+                    Button::make('Crear Servicio')
                         ->icon('plus')
                         ->type(Color::PRIMARY())
                         ->method('createOrUpdate')

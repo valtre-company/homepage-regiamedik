@@ -108,7 +108,7 @@ class FaqEditScreen extends Screen
                     ->max(1),                                       
                 ]),
                 Group::make([
-                    Button::make('Crear Análisis')
+                    Button::make('Crear Pregunta')
                         ->icon('plus')
                         ->type(Color::PRIMARY())
                         ->method('createOrUpdate')

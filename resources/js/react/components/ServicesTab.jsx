@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext, useState } from 'react';
 import ServiceContext from '../context/service/serviceContext';
 import moment from 'moment';
 import { styled } from '@mui/material/styles';
@@ -18,15 +18,14 @@ import SearchIcon from '@mui/icons-material/Search';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
-
 import { formatPrice, capitalizeFirstLetter, filterArrayByValue } from '../../helpers';
 
 const ServicesTab = () => {  
    const serviceContext = useContext(ServiceContext);
    const { loading, allServices, currentServices, searchServices } = serviceContext;         
    const classes = useStyles();
-   const [page, setPage] = React.useState(0);
-   const [rowsPerPage, setRowsPerPage] = React.useState(25);
+   const [page, setPage] = useState(0);
+   const [rowsPerPage, setRowsPerPage] = useState(25);
    const handleChangePage = (event, newPage) => setPage(newPage) ;
    const handleChangeRowsPerPage = (event) => {
       setRowsPerPage(+event.target.value) 
@@ -54,25 +53,19 @@ const ServicesTab = () => {
          {            
             <Paper className="table-services" sx={{ width: '100%', overflow: 'hidden' }}>
                <FormControl fullWidth sx={{ m: 1, }} variant="standard">
-                  { loading ? (                        
-                     <Box sx={{ width: '100+%' }}>
-                        <LinearProgress color="primary"/>                        
-                     </Box>
-                  ) : (
-                     <TextField
-                        // onChange={ e => setServicesList(filterArrayByValue(services,e.target.value))}
-                        onChange= { e => searchServices(e.target.value)}
-                        label="Buscar servicios"
-                        InputProps={{
-                           startAdornment: (
-                              <InputAdornment position="start">
-                                 <SearchIcon />
-                              </InputAdornment>
-                           ),
-                        }}
-                        variant="standard"
-                     />                     
-                  ) }
+                  <TextField      
+                     disabled={loading}                  
+                     onChange= { e => searchServices(e.target.value)}
+                     label="Buscar servicios"
+                     InputProps={{
+                        startAdornment: (
+                           <InputAdornment position="start">
+                              <SearchIcon />
+                           </InputAdornment>
+                        ),
+                     }}
+                     variant="standard"
+                  />  
                </FormControl>               
                <>
                   <TableContainer sx={{ maxHeight: 440 }}>
@@ -100,25 +93,35 @@ const ServicesTab = () => {
                            </TableRow>
                         </TableHead>
                         <TableBody>
-                           { currentServices.length > 0 ? (
-                              currentServices.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(({name,description,category,min_price, max_price ,all_locations, updated_at}) => (                           
-                                 <StyledTableRow key={name}>                                                            
-                                    <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(name)}</TableCell>
-                                    <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(description)}</TableCell>                                                            
-                                    <TableCell className="styled-cell" component="th" scope="row">{ min_price === max_price ? `${formatPrice(parseFloat(min_price))}`  : `${formatPrice(parseFloat(min_price))} - ${formatPrice(parseFloat(max_price))}` }</TableCell>
-                                    <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(category.name)}</TableCell>
-                                    <TableCell>{all_locations}</TableCell>
-                                    <TableCell>{moment(updated_at).locale("es").format("D MMM YYYY, h:mm:ss a")}</TableCell>
-                                 </StyledTableRow>
-                              ))
+                           { loading ? (
+                              <TableRow>
+                                 <TableCell colSpan={7}>
+                                    <Box sx={{ width: '100+%' }}>
+                                       <LinearProgress color="primary"/>                        
+                                    </Box>
+                                 </TableCell>   
+                              </TableRow>
+                           ) : (
+                              allServices && allServices.length ? (
+                                 currentServices.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(({slug,name,description,category,min_price, max_price ,all_locations, updated_at}) => (                           
+                                    <StyledTableRow key={name}>                                                            
+                                       <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(name)}</TableCell>
+                                       <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(description)}</TableCell>                                                            
+                                       <TableCell className="styled-cell" component="th" scope="row">{ min_price === max_price ? `${formatPrice(parseFloat(min_price))}`  : `${formatPrice(parseFloat(min_price))} - ${formatPrice(parseFloat(max_price))}` }</TableCell>
+                                       <TableCell className="styled-cell" component="th" scope="row">{capitalizeFirstLetter(category.name)}</TableCell>
+                                       <TableCell>{all_locations}</TableCell>
+                                       <TableCell>{moment(updated_at).locale("es").format("D MMM YYYY, h:mm:ss a")}</TableCell>
+                                    </StyledTableRow>
+                                 ))
                               ) : (
                                  <TableRow>
                                     <TableCell colSpan={6} align="center">
                                        <Typography variant="h6">No se encontraron resultados</Typography>
                                     </TableCell>
                                  </TableRow>
-                              )     
-                           }
+                              )  
+                           )}
+                           
                         </TableBody>
                      </Table> 
                   </TableContainer>
@@ -132,8 +135,7 @@ const ServicesTab = () => {
                      onRowsPerPageChange={handleChangeRowsPerPage}
                   />
                </>                 
-            </Paper>
-         
+            </Paper>         
          }
       </>
    );

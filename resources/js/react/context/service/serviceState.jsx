@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 import ServiceReducer from './serviceReducer';
 import ServiceContext  from './serviceContext';
 import { filterArrayByValue, removeAccents } from '../../../helpers';
@@ -17,8 +17,7 @@ const ServiceState = props => {
       serviceTypesList: [],      
       allServices: [],
       currentServices: [],
-      loading: false,
-      progress: 0
+      loading: false
    };
    const [state,dispatch] = useReducer(ServiceReducer, initialState);
    
@@ -57,8 +56,7 @@ const ServiceState = props => {
          }, 1000);
       } catch (err) {
          dispatch({
-            type: GET_CURRENT_SERVICES,
-            payload: []
+            type: GET_CURRENT_SERVICES_ERROR
          });               
       }      
    }
@@ -68,13 +66,6 @@ const ServiceState = props => {
       dispatch({
          type: SEARCH_SERVICES,
          payload: filteredServices
-      });
-   }
-
-   const setProgress = (progress) => {      
-      dispatch({
-         type: SET_PROGRESS,
-         payload: progress
       });
    }
    // Set Loading
@@ -87,7 +78,6 @@ const ServiceState = props => {
          serviceTypesList: state.serviceTypesList,
          allServices: state.allServices,
          currentServices: state.currentServices,
-         progress: state.progress,
          setCurrentTabServiceType,
          getAllServiceTypes,
          getCurrentServices,         

@@ -1,22 +1,22 @@
-import React, { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import ServiceContext from '../context/service/serviceContext';
-import { v4 as uuid } from 'uuid';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import ServicesTab from './../components/ServicesTab';
+import ServicesTab from '../components/ServicesTab';
 
 const Service = () => {    
    const serviceContext = useContext(ServiceContext);   
    const { loading, serviceTypesList, getAllServiceTypes, currentTabServiceType, setCurrentTabServiceType  } = serviceContext;         
    const [tab, setTab] = useState(0);   
-   const [serviceTypesBoolean, setServicesTypesBoolean ] = useState(true);
+
    useEffect(() => {
-      if (serviceTypesBoolean) {
-         getAllServiceTypes();
-         setServicesTypesBoolean(false);
-      }                  
+      getAllServiceTypes();
+      // eslint-disable-next-line
+   }, []);
+
+   useEffect(() => {                      
       setCurrentTabServiceType(currentTabServiceType);
    }, [currentTabServiceType]);
 
@@ -39,20 +39,6 @@ const Service = () => {
                <ServicesTab/>                  
             </TabPanel>            
          </Box>
-         {/* <TabPanel value={tab} index={1}>
-            <ServicesTab
-               services={services}
-               servicesList={servicesList}
-               setServicesList={setServicesList}
-            />
-         </TabPanel>
-         <TabPanel value={tab} index={2}>
-            <XRayTab
-               xRay={xRay}
-               xRayList={xRayList}
-               setXRayList={setXRayList}
-            />
-         </TabPanel> */}
       </>
    );
 }
@@ -64,8 +50,6 @@ function TabPanel(props) {
       <div
          role="tabpanel"
          hidden={value !== index}
-         // id={`simple-tabpanel-${currentTabServiceType}`}
-         // aria-labelledby={`simple-tab-${currentTabServiceType}`}
          {...other}
       >
          {value === index && (

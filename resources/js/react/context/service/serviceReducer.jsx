@@ -1,9 +1,7 @@
 import {
    SET_LOADING, 
-   SET_PROGRESS,
-   ADD_SERVICE, 
-   REMOVE_SERVICE, 
    GET_CURRENT_SERVICES,
+   GET_CURRENT_SERVICES_ERROR,
    GET_ALL_SERVICE_TYPES,
    SEARCH_SERVICES,
    SET_CURRENT_SERVICE_TYPE,
@@ -22,7 +20,13 @@ export default (state = [], action) => {
             allServices: action.payload,
             currentServices: action.payload,
             loading: false
-         }            
+         }    
+      case GET_CURRENT_SERVICES_ERROR:
+         return {
+            ...state,
+            loading: false,
+            currentServices: []
+         }
       case SET_CURRENT_SERVICE_TYPE:
          return {
             ...state,
@@ -33,12 +37,8 @@ export default (state = [], action) => {
       case SET_LOADING: 
          return {
             ...state,
-            loading: true
-         }
-      case SET_PROGRESS : 
-         return {
-            ...state,
-            progress: action.payload
+            loading: true,
+            currentServices: [],
          }
       case SEARCH_SERVICES: 
          return {

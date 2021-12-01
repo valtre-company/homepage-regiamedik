@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\APIFaqController;
 use App\Http\Controllers\APIServiceController;
 use App\Http\Controllers\APIServiceTypeController;
 use App\Models\Service;
@@ -35,6 +36,10 @@ Route::group(['prefix' => 'services'], function () {
     Route::get('/type/{slugType}/search/{search}', [APIServiceController::class, 'getAllServicesByTypeAndSearch'])->name('api.services.type.search');
     Route::get('/types',[APIServiceTypeController::class,'getAllServiceTypes'])->name('api.service_types.all');
     Route::get('/service/{type}', [APIServiceController::class, 'getAllServicesByType'])->name('api.services.types');
+
 });
+
+// FAQS
+Route::get('/faqs/{slugServiceType}', [APIFaqController::class, 'getFaqsBySlug'])->name('api.faqs.types');
 
 

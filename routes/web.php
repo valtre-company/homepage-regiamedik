@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FaqController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ScheduleController;
@@ -18,8 +19,14 @@ use App\Orchid\Screens\Service\ServiceListScreen;
 Route::get('/',[IndexController::class,'index'])->name('welcome');
 Route::post('/', [IndexController::class, 'contactSend'])->name('contact.send');
 
+// Schedule View
 Route::get('/calendario',[ScheduleController::class, 'index'])->name('schedule.index');
+
+// Services on RegiaMedik
 Route::get('/servicios-rmk',[ServiceController::class, 'index'])->name('service.index');
+
+// Frequently Asked Questions
+Route::get('/faqs',[FaqController::class, 'index'])->name('faq.index');
 
 // Administrator Dashboard routes
 Route::prefix('admin')->middleware('platform')->group(function () {

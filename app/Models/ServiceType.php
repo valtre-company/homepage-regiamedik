@@ -27,4 +27,12 @@ class ServiceType extends Model
     public function services(){
         return $this->hasMany(Service::class);
     }
+
+    public function faqs(){
+        return $this->hasMany(Faq::class);
+    }
+
+    public function updatedBy(){
+        return $this->belongsTo(User::class, 'updated_by');
+    }
 }

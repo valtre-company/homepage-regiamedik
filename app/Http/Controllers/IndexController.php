@@ -5,17 +5,31 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use App\Inspections\Spam;
 use App\Jobs\SendMailJob;
+use App\Models\MainCarousel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Validator;
+use Jenssegers\Agent\Agent;
 
 class IndexController extends Controller
 {
     //
     public function index () 
     {
-        return view('welcome');
+        $agent = new Agent();
+        if ($agent->isMobile()) {
+            $attachments = MainCarousel::with('attachment')
+                ->where('attachment_type','mobile')
+                ->orderBy('created_at','asc')
+                ->get();
+        } else {
+            $attachments = MainCarousel::with('attachment')
+                ->where('attachment_type','web')
+                ->orderBy('created_at','asc')
+                ->get();
+        }        
+        return view('welcome', compact('attachments'));
     }
 
     public function contactSend (Request $request)

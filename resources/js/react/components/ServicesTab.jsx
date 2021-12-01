@@ -19,6 +19,7 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 import { formatPrice, capitalizeFirstLetter } from '../../helpers';
+import '@fontsource/roboto/500.css';
 
 const ServicesTab = () => {  
    const serviceContext = useContext(ServiceContext);

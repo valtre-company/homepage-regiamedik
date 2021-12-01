@@ -3,6 +3,7 @@
 use App\Http\Controllers\APIFaqController;
 use App\Http\Controllers\APIServiceController;
 use App\Http\Controllers\APIServiceTypeController;
+use App\Http\Controllers\MainController;
 use App\Models\Service;
 use App\Models\ServiceType;
 use Illuminate\Http\Request;
@@ -28,6 +29,10 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::get('/test', function () {
         return response()->json(['message' => 'You are authenticated']);
     });
+});
+
+Route::prefix('main')->group(function () {
+    Route::get('carousel', [MainController::class, 'getCarousel']);
 });
 
 Route::group(['prefix' => 'services'], function () {

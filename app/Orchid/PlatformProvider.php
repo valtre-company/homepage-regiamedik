@@ -29,10 +29,7 @@ class PlatformProvider extends OrchidServiceProvider
         return [
             Menu::make('Dashboard')
                 ->icon('home')
-                ->route('platform.main')
-                ->badge(function () {
-                    // return Analysis::whereDate('created_at', '>=', Carbon::now())->where('can_download', 0)->count();
-                }),
+                ->route('platform.main'),
 
             Menu::make('Sucursales')
                 ->icon('location-pin')
@@ -61,7 +58,7 @@ class PlatformProvider extends OrchidServiceProvider
                     Menu::make('Crear')->icon('plus')
                         ->route('admin.category.edit'),
             ]),
-            Menu::make('Sliders Principal')
+            Menu::make('Slider principales')
                 ->icon('loop')
                 ->list([
                     Menu::make('Listar')->icon('list')

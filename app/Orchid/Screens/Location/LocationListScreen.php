@@ -53,7 +53,7 @@ class LocationListScreen extends Screen
     {
         return [
             Link::make('Crear Sucursal')
-                ->icon('icon-plus')
+                ->icon('plus')
                 ->route('admin.location.edit'),
         ];
     }

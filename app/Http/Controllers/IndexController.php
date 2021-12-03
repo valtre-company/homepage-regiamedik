@@ -5,17 +5,20 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use App\Inspections\Spam;
 use App\Jobs\SendMailJob;
+use App\Models\MainCarousel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Validator;
+use Jenssegers\Agent\Agent;
 
 class IndexController extends Controller
 {
     //
     public function index () 
     {
-        return view('welcome');
+        $attachments = MainCarousel::all();
+        return view('welcome', compact('attachments'));
     }
 
     public function contactSend (Request $request)

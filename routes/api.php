@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\APIFaqController;
+use App\Http\Controllers\APIServiceController;
+use App\Http\Controllers\APIServiceTypeController;
+use App\Http\Controllers\MainController;
+use App\Models\Service;
+use App\Models\ServiceType;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +23,28 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Route testing with auth middleware
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::get('/test', function () {
+        return response()->json(['message' => 'You are authenticated']);
+    });
+});
+
+Route::prefix('main')->group(function () {
+    Route::get('carousel', [MainController::class, 'getCarousel']);
+});
+
+Route::group(['prefix' => 'services'], function () {
+    Route::get('/', [APIServiceController::class, 'getAllServices'])->name('api.services.all');
+    // Search by type slug & search
+    Route::get('/type/{slugType}/search/{search}', [APIServiceController::class, 'getAllServicesByTypeAndSearch'])->name('api.services.type.search');
+    Route::get('/types',[APIServiceTypeController::class,'getAllServiceTypes'])->name('api.service_types.all');
+    Route::get('/service/{type}', [APIServiceController::class, 'getAllServicesByType'])->name('api.services.types');
+
+});
+
+// FAQS
+Route::get('/faqs/{slugServiceType}', [APIFaqController::class, 'getFaqsBySlug'])->name('api.faqs.types');
+
+

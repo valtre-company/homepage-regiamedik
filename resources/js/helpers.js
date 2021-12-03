@@ -30,11 +30,24 @@ const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
 
-const filterArrayByValue = (array,value) => {
-    return array.filter(({name,price}) => {    
-        name =  removeAccents(name).toLowerCase()                      
-        price = price.toString();         
-        return (name.indexOf(removeAccents(value).toLowerCase()) > -1 || price.indexOf(value) > -1);         
+const filterArrayByValue = (array,value) => {    
+    value = removeAccents(value.toLowerCase());
+    return array.filter(({name,description, min_price, max_price, lead_time, all_locations }) => {    
+        all_locations = removeAccents(all_locations.toLowerCase());
+        name = removeAccents(name.toLowerCase());
+        lead_time = lead_time ? removeAccents(lead_time.toLowerCase()) : "" ;                      
+        description =  removeAccents(description).toLowerCase()
+        min_price = min_price.toString();         
+        max_price = max_price.toString();
+        return (
+            name.indexOf(value) > -1 || 
+            lead_time.indexOf(value) > -1 ||
+            description.indexOf(value) > -1 ||
+            min_price.indexOf(value) > -1 || 
+            max_price.indexOf(value) > -1 || 
+            all_locations.indexOf(value) > -1
+        );         
     });
 }
+
 export { removeAccents, formatPrice, capitalizeFirstLetter, filterArrayByValue };

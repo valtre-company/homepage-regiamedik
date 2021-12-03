@@ -1,5 +1,5 @@
 {
-   "analysis": [
+   "laboratorio": [
       {
          "name": "17 ALFA HIDROXI PROGESTERONA (17aOHp4)", 
          "price": 625.00,
@@ -2556,7 +2556,7 @@
          "locations": [{"name": "Monterrey"}, {"name": "Juárez"}, {"name": "Apodaca"}]
       }
    ],
-   "services": [      
+   "unidad-medica": [      
       {
          "name": "RETIRO DE PUNTOS",
          "price": 250.00,
@@ -2564,7 +2564,7 @@
       },
       {
          "name": "CURACION", 
-         "price": "$100 a $300",
+         "price": 250,
          "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
       },
       {
@@ -2608,5 +2608,5 @@
          "locations": [{"name": "Juárez"}, {"name": "Apodaca"}]
       }
    ],
-   "xRay" : []
+   "rayos-x" : []
 }

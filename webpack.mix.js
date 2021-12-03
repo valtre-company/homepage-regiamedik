@@ -18,4 +18,5 @@ mix.js('resources/js/app.js', 'public/js')
     .version()
     .react()
     .sourceMaps()
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')    
+    .sass('resources/sass/orchid.scss','public/css')

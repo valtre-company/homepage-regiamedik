@@ -1,36 +1,55 @@
 /** Bootstrap Carousel **/
 .carousel {
-    .carousel-item {      
-        .carousel-img {
-            background-color: rgba(0,0,0,.65);
-            background-blend-mode: darken;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 60vh;
-            width: 100%;
-
-            @include tablet {
-                height: 80vh;
-            }
-
-            &.carousel-slider-1 {
-                background-image: url(/assets/img/slider/header-slider-1.jpg) ;
-                @supports (background-image: -webkit-image-set(url('/assets/img/slider/header-slider-1.webp') 1x)) {                    
-                    background-image: -webkit-image-set(url(/assets/img/slider/header-slider-1.webp) 1x ) ;
-                }
-                
-            }
-
-            &.carousel-slider-2 {
-                background-image: url(/assets/img/slider/header-slider-2.jpg);
-                @supports (background-image: -webkit-image-set(url('/assets/img/slider/header-slider-2.webp') 1x)) {                    
-                    background-image: -webkit-image-set(url(/assets/img/slider/header-slider-2.webp) 1x ) ;
-                }                
-            }
-                        
+    .carousel-inner {
+        max-height: 365px;
+        @include tablet {
+            max-height: 250px;
         }
     }
+    // .item {
+    // .carousel-item {     
+        // &.carousel-item-mobile {
+        //     display: block;
+        //     @include tablet {
+        //         display: none;
+        //     }
+        // }        
+        // &.carousel-item-desktop {
+        //     display: none;
+        //     @include tablet {
+        //         display: block;
+        //     }
+        // }
+        // .carousel-img {
+        //     background-color: rgba(0,0,0,.65);
+        //     background-blend-mode: darken;
+        //     background-position: center center;
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     height: 60vh;
+        //     width: 100%;
+
+        //     @include tablet {
+        //         height: 80vh;
+        //     }
+
+        //     &.carousel-slider-1 {
+        //         background-image: url(/assets/img/slider/header-slider-1.jpg) ;
+        //         @supports (background-image: -webkit-image-set(url('/assets/img/slider/header-slider-1.webp') 1x)) {                    
+        //             background-image: -webkit-image-set(url(/assets/img/slider/header-slider-1.webp) 1x ) ;
+        //         }
+                
+        //     }
+
+        //     &.carousel-slider-2 {
+        //         background-image: url(/assets/img/slider/header-slider-2.jpg);
+        //         @supports (background-image: -webkit-image-set(url('/assets/img/slider/header-slider-2.webp') 1x)) {                    
+        //             background-image: -webkit-image-set(url(/assets/img/slider/header-slider-2.webp) 1x ) ;
+        //         }                
+        //     }
+                        
+        // }
+    // }    
 }
 /** Owl Carousel */
 .owl-carousel {

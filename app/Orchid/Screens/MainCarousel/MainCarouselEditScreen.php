@@ -3,6 +3,7 @@
 namespace App\Orchid\Screens\MainCarousel;
 
 use App\Models\MainCarousel;
+use App\Service\ImageService;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -24,6 +25,11 @@ use Orchid\Support\Facades\Layout;
 
 class MainCarouselEditScreen extends Screen
 {
+    private $desktopWidth = 1350;
+    private $desktopHeight = 250;
+    private $mobileWidth = 375;
+    private $mobileHeight = 365;
+
     /**
      * Display header name.
      *
@@ -84,22 +90,22 @@ class MainCarouselEditScreen extends Screen
                         ->title('Título'),
                 ]),
                 Group::make([                    
-                    Upload::make('main_carousel.attachment_id')
-                        ->title('Sube una imagen jpg, webp, png o jpeg') 
-                        ->help('El archivo debe ser una imagen de buena resolución')
+                    Upload::make('main_carousel.attachment_web_id')
+                        ->title('Slider en modo escritorio')                         
                         ->acceptedFiles('image/*') 
                         ->maxFiles(1) 
-                        ->maxFileSizes(2)
+                        ->maxFileSizes(1)
+                        ->resizeWidth($this->desktopWidth)
+                        ->resizeHeight($this->desktopHeight)
                         ->required(), 
-                ]),
-                Group::make([                    
-                    Select::make('main_carousel.attachment_type')
-                        ->options([
-                            'web' => 'Web',
-                            'mobile' => 'Mobile',
-                        ])
-                        ->title('Tipo de Slider')
-                        ->help('Tipo de elemento que se mostrará en el slider principal')
+                    Upload::make('main_carousel.attachment_mobile_id')
+                        ->title('Slider en modo celular o tablet') 
+                        // ->help('El archivo debe ser una imagen de buena resolución')
+                        ->acceptedFiles('image/*') 
+                        ->maxFiles(1) 
+                        ->maxFileSizes(1)
+                        ->resizeWidth($this->mobileWidth)
+                        ->resizeHeight($this->mobileHeight)
                         ->required(),                    
                 ]),
                 Group::make([
@@ -132,35 +138,32 @@ class MainCarouselEditScreen extends Screen
     public function createOrUpdate(MainCarousel $main_carousel, Request $request) {
 
         $is_new = !$main_carousel->exists;
-        $data = $request->main_carousel;
-        $attachment_id = isset($data["attachment_id"][0]) ? $data["attachment_id"][0] : null;
-        $attachment_type = isset($data["attachment_type"]) ? $data["attachment_type"] : null;        
+        $data = $request->main_carousel;        
         $title = isset($data["title"]) ? $data["title"] : null;
+        $attachment_web_id = isset($data["attachment_web_id"]) ? $data["attachment_web_id"][0] : null;
+        $attachment_mobile_id = isset($data["attachment_mobile_id"]) ? $data["attachment_mobile_id"][0] : null;
+        
         try {
             if(!$title) {
                 throw new Exception("El título es requerido");
             }
-            if(!$attachment_type) {
-                throw new Exception("Debe seleccionar un tipo de slider");
+
+            if(!$attachment_web_id) {
+                throw new Exception("La imagen en modo escritorio es requerida");
             }
-            if (!$attachment_id) {
-                throw new Exception("attachment_id doesn't exists on request");
+
+            if(!$attachment_mobile_id) {
+                throw new Exception("La imagen en modo celular o tablet es requerida");
             }
-            
+
             $main_carousel->fill([
                 'title' => $title,
-                "attachment_id" => $attachment_id,
-                "attachment_type" => $attachment_type,
+                "attachment_web_id" => $attachment_web_id,   
+                "attachment_mobile_id" => $attachment_mobile_id,
             ])->save();
 
-            if (env('APP_ENV') === 'local') {
-                $a = Attachment::find($attachment_id);
-                $a->update([
-                    'url' => str_replace('http://localhost', 'http://localhost:8080', $a->url)
-                ]);
-            }
-
-            // ImagesService::resizeCarousel( $main_carousel );
+            ImageService::resizeMainCarousel($main_carousel->attachmentWeb->fullPath, $this->desktopWidth, $this->desktopHeight);
+            ImageService::resizeMainCarousel($main_carousel->attachmentMobile->fullPath, $this->mobileWidth, $this->mobileHeight);
 
             if ($is_new) {
                 Alert::success("Se ha creado el registro satisfactoriamente.");
@@ -170,14 +173,9 @@ class MainCarouselEditScreen extends Screen
 
         } catch (Exception $e) {
             Log::info("Exception", ["val" => $e] );
-            $attachment = Attachment::find( $attachment_id );
-            if ( Storage::exists( $attachment->storagePath ) ) {
-                Storage::delete([ $attachment->storagePath ]);
-            } 
 
-            if ($attachment) {
-                $attachment->delete();
-            }
+            $this->removeAttachmentId($attachment_mobile_id);
+            $this->removeAttachmentId($attachment_web_id);            
 
             Alert::error("Hubo un error al crear el registro, verifique e intente nuevamente.");
         }
@@ -186,26 +184,29 @@ class MainCarouselEditScreen extends Screen
     }
 
     public function remove(MainCarousel $main_carousel, Request $request) {
-
         if ($main_carousel->exists) {
-
-            if (! Hash::check($request->password, Auth::user()->password)) { // validate password
+            if (!Hash::check($request->password, Auth::user()->password)) {
                 Alert::error("La contraseña ingresada es incorrecta");
                 return redirect()->route('admin.main_carousel.edit', $main_carousel);
-            }
-            
-            if ($main_carousel->attachment && $main_carousel->attachment->id) {
-                if (Storage::exists( $main_carousel->storagePath )) {
-                    Storage::delete( $main_carousel->storagePath ); // delete image from storage
-                }
-                $main_carousel->attachment->delete(); // delete image record from db
-            }
+            }        
 
-            $main_carousel->delete(); // delete eloquent model
+            $this->removeAttachmentId($main_carousel->attachment_mobile_id);
+            $this->removeAttachmentId($main_carousel->attachment_web_id);            
+            $main_carousel->delete(); 
             
             Alert::success("Se ha eliminado correctamente el registro de la base de datos.");
         }
 
         return redirect()->route('admin.main_carousel.list');
+    }
+
+    public function removeAttachmentId($id) {
+        $attachment = Attachment::find($id);
+        if ($attachment && $attachment->exists) {
+            if (Storage::exists($attachment->storagePath)) {
+                Storage::delete($attachment->storagePath);
+            }
+            $attachment->delete();
+        }
     }
 }

@@ -16,8 +16,8 @@ class CreateMainCarouselsTable extends Migration
         Schema::create('main_carousels', function (Blueprint $table) {
             $table->id();         
             $table->string('title');                               
-            $table->bigInteger('attachment_id')->nullable();  
-            $table->string('attachment_type')->nullable();          
+            $table->bigInteger('attachment_web_id');                    
+            $table->bigInteger('attachment_mobile_id');                    
             $table->timestamps();
         });
     }

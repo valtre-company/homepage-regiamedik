@@ -17,18 +17,7 @@ class IndexController extends Controller
     //
     public function index () 
     {
-        $agent = new Agent();
-        if ($agent->isMobile()) {
-            $attachments = MainCarousel::with('attachment')
-                ->where('attachment_type','mobile')
-                ->orderBy('created_at','asc')
-                ->get();
-        } else {
-            $attachments = MainCarousel::with('attachment')
-                ->where('attachment_type','web')
-                ->orderBy('created_at','asc')
-                ->get();
-        }        
+        $attachments = MainCarousel::all();
         return view('welcome', compact('attachments'));
     }
 

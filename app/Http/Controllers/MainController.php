@@ -10,7 +10,7 @@ class MainController extends Controller
     //
     public function getCarousel()
     {    
-        return MainCarousel::with('attachment')
+        return MainCarousel::with('attachmentWeb','attachmentMobile')
             ->orderBy('created_at', 'asc')
             ->get();    
     }

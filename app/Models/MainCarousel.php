@@ -16,17 +16,20 @@ class MainCarousel extends Model
 
     protected $fillable = [       
         'title', 
-        'attachment_id',
-        'attachment_type',
+        'attachment_web_id',
+        'attachment_mobile_id',
     ];
 
     protected $allowedSorts = [
         'id',
-        'attachment_type',
         'created_at'
     ];
 
-    public function attachment() {
-        return $this->belongsTo(Attachment::class, 'attachment_id');
+    public function attachmentWeb() {
+        return $this->belongsTo(Attachment::class, 'attachment_web_id');
+    }
+
+    public function attachmentMobile() {
+        return $this->belongsTo(Attachment::class, 'attachment_mobile_id');
     }
 }

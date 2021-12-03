@@ -58,3 +58,13 @@ Route::prefix('admin')->middleware('platform')->group(function () {
    Route::screen('faq/{faq?}', FaqEditScreen::class)
       ->name('admin.faq.edit');
 });
+
+Route::get('login', function () {
+   return redirect()->route('platform.login.auth');
+})->name('login');
+
+// Auth::routes();
+
+Route::get('/test', function () {
+   return Auth::user()->getRoles();
+});

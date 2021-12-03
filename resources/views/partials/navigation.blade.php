@@ -69,16 +69,16 @@
           <div class="st-nav">
             <ul class="st-nav-list st-onepage-nav">
               <li>
-                <a href="#inicio">Inicio</a>
+                <a href="{{ !Route::is('welcome') ? route('welcome') : '' }}#inicio">Inicio</a>
               </li>
               {{-- <li>
                 <a href="#servicios" class="st-smooth-move">Servicios</a>
               </li> --}}
               <li>
-                <a href="#acerca-de">Nosotros</a>
+                <a href="{{ !Route::is('welcome') ? route('welcome') : '' }}#acerca-de">Nosotros</a>
               </li>
               <li>
-                <a href="#contacto">Contacto</a>
+                <a href="{{ !Route::is('welcome') ? route('welcome') : '' }}#contacto">Contacto</a>
               </li>
               <li class="d-block d-md-none">
                 <a target="_blank" rel="noreferrer" href="https://dist.regiamedik.com/">Empresas</a>
@@ -92,6 +92,16 @@
               {{-- <li class="d-block d-md-none">
                 <a target="_blank" href="#contacto" rel="noreferrer" class="st-smooth-move">Cotizar Pedido</a>
               </li> --}}
+              @if(Auth::check())       
+                @if (!Route::is('service.index'))               
+                <li>
+                  <a href="{{ route('service.index') }}">Servicios</a>
+                </li>
+                @endif    
+                <li>
+                  <a href="{{ route('platform.index') }}">Admin</a>
+                </li>
+              @endif
             </ul>
             <span class="st-munu-toggle"></span>
           </div>

@@ -47,7 +47,7 @@ const Faq = () => {
                gutterBottom 
                style={{ fontSize: '1.6rem', marginLeft: '10px' }}
                mb={0}
-            >Preguntas frecuentas</Typography>
+            >Preguntas frecuentes</Typography>
          </Typography>
          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={tab} onChange={handleTabs} textColor="primary" indicatorColor="primary">  

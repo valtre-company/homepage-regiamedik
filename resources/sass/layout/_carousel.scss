@@ -1,6 +1,13 @@
 /** Bootstrap Carousel **/
 .carousel {
-    .carousel-item {     
+    .carousel-inner {
+        max-height: 365px;
+        @include tablet {
+            max-height: 250px;
+        }
+    }
+    // .item {
+    // .carousel-item {     
         // &.carousel-item-mobile {
         //     display: block;
         //     @include tablet {
@@ -42,7 +49,7 @@
         //     }
                         
         // }
-    }    
+    // }    
 }
 /** Owl Carousel */
 .owl-carousel {

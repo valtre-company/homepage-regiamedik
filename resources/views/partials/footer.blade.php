@@ -41,16 +41,19 @@
             <h2 class="st-footer-widget-title">Menú</h2>
             <ul class="st-footer-widget-nav st-mp0">
               <li>
-                <a href="#inicio"><i class="fas fa-chevron-right"></i>Inicio</a>
+                <a href="{{ !Route::is('welcome') ? route('welcome') : '' }}#inicio"><i class="fas fa-chevron-right"></i>Inicio</a>
               </li>
               <li>
-                <a href="#acerca-de"><i class="fas fa-chevron-right"></i>Nosotros</a>
+                <a href="{{ !Route::is('welcome') ? route('welcome') : '' }}#acerca-de"><i class="fas fa-chevron-right"></i>Nosotros</a>
               </li>
               {{-- <li>
                 <a href="#servicios"><i class="fas fa-chevron-right"></i>Servicios</a>
               </li> --}}
               <li>
-                <a href="#contacto"><i class="fas fa-chevron-right"></i>Contacto</a>
+                <a href="{{ !Route::is('welcome') ? route('welcome') : '' }}#contacto"><i class="fas fa-chevron-right"></i>Contacto</a>
+              </li>
+              <li>
+                <a href="{{ route('faq.index') }}"><i class="fas fa-chevron-right"></i>Preguntas frecuentes</a>
               </li>
             </ul>
           </div>

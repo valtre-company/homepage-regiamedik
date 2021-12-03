@@ -34,6 +34,8 @@
     "Allow the user to perform some actions that are not provided for by his roles": "Permite que el usuario realice algunas acciones que no están permitidas por sus roles.",
     "A role is a collection of privileges (of possibly different services like the Users service, Moderator, and so on) that grants users with that role the ability to perform certain tasks or operations.": "Un rol es una colección de privilegios (de posibles servicios diferentes como el servicio de usuarios, moderador, etc.) que concede a los usuarios con ese rol la capacidad de realizar ciertas tareas o operaciones.",
     "Permission/Privilege": "Permiso/Privilegio",
-    "A privilege is necessary to perform certain tasks and operations in an area.": "Un privilegio es necesario para realizar ciertas tareas o operaciones en un área."
-
+    "A privilege is necessary to perform certain tasks and operations in an area.": "Un privilegio es necesario para realizar ciertas tareas o operaciones en un área.",
+    "Permissions": "Permisos",
+    "You can revert to your original state by logging out." : "Puedes revertir tu estado original cerrando sesión.",
+    "Once the account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.": "Una vez que la cuenta sea eliminada, todos sus recursos y datos serán eliminados permanentemente. Antes de eliminar tu cuenta, por favor descarga cualquier información o datos que desees conservar."
 }

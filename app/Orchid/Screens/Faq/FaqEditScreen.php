@@ -84,6 +84,17 @@ class FaqEditScreen extends Screen
         return [
             Layout::rows([
                 Group::make([
+                    Relation::make('faq.service_type_id')
+                    ->title('Tipo de servicio')
+                    ->searchColumns('name','slug')
+                    ->fromModel(ServiceType::class,'id')                    
+                    ->multiple()
+                    ->displayAppend('full_info')
+                    ->required()                        
+                    ->help('Seleccione un tipo de servicio al que va dirigido')
+                    ->max(1),                                       
+                ]),
+                Group::make([
                     Input::make('faq.question')                        
                         ->title('Pregunta')
                         ->placeholder('¿Cuál es el horario del laboratorio?')
@@ -96,17 +107,6 @@ class FaqEditScreen extends Screen
                     ->rows(2)
                     ->toolbar(["text", "color", "header", "list", "format",])
                     ->height('200px'),
-                Group::make([
-                    Relation::make('faq.service_type_id')
-                    ->title('Tipo de servicio')
-                    ->searchColumns('name','slug')
-                    ->fromModel(ServiceType::class,'id')                    
-                    ->multiple()
-                    ->displayAppend('full_info')
-                    ->required()                        
-                    ->help('Seleccione un tipo de servicio al que va dirigido')
-                    ->max(1),                                       
-                ]),
                 Group::make([
                     Button::make('Crear Pregunta')
                         ->icon('plus')

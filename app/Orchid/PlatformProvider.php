@@ -73,7 +73,17 @@ class PlatformProvider extends OrchidServiceProvider
                         ->route('admin.faq.list'),
                     Menu::make('Crear')->icon('plus')
                         ->route('admin.faq.edit'),
-                ]),                              
+                ]),   
+            Menu::make(__('Users'))
+                ->icon('user')
+                ->route('platform.systems.users')
+                ->permission('platform.systems.users')
+                ->title(__('Access rights')),
+
+            Menu::make(__('Roles'))
+                ->icon('lock')
+                ->route('platform.systems.roles')
+                ->permission('platform.systems.roles'),                           
                 // ->canSee(function (ItemPermission $permission) {
                 //     return $permission->has('service.list') || $permission->has('service.create');
                 // }),
@@ -133,17 +143,6 @@ class PlatformProvider extends OrchidServiceProvider
             //     ->badge(function () {
             //         return Dashboard::version();
             //     }, Color::DARK()),
-
-            Menu::make(__('Users'))
-                ->icon('user')
-                ->route('platform.systems.users')
-                ->permission('platform.systems.users')
-                ->title(__('Access rights')),
-
-            Menu::make(__('Roles'))
-                ->icon('lock')
-                ->route('platform.systems.roles')
-                ->permission('platform.systems.roles'),
         ];
     }
 

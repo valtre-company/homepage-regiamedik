@@ -27,9 +27,9 @@ class FaqListScreen extends Screen
     {
         $data = Faq::filters()->defaultSort('id','desc');
 
-        if(request()->query() && isset(request()->query()["filter"]) && isset(request()->query()["filter"]["name"])) {
+        if(request()->query() && isset(request()->query()["filter"]) && isset(request()->query()["filter"]["question"])) {
             $data->where(function ($query) {
-                $query->where(DB::raw('CONCAT_WS(" ", question)'), 'like', '%' . request()->query()["filter"]["answer"] .'%');
+                $query->where(DB::raw('CONCAT_WS(" ", question)'), 'like', '%' . request()->query()["filter"]["question"] .'%');
             });
         }
 

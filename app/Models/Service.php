@@ -32,6 +32,12 @@ class Service extends Model
         'all_locations'        
     ];
 
+    protected $allowedSorts = [
+        'name',
+        'min_price',
+        'max_price',
+    ];
+
     public function getAllLocationsAttribute()
     {        
         $title = "";            

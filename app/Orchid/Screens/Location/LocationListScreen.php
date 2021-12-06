@@ -39,6 +39,26 @@ class LocationListScreen extends Screen
                 $query->where(DB::raw('CONCAT_WS(" ", street)'), 'like', '%' . request()->query()["filter"]["street"] .'%');
             });
         }
+
+        // Filter by city
+        if (request()->query() && isset(request()->query()["filter"]) && isset(request()->query()["filter"]["city"])) {        
+            $data->where(function ($query) {
+                $query->where(DB::raw('CONCAT_WS(" ", city)'), 'like', '%' . request()->query()["filter"]["city"] .'%');
+            });
+        }
+        
+        // Filter by number_interior
+        if (request()->query() && isset(request()->query()["filter"]) && isset(request()->query()["filter"]["number_interior"])) {        
+            $data->where(function ($query) {
+                $query->where(DB::raw('CONCAT_WS(" ", number_interior)'), 'like', '%' . request()->query()["filter"]["number_interior"] .'%');
+            });
+        }
+
+        if(request()->query() && isset(request()->query()["filter"]) && isset(request()->query()["filter"]["service_type_id"])){
+            $data->whereHas('serviceType', function ($query){
+                $query->where(DB::raw('CONCAT_WS(" ", name)'), 'like', '%'. request()->query()["filter"]["service_type_id"] .'%');      
+            });    
+        }   
         return [
             'locations' => $data->paginate(),
         ];

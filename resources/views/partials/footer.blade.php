@@ -1,6 +1,7 @@
 
 <!-- Start Footer -->
-<footer class="st-site-footer st-sticky-footer st-dynamic-bg" data-src="{{ asset('assets/images/footer-bg.png') }}">
+{{-- <footer class="st-site-footer st-sticky-footer st-dynamic-bg" data-src="{{ asset('assets/images/footer-bg.png') }}"> --}}
+<footer class="st-site-footer st-sticky-footer">
   <div class="st-main-footer">
     <div class="container">
       <div class="row">

@@ -1,11 +1,13 @@
-
-@foreach ($attachments as $key => $attachment) 
-   <div class="carousel-item {{ !$key ? "active" : "" }} ">      
+@php $count = 0; @endphp
+@foreach ($attachments as $key => $attachment)      
+   @if($attachment->attachmentWeb)
+   <div class="carousel-item {{ !$count ? "active" : "" }} ">      
       <picture>		         
          <source media="(max-width: 480px)" srcset="{{ $attachment->attachmentMobile->url }}?t={{ time() }}" type="{{ $attachment->attachmentMobile->mime }}">			
          <source media="(max-width: 768px)" srcset="{{ $attachment->attachmentWeb->url }}?t={{ time() }}" type="{{ $attachment->attachmentWeb->mime }}">         	
          <img src="{{ $attachment->attachmentWeb->url }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
-      </picture>
-      {{-- <img src="{{ $attachment->attachment->url }}?t={{ time() }}" alt="{{ $attachment->title ? $attachment->title : 'Imagen Carousel' }}"> --}}
+      </picture>      
    </div>
+   @php $count++; @endphp
+   @endif
 @endforeach

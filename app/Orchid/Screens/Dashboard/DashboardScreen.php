@@ -6,6 +6,7 @@ use App\Models\Faq;
 use App\Models\Service;
 use App\Orchid\Layouts\Faq\FaqLayoutScreen;
 use App\Orchid\Layouts\Service\ServiceLayoutScreen;
+use Illuminate\Support\Facades\DB;
 use Orchid\Screen\Actions\DropDown;
 use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Screen;
@@ -33,6 +34,22 @@ class DashboardScreen extends Screen
     public function query(): array
     {
         $services = Service::filters()->defaultSort('id','desc');
+
+        // Filter by service name
+        if(request()->query() && isset(request()->query()["filter"]) && isset(request()->query()["filter"]["name"])) {
+            $services->where(function ($query) {
+                $query->where(DB::raw('CONCAT_WS(" ", name)'), 'like', '%' . request()->query()["filter"]["name"] .'%');
+            });
+        }
+
+        // Filter by service min price or max_price
+        if(request()->query() && isset(request()->query()["filter"]) && isset(request()->query()["filter"]["min_price"])) {
+            $services->where(function ($query) {
+                $query->where('min_price', '>=', request()->query()["filter"]["min_price"]);
+            });
+        }       
+        
+
         $faqs = Faq::filters()->defaultSort('id','desc');
         return [
             'services' => $services->paginate(),

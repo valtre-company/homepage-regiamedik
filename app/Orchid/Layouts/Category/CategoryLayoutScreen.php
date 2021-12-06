@@ -43,7 +43,6 @@ class CategoryLayoutScreen extends Table
                 ->render(function (Category $category) {
                     return (new Carbon($category->created_at))->isoFormat('D/M/YYYY h:mm A');
                 }),
-
             TD::make('updated_at', 'Últim. Modificación')
                 ->sort()
                 ->render(function (Category $category) {

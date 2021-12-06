@@ -17,7 +17,9 @@ class IndexController extends Controller
     //
     public function index () 
     {
-        $attachments = MainCarousel::all();
+        $attachments = MainCarousel::inRandomOrder()
+            ->where('visible', 1)
+            ->get();
         return view('welcome', compact('attachments'));
     }
 

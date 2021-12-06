@@ -6,6 +6,7 @@ use App\Helpers\Helper;
 use App\Models\Service;
 use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Fields\CheckBox;
+use Orchid\Screen\Fields\Input;
 use Orchid\Screen\Layouts\Table;
 use Orchid\Screen\TD;
 
@@ -45,9 +46,9 @@ class ServiceLayoutScreen extends Table
                     $price = $service->min_price === $service->max_price ? $service->min_price : $service->min_price . ' - ' . $service->max_price;
                     return Helper::formatMoney($price);                
                 })
-                ->filter(TD::FILTER_TEXT),
+                ->filter(TD::FILTER_NUMERIC),
             TD::make('category_id','Categoría')
-                ->sort()
+                ->sort()                
                 ->render(function(Service $service) {
                     return $service->category->name;
                 })
@@ -61,14 +62,13 @@ class ServiceLayoutScreen extends Table
                 ->sort()
                 ->render(function(Service $service) {
                     return $service->updated_at->diffForHumans();
-                })
-                ->filter(TD::FILTER_DATE),                
+                }),                
             TD::make('updated_by', 'Actualizado Por')   
                 ->sort()          
                 ->render(function(Service $service) {
                     return "{$service->updatedBy->full_user_name}" ?? '-';
                 })                              
-                ->filter(TD::FILTER_DATE)
+                ->filter(TD::FILTER_TEXT)
         ];
     }
 }

@@ -2,8 +2,8 @@
 <div class="st-hero-wrap st-color1 overflow-hidden">	
 	<div id="flechas" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
-			@if (count($attachments) > 0)
-				@include('ui.carousel')				
+			@include('ui.carousel')				
+			{{-- @if (!count($attachments))
 			@else
 				<div class="carousel-item active">    					
 					<picture>		
@@ -32,7 +32,7 @@
 						<img src="{{ asset("assets/images/main_banner_web_3.png"); }}?t={{ time() }}" alt="Banner RegiaMedik" class="img-fluid w-100">
 					</picture>
 				</div>	
-			@endif			
+			@endif			 --}}
 		</div>
 		<a class="carousel-control-prev" href="#flechas" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>

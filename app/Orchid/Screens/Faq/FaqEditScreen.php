@@ -120,6 +120,12 @@ class FaqEditScreen extends Screen
                         ->method('createOrUpdate')                        
                         ->canSee($this->exists),
 
+                    Button::make('Duplicar')
+                        ->icon('copy')
+                        ->type(Color::SUCCESS())
+                        ->method('duplicate')
+                        ->canSee($this->exists),
+
                     ModalToggle::make('Eliminar')
                         ->modal('askIfDelete')
                         ->method('remove')
@@ -194,5 +200,21 @@ class FaqEditScreen extends Screen
             Alert::warning('Contraseña incorrecta');
             return redirect()->back();
         }
+    }
+
+    function duplicate(Faq $faq, Request $request){
+        $data = $request->get('faq');
+        $data['created_by'] = Auth::user()->id;
+        $data['updated_by'] = Auth::user()->id;
+        $data['service_type_id'] = $data['service_type_id'][0];
+        $data['question'] = 'Copia de '. $data['question'];
+        $data['answer'] = 'Copia de '. $data['answer'];
+        $faq->fill($data);
+        if($faq->save()) {
+            Alert::info('Pregunta duplicada con éxito');
+        } else {
+            Alert::error('Hubo un error al duplicar la pregunta');
+        }
+        return redirect()->route('admin.faq.list');
     }
 }

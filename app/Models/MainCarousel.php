@@ -18,6 +18,7 @@ class MainCarousel extends Model
         'title', 
         'attachment_web_id',
         'attachment_mobile_id',
+        'visible'
     ];
 
     protected $allowedSorts = [

@@ -88,6 +88,12 @@ class MainCarouselEditScreen extends Screen
                         ->max(255)
                         ->required()
                         ->title('Título'),
+                    Select::make('main_carousel.visible')
+                        ->options([
+                            '1' => 'Visible',
+                            '0' => 'No Visible',
+                        ])
+                        ->title('Visible')
                 ]),
                 Group::make([                    
                     Upload::make('main_carousel.attachment_web_id')
@@ -113,6 +119,10 @@ class MainCarouselEditScreen extends Screen
                         ->method('createOrUpdate')
                         ->type(Color::PRIMARY())
                         ->canSee(!$this->exists),
+                    Button::make('Actualizar')
+                        ->method('createOrUpdate')
+                        ->type(Color::PRIMARY())
+                        ->canSee($this->exists),                        
                     ModalToggle::make('Eliminar')
                         ->modal('askIfDelete')
                         ->method('remove')
@@ -137,47 +147,78 @@ class MainCarouselEditScreen extends Screen
 
     public function createOrUpdate(MainCarousel $main_carousel, Request $request) {
 
-        $is_new = !$main_carousel->exists;
+        $isNew = !$main_carousel->exists;
         $data = $request->main_carousel;        
         $title = isset($data["title"]) ? $data["title"] : null;
-        $attachment_web_id = isset($data["attachment_web_id"]) ? $data["attachment_web_id"][0] : null;
-        $attachment_mobile_id = isset($data["attachment_mobile_id"]) ? $data["attachment_mobile_id"][0] : null;
-        
+        $attachment_web_id = isset($data["attachment_web_id"]) ? intval($data["attachment_web_id"][0]) : null;
+        $attachment_mobile_id = isset($data["attachment_mobile_id"]) ? intval($data["attachment_mobile_id"][0]) : null;
+        $visible = isset($data["visible"]) ? intval($data["visible"]) : 0;        
         try {
             if(!$title) {
-                throw new Exception("El título es requerido");
+                Alert::error('El título es requerido');
+                return back();
             }
-
             if(!$attachment_web_id) {
-                throw new Exception("La imagen en modo escritorio es requerida");
+                Alert::error('La imagen en modo escritorio es requerida');
+                return back();
             }
-
             if(!$attachment_mobile_id) {
-                throw new Exception("La imagen en modo celular o tablet es requerida");
-            }
-
-            $main_carousel->fill([
-                'title' => $title,
-                "attachment_web_id" => $attachment_web_id,   
-                "attachment_mobile_id" => $attachment_mobile_id,
-            ])->save();
-
-            ImageService::resizeMainCarousel($main_carousel->attachmentWeb->fullPath, $this->desktopWidth, $this->desktopHeight);
-            ImageService::resizeMainCarousel($main_carousel->attachmentMobile->fullPath, $this->mobileWidth, $this->mobileHeight);
-
-            if ($is_new) {
+                Alert::error('La imagen en modo celular o tablet es requerida');
+                return back();
+            }                        
+            if($isNew) {                
+                $main_carousel = $main_carousel->create([
+                    'title' => $title,
+                    'visible' => $visible,        
+                    'attachment_web_id' => $attachment_web_id,
+                    'attachment_mobile_id' => $attachment_mobile_id,
+                ]);               
+                ImageService::resizeMainCarousel($main_carousel->attachmentWeb->fullPath, $this->desktopWidth, $this->desktopHeight);                
+                ImageService::resizeMainCarousel($main_carousel->attachmentMobile->fullPath, $this->mobileWidth, $this->mobileHeight);                 
+            } else {
+                $main_carousel->update([
+                    'title' => $title,
+                    'visible' => $visible,                    
+                ]);
+                if($main_carousel->attachment_web_id !== $attachment_web_id) {     
+                    $attachmentWebLast = $main_carousel->attachmentWeb;              
+                    if ($attachmentWebLast && $attachmentWebLast->id) {
+                        if (Storage::exists($attachmentWebLast->storagePath)) {
+                            Storage::delete($attachmentWebLast->storagePath); 
+                        }
+                        $attachmentWebLast->delete(); 
+                    }
+                    $main_carousel->update(['attachment_web_id' => $attachment_web_id]);             
+                    $main_carousel = MainCarousel::find($main_carousel->id);
+                    ImageService::resizeMainCarousel($main_carousel->attachmentWeb->fullPath, $this->desktopWidth, $this->desktopHeight);                
+                }            
+                if($main_carousel->attachment_mobile_id !== $attachment_mobile_id) {
+                    $attachmentMobileLast = $main_carousel->attachmentMobile;       
+                    if ($attachmentMobileLast && $attachmentMobileLast->id) {
+                        if (Storage::exists($attachmentMobileLast->storagePath)) {
+                            Storage::delete($attachmentMobileLast->storagePath); 
+                        }
+                        $attachmentMobileLast->delete(); 
+                    }
+                    $main_carousel->update(['attachment_mobile_id' => $attachment_mobile_id]); 
+                    $main_carousel = MainCarousel::find($main_carousel->id);                
+                    ImageService::resizeMainCarousel($main_carousel->attachmentMobile->fullPath, $this->mobileWidth, $this->mobileHeight);                 
+                }
+            }   
+            if ($isNew) {
                 Alert::success("Se ha creado el registro satisfactoriamente.");
             } else {
                 Alert::success("Se ha actualizado el registro satisfactoriamente.");
             }
-
         } catch (Exception $e) {
             Log::info("Exception", ["val" => $e] );
-
-            $this->removeAttachmentId($attachment_mobile_id);
-            $this->removeAttachmentId($attachment_web_id);            
-
-            Alert::error("Hubo un error al crear el registro, verifique e intente nuevamente.");
+            if($attachment_mobile_id) $this->removeAttachmentId($attachment_mobile_id);
+            if($attachment_web_id) $this->removeAttachmentId($attachment_web_id);            
+            if($isNew) {
+                Alert::error("Hubo un error al crear el registro, verifique e intente nuevamente.");
+            } else {
+                Alert::error("Hubo un error al actualizar el registro, verifique e intente nuevamente.");
+            }
         }
         
         return redirect()->route('admin.main_carousel.edit', $main_carousel);
@@ -189,7 +230,6 @@ class MainCarouselEditScreen extends Screen
                 Alert::error("La contraseña ingresada es incorrecta");
                 return redirect()->route('admin.main_carousel.edit', $main_carousel);
             }        
-
             $this->removeAttachmentId($main_carousel->attachment_mobile_id);
             $this->removeAttachmentId($main_carousel->attachment_web_id);            
             $main_carousel->delete(); 

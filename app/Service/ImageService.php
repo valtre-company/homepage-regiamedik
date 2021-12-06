@@ -2,7 +2,6 @@
 
 namespace App\Service;
 
-use App\Models\MainCarousel;
 use Intervention\Image\Facades\Image;
 
 class ImageService {

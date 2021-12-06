@@ -150,12 +150,19 @@ class ServiceEditScreen extends Screen
                         ->method('createOrUpdate')                        
                         ->canSee($this->exists),
 
+                    Button::make('Duplicar')
+                        ->icon('copy')
+                        ->type(Color::SUCCESS())
+                        ->method('duplicate')
+                        ->canSee($this->exists),
+
                     ModalToggle::make('Eliminar')
                         ->modal('askIfDelete')
                         ->method('remove')
                         ->type(Color::DANGER())
                         ->icon('trash')
                         ->canSee($this->exists),
+
                 ])->autoWidth(),
                 // Layout::view('platform.analysis.analysis-form'),
             ])->title('Información General'),
@@ -267,5 +274,29 @@ class ServiceEditScreen extends Screen
             Alert::warning('Contraseña incorrecta');
             return redirect()->back();
         }
+    }
+
+    public function duplicate(Service $service, Request $request)
+    {
+        $data = $request->get('service');
+        $data['name'] = $data['name'] . ' (Copia)';
+        $data['slug'] = Str::slug($data['name']);
+        $data['created_by'] = Auth::user()->id;
+        $data['updated_by'] = Auth::user()->id;
+        $data['locations'] = isset($data['locations']) ? $data['locations'] : [];
+        try {
+            DB::beginTransaction();
+            $service->fill($data);
+            $service->save();
+            $this->generateServicesLocations($service, $data['locations']);
+            DB::commit();
+            Alert::success('Servicio duplicado con éxito');
+        } catch (Exception $e) {
+            Log::debug($e->getMessage());
+            Toast::warning('Verifique los datos e intente nuevamente');
+            Alert::error('Hubo un error al duplicar el servicio');
+            DB::rollBack();
+        }
+        return redirect()->route('admin.service.list');
     }
 }

@@ -33,6 +33,12 @@ class CategoryListScreen extends Screen
             });
         }
 
+        if(request()->query() && isset(request()->query()["filter"]) && isset(request()->query()["filter"]["slug"])) {
+            $data->where(function ($query) {
+                $query->where(DB::raw('CONCAT_WS(" ", slug)'), 'like', '%' . request()->query()["filter"]["slug"] .'%');
+            });
+        }
+
         return [
             'categories' => $data->paginate(),
         ];

@@ -2,6 +2,20 @@ import Typed from 'typed.js';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
+
+(async () => {
+   if ("loading" in HTMLImageElement.prototype) {
+      const images = document.querySelectorAll("img.lazyload");
+      images.forEach((img) => {
+         img.src = img.dataset.src;
+      });
+   } else {
+      const lazySizes = await import("lazysizes");
+      lazySizes.init();
+   }
+})();  
+
+
 // Function on DOM Content Loading execute function eventListeners
 document.addEventListener("DOMContentLoaded", eventListeners );
 

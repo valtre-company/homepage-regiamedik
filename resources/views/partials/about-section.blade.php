@@ -1,8 +1,8 @@
 <!-- Start About Section -->
 <section class="st-about-wrap pt-5" id="acerca-de">
-  <div class="st-shape-bg">
+  {{-- <div class="st-shape-bg">
     <img src="{{ asset('assets/fonts/about-bg-shape.svg') }}" alt="shape">
-  </div>
+  </div> --}}
   {{-- <div class="st-height-b120 st-height-lg-b50"></div> --}}
   <div class="container">
     <div class="st-section-heading st-style1">

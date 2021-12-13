@@ -64,7 +64,3 @@ Route::get('login', function () {
 })->name('login');
 
 // Auth::routes();
-
-Route::get('/test', function () {
-   return Auth::user()->getRoles();
-});

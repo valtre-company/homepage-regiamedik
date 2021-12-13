@@ -2,10 +2,10 @@
 <section id="contacto" class="st-shape-wrap" style="padding-bottom: 5rem;">
   {{-- <div class="st-shape4">
     <img src="{{ asset('assets/images/section_shape.png') }}" alt="shape1">
-  </div> --}}
-  <div class="st-shape6">
-    {{-- <img src="{{ asset('assets/fonts/contact-shape3.svg') }}" alt="shape3"> --}}
   </div>
+  <div class="st-shape6">
+    <img src="{{ asset('assets/fonts/contact-shape3.svg') }}" alt="shape3">
+  </div> --}}
   {{-- <div class="st-height-b120 st-height-lg-b80"></div> --}}
   <div class="container mt-5">
     <div class="st-section-heading st-style1">
@@ -40,9 +40,7 @@
           </p>
           @endif
           <div id="st-alert1" style="display: none;"></div>
-
-          <input type="hidden" id="sitio" name="sitio" value="Home Page Regia Medi-K">
-          
+          <input type="hidden" id="sitio" name="sitio" value="Home Page Regia Medi-K">        
           <div class="row">
             <div class="col-lg-6">
               <div class="st-form-field st-style1">

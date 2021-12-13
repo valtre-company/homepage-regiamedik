@@ -63,7 +63,7 @@
       <div class="st-main-header-in">
         <div class="st-main-header-left">
           <a class="st-site-branding" href="{{ route('welcome') }}">
-            <img src="{{ asset('logo.png') }}?t={{ time() }}" class="brand-logo img-fluid" alt="Regia Medi-K Logo"></a>
+            <img data-src="{{ asset('logo.png') }}?t={{ time() }}" class="brand-logo img-fluid lazyload" alt="Regia Medi-K Logo" loading="lazy"></a>
         </div>
         <div class="st-main-header-right">
           <div class="st-nav">

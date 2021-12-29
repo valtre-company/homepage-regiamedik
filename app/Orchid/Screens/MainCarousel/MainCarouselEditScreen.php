@@ -81,35 +81,40 @@ class MainCarouselEditScreen extends Screen
     public function layout(): array
     {
         return [
-            Layout::rows([
+            Layout::rows([                
                 Group::make([                    
                     Input::make('main_carousel.title')
                         ->type('text')
                         ->max(255)
-                        ->required()
+                        ->required()        
+                        ->help('El título se utilizará cuando no cargue correctamente la imagen')                
                         ->title('Título'),
                     Select::make('main_carousel.visible')
                         ->options([
                             '1' => 'Visible',
                             '0' => 'No Visible',
                         ])
+                        ->help('Seleccione si el elemento está visible o no')
                         ->title('Visible')
                 ]),
                 Group::make([                    
                     Upload::make('main_carousel.attachment_web_id')
-                        ->title('Slider en modo escritorio')                         
+                        ->title('Slider en modo escritorio')              
+                        ->help('La imagen debe medir '.$this->desktopWidth.'px de ancho por '.$this->desktopHeight.'px de alto.')           
                         ->acceptedFiles('image/*') 
-                        ->maxFiles(1) 
-                        ->maxFileSizes(1)
+                        ->maxFiles(1)  
+                        ->maxFileSize(2)  
+                        ->popover("El archivo debe ser de formato JPG o PNG y de tamaño inferior a 2MB.")                     
                         ->resizeWidth($this->desktopWidth)
                         ->resizeHeight($this->desktopHeight)
                         ->required(), 
                     Upload::make('main_carousel.attachment_mobile_id')
                         ->title('Slider en modo celular o tablet') 
-                        // ->help('El archivo debe ser una imagen de buena resolución')
+                        ->popover("El archivo debe ser de formato JPG o PNG y de tamaño inferior a 2MB.")                     
+                        ->help('La imagen debe medir '.$this->mobileWidth.'px de ancho por '.$this->mobileHeight.'px de alto.')
                         ->acceptedFiles('image/*') 
-                        ->maxFiles(1) 
-                        ->maxFileSizes(1)
+                        ->maxFiles(1)         
+                        ->maxFileSize(2)                                       
                         ->resizeWidth($this->mobileWidth)
                         ->resizeHeight($this->mobileHeight)
                         ->required(),                    

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="js sizes customelements history pointerevents webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" >
 <head>
-	<style>.jquery-ripples { position: relative; z-index: 0; }</style>
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Valtre">
-	<meta name="description" content="Servicios integrales de salud para todo tipo de clientes, ¡Conócenos!. Correo; {{ env('EMAIL') }}; Teléfono: {{ env('PHONE_NUMBER') }}. Copyright {{ Carbon\Carbon::now()->year }} Regia MediK." />
+	<meta name="description" content="@yield('meta_description', 'Servicios integrales de salud para todo tipo de clientes, Belisario Domínguez 2470A, Centro, 64000 Monterrey, N.L. local 10, (Semillero Obispado). Correo; {{ env('EMAIL') }}; Teléfono: {{ env('PHONE_NUMBER') }}. Copyright {{ Carbon\Carbon::now()->year }} Regia MediK.')" />
+    <meta name="keywords" content="@yield('meta_keywords', 'prueba de antigeno, prueba pcr, analisis clinicos, rayos x')">
 	<!-- Page Title -->
 	<title>Regia Medi-K {{ isset($title) ? ' / '. $title : '' }} @yield('title')</title>
 
@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="{{ asset('assets/css/select2.min.css') }}"> --}}
 	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">		
 	<link rel="stylesheet" href="{{ mix('css/app.css') }}?v={{ time() }}">
+	<style>.jquery-ripples { position: relative; z-index: 0; }</style>
 </head>
 <body>
 

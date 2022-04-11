@@ -7,7 +7,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Valtre">
-	<meta name="description" content="@yield('meta_description', 'Servicios integrales de salud para todo tipo de clientes, Belisario Domínguez 2470A, Centro, 64000 Monterrey, N.L. local 10, (Semillero Obispado). Correo; {{ env('EMAIL') }}; Teléfono: {{ env('PHONE_NUMBER') }}. Copyright {{ Carbon\Carbon::now()->year }} Regia MediK')">
+	<meta name="description" content="@yield('meta_description', 'Servicios integrales de salud para todo tipo de clientes">
     <meta name="keywords" content="@yield('meta_keywords', 'prueba de antigeno, prueba pcr, analisis clinicos, rayos x')">
 	<!-- Page Title -->
 	<title>Regia Medi-K {{ isset($title) ? ' / '. $title : '' }} @yield('title')</title>

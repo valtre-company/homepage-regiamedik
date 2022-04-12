@@ -1,9 +1,13 @@
-@if ($attachment->attachmentWeb('image')->get()->count()>0)
-
-   @foreach($attachment->attachmentWeb('image')->get() as $image)
-			<div class="carousel-item {{($loop->first) ? 'active' : ''}}">
-			  <img class="d-block img-fluid" src="{{$image->url('standart')}}" alt="{{$image->alt}}">
-			</div>
-   @endforeach
-
-@endif
+@php $count = 0; @endphp
+@foreach ($attachments as $key => $attachment)      
+   @if($attachment->attachmentWeb)
+   <div class="carousel-item {{ !$count ? 'active' : '' }}">
+      <picture>		         
+         <source media="(max-width: 480px)" srcset="{{ $attachment->attachmentMobile->url }}?t={{ time() }}" type="{{ $attachment->attachmentMobile->mime }}">			
+         <source media="(max-width: 768px)" srcset="{{ $attachment->attachmentWeb->url }}?t={{ time() }}" type="{{ $attachment->attachmentWeb->mime }}">         	
+         <img data-src="{{ $attachment->attachmentWeb->url }}?t={{ time() }}" src="/storage/folder_name/{{$attachment->attachmentWeb}}" alt="Banner RegiaMedik" class="img-fluid w-100 lazyload" loading="lazy">
+      </picture>      
+   </div>
+   @php $count++; @endphp
+   @endif
+@endforeach

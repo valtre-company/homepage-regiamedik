@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Valtre">
 	<meta name="description" content="@yield('meta_description', 'Servicios integrales de salud para todo tipo de clientes')">
-    <meta name="keywords" content="@yield('meta_keywords', 'prueba de antigeno, prueba pcr, analisis clinicos, rayos x')">
+    <meta name="keywords" content="@yield('meta_keywords', 'prueba de antigeno, prueba pcr, analisis clinicos, rayos x, maquila pcr, maquila de pcr')">
 	<!-- Page Title -->
 	<title>Regia Medi-K {{ isset($title) ? ' / '. $title : '' }} @yield('title')</title>
 

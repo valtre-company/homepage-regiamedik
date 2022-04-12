@@ -1,4 +1,4 @@
-@if ($post->attachment('image')->get()->count()>0)
+@if ($attachment->attachmentWeb('image')->get()->count()>0)
 
    @foreach($attachment->attachmentWeb('image')->get() as $image)
 			<div class="carousel-item {{($loop->first) ? 'active' : ''}}">

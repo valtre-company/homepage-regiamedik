@@ -1,7 +1,7 @@
 @php $count = 0; @endphp
 @foreach ($attachments as $key => $attachment)      
    @if($attachment->attachmentWeb)
-   <div class="carousel-item {{ !$count ? 'active' : '' }}">
+   <div class="carousel-item {{ !$count ? "active" : "" }} ">
       <picture>		         
          <source media="(max-width: 480px)" srcset="{{ $attachment->attachmentMobile->url }}?t={{ time() }}" type="{{ $attachment->attachmentMobile->mime }}">			
          <source media="(max-width: 768px)" srcset="{{ $attachment->attachmentWeb->url }}?t={{ time() }}" type="{{ $attachment->attachmentWeb->mime }}">         	

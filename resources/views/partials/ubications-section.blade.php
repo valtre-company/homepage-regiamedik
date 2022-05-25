@@ -169,7 +169,7 @@
               <ul class="st-shedule-list">
                 <li class="jus">
                   <div class="st-shedule-left">Lun - Vie</div>
-                  <div class="st-shedule-right">07:00hrs - 20:00hrs</div>
+                  <div class="st-shedule-right">07:00hrs - 16:00hrs</div>
                 </li>
                 <li>
                   <div class="st-shedule-left">Sab</div>                  
@@ -241,7 +241,7 @@
               <ul class="st-shedule-list">
                 <li class="jus">
                   <div class="st-shedule-left">Lun - Vie</div>
-                  <div class="st-shedule-right">08:00hrs - 18:00hrs</div>
+                  <div class="st-shedule-right">08:00hrs - 17:00hrs</div>
                 </li>
                 <li>
                   <div class="st-shedule-left">Sab</div>                  
@@ -309,12 +309,12 @@
             <div class="d-flex flex-column text-center">
               <ul class="st-shedule-list">
                 <li class="jus">
-                  <div class="st-shedule-left">Lun - Vie</div>
-                  <div class="st-shedule-right">07:00hrs - 20:00pm</div>
+                  <div class="st-shedule-left">Martes y Viernes</div>
+                  <div class="st-shedule-right">08:00hrs - 16:00hrs</div>
                 </li>
                 <li>
                   <div class="st-shedule-left">Sab</div>                  
-                  <div class="st-shedule-right">07:00hrs - 15:00hrs</div>
+                  <div class="st-shedule-right">08:00hrs - 16:00hrs</div>
                 </li>
               </ul>
             </div>

@@ -224,7 +224,7 @@
 
   <a target="_blank" rel="noopener noreferrer" href="https://www.pacal.org/n/home/">
             <div class="st-iconbox st-style1 d-flex flex-row justify-content-center align-items-center">                
-                <p class="st-iconbox-text" style="margin-bottom: 0 !important; padding-right: 1rem;">Contamos con certificaci&oacute;n</p>
+                <p class="st-iconbox-title" style="margin-bottom: 0 !important; padding-right: 1rem;">Contamos con certificaci&oacute;n</p>
                 <h2 class="st-iconbox-title" style="padding-right: 1rem;"><img src="https://jacobocuriel.com.mx//assets/img/Logotipo-PACAL.png" width="100"> </h2><button type="button" class="btn btn-primary btn-sm">Conoce más</button>                
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>

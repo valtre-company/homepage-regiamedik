@@ -223,9 +223,9 @@
 
 
   <a target="_blank" rel="noopener noreferrer" href="https://dist.regiamedik.com" class="">
-            <div class="st-iconbox st-style1 d-flex flex-row">                
-                <p class="st-iconbox-text mb-1 mb-lg-3">Medicamentos e insumos para empresas y hospitales.</p>
-                <h2 class="st-iconbox-title">Distribuidora </h2><button type="button" class="btn btn-primary btn-sm">Conoce más</button>                
+            <div class="st-iconbox st-style1 d-flex flex-row justify-content-center">                
+                <p class="st-iconbox-text mb-1 mb-lg-3">Contamos con certificaci&oacute;n</p>
+                <h2 class="st-iconbox-title">Picali </h2><button type="button" class="btn btn-primary btn-sm">Conoce más</button>                
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
         </a>

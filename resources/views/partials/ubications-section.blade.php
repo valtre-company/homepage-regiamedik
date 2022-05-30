@@ -223,8 +223,8 @@
 
 
     <div class="wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInRight;">
-      <div class="st-shedule-wrap">
-        <div class="st-shedule">
+      <div class="st-shedule-wrap" style="background: #f9fafc !important;">
+        <div class="st-shedule" style="padding: none !important; border-color: transparent !important;">
           <div class="d-flex flex-column text-center mb-1">
           <div class="st-seperator">
       <div class="st-seperator-left wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInLeft;"></div>

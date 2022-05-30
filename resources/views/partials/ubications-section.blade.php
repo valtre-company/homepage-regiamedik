@@ -233,7 +233,7 @@
     </div>
 
 
-    <div class="col-12 col-md-6 col-lg-4 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInRight;">
+    <div class="wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInRight;">
       <div class="st-shedule-wrap">
         <div class="st-shedule">
           <div class="d-flex flex-column text-center mb-1">

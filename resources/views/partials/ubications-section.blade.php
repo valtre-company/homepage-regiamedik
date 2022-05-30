@@ -222,10 +222,10 @@
 
 
 
-  <a target="_blank" rel="noopener noreferrer" href="https://dist.regiamedik.com" class="">
+  <a target="_blank" rel="noopener noreferrer" href="https://dist.regiamedik.com">
             <div class="st-iconbox st-style1 d-flex flex-row justify-content-center align-items-center">                
-                <p class="st-iconbox-text" style="margin-bottom: 0 !important;">Contamos con certificaci&oacute;n</p>
-                <h2 class="st-iconbox-title"><img src="https://jacobocuriel.com.mx//assets/img/Logotipo-PACAL.png" width="100"> </h2><button type="button" class="btn btn-primary btn-sm">Conoce más</button>                
+                <p class="st-iconbox-text" style="margin-bottom: 0 !important; padding-right: 1rem;">Contamos con certificaci&oacute;n</p>
+                <h2 class="st-iconbox-title" style="padding-right: 1rem;"><img src="https://jacobocuriel.com.mx//assets/img/Logotipo-PACAL.png" width="100"> </h2><button type="button" class="btn btn-primary btn-sm">Conoce más</button>                
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
         </a>

@@ -223,7 +223,7 @@
 
 
   <a target="_blank" rel="noopener noreferrer" href="https://dist.regiamedik.com" class="">
-            <div class="st-iconbox st-style1 d-flex flex-row justify-content-center">                
+            <div class="st-iconbox st-style1 d-flex flex-row justify-content-center align-items-center">                
                 <p class="st-iconbox-text mb-1 mb-lg-3">Contamos con certificaci&oacute;n</p>
                 <h2 class="st-iconbox-title">Picali </h2><button type="button" class="btn btn-primary btn-sm">Conoce más</button>                
             </div>

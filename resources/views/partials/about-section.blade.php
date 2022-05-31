@@ -19,7 +19,7 @@
       </div>
       {{-- <div class="st-section-heading-subtitle">¡En Regia Medi-K cuidamos de tu salud y la de tu empresa!</div> --}}
       <div class="st-section-heading-subtitle mx-auto">Somos una empresa que ofrece un amplio portafolio de servicios integrales de salud, medicamentos, insumos y equipos de diagnóstico.</div>
-      <div class="row mt-5 valores justify-content-center flex-wrap">
+      <div class="row mt-5 valores flex-wrap">
         <div class="col-12 col-md-3 mb-2 mb-md-0" style="margin-right: 1rem !important;">
           <div class="flip-card">
             <div class="flip-card-inner">

@@ -46,7 +46,7 @@
         </div>
 
         <div class="col-12 col-md-3 mb-2 mb-md-0">
-          <div class="flip-card">
+          <div class="flip-card" style="margin-left: 1rem !important;">
             <div class="flip-card-inner">
               <div class="flip-card-front card-blue">
                 <h2>Valores Agregados</h2>

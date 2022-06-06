@@ -15,7 +15,7 @@
               <ul class="redes-sociales st-social-btn st-style1 st-mp0">
                 
                 <li>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/SALUD_Logo_2019.svg" width="100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/SALUD_Logo_2019.svg" style="width: 80px !important;">
                 </li>
                 <li>
                   <a target="_blank" rel="noreferrer" href="{{ env("LINKEDIN_URL") }}">

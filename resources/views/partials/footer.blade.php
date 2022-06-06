@@ -13,6 +13,12 @@
               <div class="st-footer-text text-center">Somos una empresa regiomontana que nace por la necesidad de contar con una alternativa diferente en soluciones integrales de salud.</div>
               <div class="st-height-b25 st-height-lg-b25"></div>
               <ul class="redes-sociales st-social-btn st-style1 st-mp0">
+                
+                <li>
+                  <a target="_blank" rel="noreferrer" href="#">
+                    <span class="sr-only"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/SALUD_Logo_2019.svg" width="100"></span>
+                  </a>
+                </li>
                 <li>
                   <a target="_blank" rel="noreferrer" href="{{ env("LINKEDIN_URL") }}">
                     <span class="sr-only"><i class="fab fa-linkedin"></i>LinkedIn</span>

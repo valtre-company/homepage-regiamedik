@@ -52,7 +52,14 @@
                 <h2>Valores Agregados</h2>
               </div>
               <div class="flip-card-back card-blue">
-                <p>Valores</p>
+              <div class="text-left">
+                  <p class="d-block p-0">■ Laboratorio certificado por Pacal&nbsp;</p>
+                  <p class="d-block p-0">■ Servicios a Domicilio</p>
+                  <p class="d-block p-0">■ Servicio Integral de Salud</p>
+                  <p class="d-block p-0">■ Entrega de Resultados Express</p>
+                  <p class="d-block p-0">■ Resoluci&oacute;n en im&aacute;genes de alta calidad</p>
+                  <p class="d-block p-0">■ Entrega de resultados f&iacute;sicos y digitales</p>
+                </div>
               </div>
             </div>
           </div>

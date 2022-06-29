@@ -1,6 +1,6 @@
 
 @extends('layouts.app')
-@section('meta_description', 'Servicios integrales de salud para todo tipo de clientes')
+@section('meta_description', 'Servicios integrales de salud para todo tipo de cliente')
 @section('meta_keywords', 'prueba de antigeno, prueba pcr, analisis clinicos, rayos x, maquila pcr, maquila de pcr')
 @section('content')
 

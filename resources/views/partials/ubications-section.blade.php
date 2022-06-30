@@ -169,11 +169,11 @@
               <ul class="st-shedule-list">
                 <li class="jus">
                   <div class="st-shedule-left">Lun - Vie</div>
-                  <div class="st-shedule-right">07:00hrs - 16:00hrs</div>
+                  <div class="st-shedule-right">07:00hrs - 20:00hrs</div>
                 </li>
                 <li>
-                  <div class="st-shedule-left">Sab</div>                  
-                  <div class="st-shedule-right">07:00hrs - 14:00hrs</div>
+                  <div class="st-shedule-left">Sab - Dom</div>                  
+                  <div class="st-shedule-right">07:00hrs - 15:00hrs</div>
                 </li>
               </ul>
             </div>
@@ -222,25 +222,10 @@
 
 
 
-<<<<<<< HEAD
-
-    <div class="wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.2s; animation-name: fadeInRight;">
-      <div class="st-shedule-wrap">
-        <div class="st-shedule">
-          <div class="d-flex flex-column text-center mb-1">
-            <div>
-              <i class="fas fa-map-marker-alt icon-location mr-2" style="font-size: 22px;"></i>
-              <div class="st-call-number">
-                <a aria-label="WhatsApp" target="_blank" rel="noreferrer" href="https://wa.me/{{ env('LADA') . str_replace(' ', '',env('LAB_RM1_WHATSAPP_NUMBER')) }}?text={{ env('WHATSAPP_MESSAGE') }}">
-               Pacalli
-                </a>
-              </div>
-=======
   <a target="_blank" rel="noopener noreferrer" href="https://www.pacal.org/n/home/">
             <div class="st-iconbox st-style1 d-flex flex-row justify-content-center align-items-center">                
                 <p class="st-iconbox-title" style="margin-bottom: 0 !important; padding-right: 1rem;">Contamos con certificaci&oacute;n</p>
                 <h2 class="st-iconbox-title" style="padding-right: 1rem;"><img src="https://jacobocuriel.com.mx//assets/img/Logotipo-PACAL.png" width="100"> </h2><button type="button" class="btn btn-primary btn-sm">Conoce más</button>                
->>>>>>> master
             </div>
             <div class="st-height-b0 st-height-lg-b30"></div>
         </a>
@@ -271,11 +256,11 @@
               <ul class="st-shedule-list">
                 <li class="jus">
                   <div class="st-shedule-left">Lun - Vie</div>
-                  <div class="st-shedule-right">07:00hrs - 17:00hrs</div>
+                  <div class="st-shedule-right">07:00hrs - 20:00hrs</div>
                 </li>
                 <li>
                   <div class="st-shedule-left">Sab - Dom</div>                  
-                  <div class="st-shedule-right">07:00hrs - 17:00hrs</div>
+                  <div class="st-shedule-right">07:00hrs - 15:00hrs</div>
                 </li>
               </ul>
             </div>
@@ -339,12 +324,12 @@
             <div class="d-flex flex-column text-center">
               <ul class="st-shedule-list">
                 <li class="jus">
-                  <div class="st-shedule-left">Martes y Viernes</div>
-                  <div class="st-shedule-right">08:00hrs - 16:00hrs</div>
+                  <div class="st-shedule-left">Lun - Vie</div>
+                  <div class="st-shedule-right">07:00hrs - 20:00hrs</div>
                 </li>
                 <li>
-                  <div class="st-shedule-left">Sab</div>                  
-                  <div class="st-shedule-right">08:00hrs - 14:00hrs</div>
+                  <div class="st-shedule-left">Sab - Dom</div>                  
+                  <div class="st-shedule-right">07:00hrs - 15:00hrs</div>
                 </li>
               </ul>
             </div>
